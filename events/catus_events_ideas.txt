@@ -439,6 +439,9 @@ country_event = {
 			not = {
 				full_idea_group = horde_gov_ideas
 			}
+			not = {
+				has_global_flag = idea_groups_expanded_mod_active
+			}
 		}
 		hidden_effect = {
 			add_idea_group = horde_gov_ideas
@@ -460,6 +463,9 @@ country_event = {
 		trigger = {
 			not = {
 				full_idea_group = theocracy_gov_ideas
+			}
+			not = {
+				has_global_flag = idea_groups_expanded_mod_active
 			}
 		}
 		hidden_effect = {
