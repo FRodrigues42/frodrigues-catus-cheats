@@ -1,0 +1,5967 @@
+namespace = catus_events_remove
+
+country_event = {
+	id = catus_events_remove.1
+	title = "catus_events_remove.title"
+	desc = "catus_events_remove.desc"
+	picture = TEMPORAL_RIFT_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_colonisation.17"
+		trigger = {
+            any_country = {
+                has_country_modifier = catus_colonisation
+            }
+        }
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    has_country_modifier = catus_colonisation
+                }
+                remove_country_modifier = catus_colonisation
+            }
+        }
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.34"
+		trigger = {
+			or = {
+				any_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion
+					}
+				}
+				any_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion_max
+					}
+				}
+			}
+        }
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    has_opinion_modifier = {
+                        who = ROOT
+                        modifier = cheat_add_opinion
+                    }
+                }
+                remove_opinion = {
+                    who = ROOT
+                    modifier = cheat_add_opinion
+                }
+                reverse_remove_opinion = {
+                    who = ROOT
+                    modifier = cheat_add_opinion
+                }
+            }
+            every_country = {
+                limit = {
+                    has_opinion_modifier = {
+                        who = ROOT
+                        modifier = cheat_add_opinion_max
+                    }
+                }
+                remove_opinion = {
+                    who = ROOT
+                    modifier = cheat_add_opinion_max
+                }
+                reverse_remove_opinion = {
+                    who = ROOT
+                    modifier = cheat_add_opinion_max
+                }
+            }
+        }
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.9"
+		trigger = {
+			has_country_flag = mod_unrest
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_unrest
+			clr_country_flag = mod_unrest
+		}
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.12"
+		trigger = {
+			has_country_flag = mod_powerreduction
+		}
+		remove_country_modifier = catus_powerreduction
+		clr_country_flag = mod_powerreduction
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.23"
+		trigger = {
+			has_country_flag = mod_movementspeed
+		}
+		remove_country_modifier = catus_movementspeed
+		clr_country_flag = mod_movementspeed
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.9"
+		trigger = {
+			has_country_flag = mod_military
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_lmorale
+			remove_country_modifier = catus_nmorale
+			remove_country_modifier = catus_infantry
+			remove_country_modifier = catus_cavalry
+			remove_country_modifier = catus_artillery
+			remove_country_modifier = catus_hship
+			remove_country_modifier = catus_lship
+			remove_country_modifier = catus_galley
+			remove_country_modifier = catus_transport
+			clr_country_flag = mod_military
+		}
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.23"
+		trigger = {
+			has_country_flag = mod_hreopinion
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+			}
+			remove_country_modifier = catus_diprep
+			clr_country_flag = mod_hreopinion
+		}
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.26"
+		trigger = {
+			has_country_flag = mod_aereduction
+		}
+		remove_country_modifier = catus_aereduction
+		clr_country_flag = mod_aereduction
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.28"
+		trigger = {
+			has_country_flag = mod_moresubjects
+		}
+		remove_country_modifier = catus_moresubjects
+		clr_country_flag = mod_moresubjects
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.30"
+		trigger = {
+			has_country_flag = mod_diprep
+		}
+		remove_country_modifier = catus_diprep
+		clr_country_flag = mod_diprep
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.3"
+		trigger = {
+			has_country_flag = mod_colonisation
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_colonisation
+			clr_country_flag = mod_colonisation
+		}
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.5"
+		trigger = {
+			or = {
+				has_global_flag = mod_masscol_1
+				has_global_flag = mod_masscol_2
+				has_global_flag = mod_masscol_3
+				has_global_flag = mod_masscol_4
+				has_global_flag = mod_masscol_5
+				has_global_flag = mod_masscol_6
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_colonisation
+			}
+			every_province = {
+				limit = {
+						base_tax = 150
+				}
+				hidden_effect = {
+					add_base_tax = -150
+				}
+			}
+			clr_global_flag = mod_masscol_1
+			clr_global_flag = mod_masscol_2
+			clr_global_flag = mod_masscol_3
+			clr_global_flag = mod_masscol_4
+			clr_global_flag = mod_masscol_5
+			clr_global_flag = mod_masscol_6
+		}
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.11"
+		trigger = {
+			has_country_flag = mod_alwaysrebels
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_alwaysrebels
+			clr_country_flag = mod_alwaysrebels
+		}
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.13"
+		trigger = {
+			has_global_flag = mod_gloalwaysrebels
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_alwaysrebels
+			}
+			clr_global_flag = mod_gloalwaysrebels
+		}
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.15"
+		trigger = {
+			has_country_flag = mod_allpowerreduction
+		}
+		every_country = {
+			remove_country_modifier = catus_powerreduction
+		}
+		clr_global_flag = mod_allpowerreduction
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.4"
+		trigger = {
+			has_country_flag = mod_negpowerreduction
+		}
+		remove_country_modifier = catus_negpowerreduction
+		clr_country_flag = mod_negpowerreduction
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.6"
+		trigger = {
+			has_country_flag = mod_nomadic_conquest
+		}
+		remove_country_modifier = nomadic_conquest
+		clr_country_flag = mod_nomadic_conquest
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+ #####################################################################################################
+    option = {
+        name = "catus_events_amount_of_banners"
+        trigger = {
+            has_country_flag = mod_amount_of_banners
+        }
+        remove_country_modifier = catus_nmod_amount_of_banners
+        clr_country_flag = mod_amount_of_banners
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_army_tradition"
+        trigger = {
+            has_country_flag = mod_army_tradition
+        }
+        remove_country_modifier = catus_nmod_army_tradition
+        clr_country_flag = mod_army_tradition
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_army_tradition_decay"
+        trigger = {
+            has_country_flag = mod_army_tradition_decay
+        }
+        remove_country_modifier = catus_nmod_army_tradition_decay
+        clr_country_flag = mod_army_tradition_decay
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_army_tradition_from_battle"
+        trigger = {
+            has_country_flag = mod_army_tradition_from_battle
+        }
+        remove_country_modifier = catus_nmod_army_tradition_from_battle
+        clr_country_flag = mod_army_tradition_from_battle
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_artillery_bonus_vs_fort"
+        trigger = {
+            has_country_flag = mod_artillery_bonus_vs_fort
+        }
+        remove_country_modifier = catus_nmod_artillery_bonus_vs_fort
+        clr_country_flag = mod_artillery_bonus_vs_fort
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_artillery_cost"
+        trigger = {
+            has_country_flag = mod_artillery_cost
+        }
+        remove_country_modifier = catus_nmod_artillery_cost
+        clr_country_flag = mod_artillery_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_artillery_power"
+        trigger = {
+            has_country_flag = mod_artillery_power
+        }
+        remove_country_modifier = catus_nmod_artillery_power
+        clr_country_flag = mod_artillery_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_backrow_artillery_damage"
+        trigger = {
+            has_country_flag = mod_backrow_artillery_damage
+        }
+        remove_country_modifier = catus_nmod_backrow_artillery_damage
+        clr_country_flag = mod_backrow_artillery_damage
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_cavalry_cost"
+        trigger = {
+            has_country_flag = mod_cavalry_cost
+        }
+        remove_country_modifier = catus_nmod_cavalry_cost
+        clr_country_flag = mod_cavalry_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_cavalry_flanking"
+        trigger = {
+            has_country_flag = mod_cavalry_flanking
+        }
+        remove_country_modifier = catus_nmod_cavalry_flanking
+        clr_country_flag = mod_cavalry_flanking
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_cavalry_power"
+        trigger = {
+            has_country_flag = mod_cavalry_power
+        }
+        remove_country_modifier = catus_nmod_cavalry_power
+        clr_country_flag = mod_cavalry_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_cav_to_inf_ratio"
+        trigger = {
+            has_country_flag = mod_cav_to_inf_ratio
+        }
+        remove_country_modifier = catus_nmod_cav_to_inf_ratio
+        clr_country_flag = mod_cav_to_inf_ratio
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_defensiveness"
+        trigger = {
+            has_country_flag = mod_defensiveness
+        }
+        remove_country_modifier = catus_nmod_defensiveness
+        clr_country_flag = mod_defensiveness
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_discipline"
+        trigger = {
+            has_country_flag = mod_discipline
+        }
+        remove_country_modifier = catus_nmod_discipline
+        clr_country_flag = mod_discipline
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_drill_decay_modifier"
+        trigger = {
+            has_country_flag = mod_drill_decay_modifier
+        }
+        remove_country_modifier = catus_nmod_drill_decay_modifier
+        clr_country_flag = mod_drill_decay_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_drill_gain_modifier"
+        trigger = {
+            has_country_flag = mod_drill_gain_modifier
+        }
+        remove_country_modifier = catus_nmod_drill_gain_modifier
+        clr_country_flag = mod_drill_gain_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_fire_damage"
+        trigger = {
+            has_country_flag = mod_fire_damage
+        }
+        remove_country_modifier = catus_nmod_fire_damage
+        clr_country_flag = mod_fire_damage
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_fire_damage_received"
+        trigger = {
+            has_country_flag = mod_fire_damage_received
+        }
+        remove_country_modifier = catus_nmod_fire_damage_received
+        clr_country_flag = mod_fire_damage_received
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_fort_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_fort_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_fort_maintenance_modifier
+        clr_country_flag = mod_fort_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_garrison_size"
+        trigger = {
+            has_country_flag = mod_garrison_size
+        }
+        remove_country_modifier = catus_nmod_garrison_size
+        clr_country_flag = mod_garrison_size
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_general_cost"
+        trigger = {
+            has_country_flag = mod_general_cost
+        }
+        remove_country_modifier = catus_nmod_general_cost
+        clr_country_flag = mod_general_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_garrison_growth"
+        trigger = {
+            has_country_flag = mod_global_garrison_growth
+        }
+        remove_country_modifier = catus_nmod_global_garrison_growth
+        clr_country_flag = mod_global_garrison_growth
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_manpower"
+        trigger = {
+            has_country_flag = mod_global_manpower
+        }
+        remove_country_modifier = catus_nmod_global_manpower
+        clr_country_flag = mod_global_manpower
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_manpower_modifier"
+        trigger = {
+            has_country_flag = mod_global_manpower_modifier
+        }
+        remove_country_modifier = catus_nmod_global_manpower_modifier
+        clr_country_flag = mod_global_manpower_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_regiment_cost"
+        trigger = {
+            has_country_flag = mod_global_regiment_cost
+        }
+        remove_country_modifier = catus_nmod_global_regiment_cost
+        clr_country_flag = mod_global_regiment_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_regiment_recruit_speed"
+        trigger = {
+            has_country_flag = mod_global_regiment_recruit_speed
+        }
+        remove_country_modifier = catus_nmod_global_regiment_recruit_speed
+        clr_country_flag = mod_global_regiment_recruit_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_hostile_attrition"
+        trigger = {
+            has_country_flag = mod_hostile_attrition
+        }
+        remove_country_modifier = catus_nmod_hostile_attrition
+        clr_country_flag = mod_hostile_attrition
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_infantry_cost"
+        trigger = {
+            has_country_flag = mod_infantry_cost
+        }
+        remove_country_modifier = catus_nmod_infantry_cost
+        clr_country_flag = mod_infantry_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_infantry_power"
+        trigger = {
+            has_country_flag = mod_infantry_power
+        }
+        remove_country_modifier = catus_nmod_infantry_power
+        clr_country_flag = mod_infantry_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_land_attrition"
+        trigger = {
+            has_country_flag = mod_land_attrition
+        }
+        remove_country_modifier = catus_nmod_land_attrition
+        clr_country_flag = mod_land_attrition
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_land_forcelimit"
+        trigger = {
+            has_country_flag = mod_land_forcelimit
+        }
+        remove_country_modifier = catus_nmod_land_forcelimit
+        clr_country_flag = mod_land_forcelimit
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_land_forcelimit_modifier"
+        trigger = {
+            has_country_flag = mod_land_forcelimit_modifier
+        }
+        remove_country_modifier = catus_nmod_land_forcelimit_modifier
+        clr_country_flag = mod_land_forcelimit_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_land_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_land_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_land_maintenance_modifier
+        clr_country_flag = mod_land_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_land_morale"
+        trigger = {
+            has_country_flag = mod_land_morale
+        }
+        remove_country_modifier = catus_nmod_land_morale
+        clr_country_flag = mod_land_morale
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_leader_land_fire"
+        trigger = {
+            has_country_flag = mod_leader_land_fire
+        }
+        remove_country_modifier = catus_nmod_leader_land_fire
+        clr_country_flag = mod_leader_land_fire
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_leader_land_manuever"
+        trigger = {
+            has_country_flag = mod_leader_land_manuever
+        }
+        remove_country_modifier = catus_nmod_leader_land_manuever
+        clr_country_flag = mod_leader_land_manuever
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_leader_land_shock"
+        trigger = {
+            has_country_flag = mod_leader_land_shock
+        }
+        remove_country_modifier = catus_nmod_leader_land_shock
+        clr_country_flag = mod_leader_land_shock
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_leader_siege"
+        trigger = {
+            has_country_flag = mod_leader_siege
+        }
+        remove_country_modifier = catus_nmod_leader_siege
+        clr_country_flag = mod_leader_siege
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_loot_amount"
+        trigger = {
+            has_country_flag = mod_loot_amount
+        }
+        remove_country_modifier = catus_nmod_loot_amount
+        clr_country_flag = mod_loot_amount
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_manpower_recovery_speed"
+        trigger = {
+            has_country_flag = mod_manpower_recovery_speed
+        }
+        remove_country_modifier = catus_nmod_manpower_recovery_speed
+        clr_country_flag = mod_manpower_recovery_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_mercenary_discipline"
+        trigger = {
+            has_country_flag = mod_mercenary_discipline
+        }
+        remove_country_modifier = catus_nmod_mercenary_discipline
+        clr_country_flag = mod_mercenary_discipline
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_movement_speed"
+        trigger = {
+            has_country_flag = mod_movement_speed
+        }
+        remove_country_modifier = catus_nmod_movement_speed
+        clr_country_flag = mod_movement_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_possible_condottieri"
+        trigger = {
+            has_country_flag = mod_possible_condottieri
+        }
+        remove_country_modifier = catus_nmod_possible_condottieri
+        clr_country_flag = mod_possible_condottieri
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_prestige_from_land"
+        trigger = {
+            has_country_flag = mod_prestige_from_land
+        }
+        remove_country_modifier = catus_nmod_prestige_from_land
+        clr_country_flag = mod_prestige_from_land
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_raze_power_gain"
+        trigger = {
+            has_country_flag = mod_raze_power_gain
+        }
+        remove_country_modifier = catus_nmod_raze_power_gain
+        clr_country_flag = mod_raze_power_gain
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_recover_army_morale_speed"
+        trigger = {
+            has_country_flag = mod_recover_army_morale_speed
+        }
+        remove_country_modifier = catus_nmod_recover_army_morale_speed
+        clr_country_flag = mod_recover_army_morale_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_reinforce_cost_modifier"
+        trigger = {
+            has_country_flag = mod_reinforce_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_reinforce_cost_modifier
+        clr_country_flag = mod_reinforce_cost_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_reinforce_speed"
+        trigger = {
+            has_country_flag = mod_reinforce_speed
+        }
+        remove_country_modifier = catus_nmod_reinforce_speed
+        clr_country_flag = mod_reinforce_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_reserves_organisation"
+        trigger = {
+            has_country_flag = mod_reserves_organisation
+        }
+        remove_country_modifier = catus_nmod_reserves_organisation
+        clr_country_flag = mod_reserves_organisation
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_rival_border_fort_maintenance"
+        trigger = {
+            has_country_flag = mod_rival_border_fort_maintenance
+        }
+        remove_country_modifier = catus_nmod_rival_border_fort_maintenance
+        clr_country_flag = mod_rival_border_fort_maintenance
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_siege_blockade_progress"
+        trigger = {
+            has_country_flag = mod_siege_blockade_progress
+        }
+        remove_country_modifier = catus_nmod_siege_blockade_progress
+        clr_country_flag = mod_siege_blockade_progress
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_shock_damage"
+        trigger = {
+            has_country_flag = mod_shock_damage
+        }
+        remove_country_modifier = catus_nmod_shock_damage
+        clr_country_flag = mod_shock_damage
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_shock_damage_received"
+        trigger = {
+            has_country_flag = mod_shock_damage_received
+        }
+        remove_country_modifier = catus_nmod_shock_damage_received
+        clr_country_flag = mod_shock_damage_received
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_siege_ability"
+        trigger = {
+            has_country_flag = mod_siege_ability
+        }
+        remove_country_modifier = catus_nmod_siege_ability
+        clr_country_flag = mod_siege_ability
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_yearly_army_professionalism"
+        trigger = {
+            has_country_flag = mod_yearly_army_professionalism
+        }
+        remove_country_modifier = catus_nmod_yearly_army_professionalism
+        clr_country_flag = mod_yearly_army_professionalism
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_colonists"
+        trigger = {
+            has_country_flag = mod_colonists
+        }
+        remove_country_modifier = catus_nmod_colonists
+        clr_country_flag = mod_colonists
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_colonist_placement_chance"
+        trigger = {
+            has_country_flag = mod_colonist_placement_chance
+        }
+        remove_country_modifier = catus_nmod_colonist_placement_chance
+        clr_country_flag = mod_colonist_placement_chance
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_colonial_growth"
+        trigger = {
+            has_country_flag = mod_global_colonial_growth
+        }
+        remove_country_modifier = catus_nmod_global_colonial_growth
+        clr_country_flag = mod_global_colonial_growth
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_tariffs"
+        trigger = {
+            has_country_flag = mod_global_tariffs
+        }
+        remove_country_modifier = catus_nmod_global_tariffs
+        clr_country_flag = mod_global_tariffs
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_native_uprising_chance"
+        trigger = {
+            has_country_flag = mod_native_uprising_chance
+        }
+        remove_country_modifier = catus_nmod_native_uprising_chance
+        clr_country_flag = mod_native_uprising_chance
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_native_assimilation"
+        trigger = {
+            has_country_flag = mod_native_assimilation
+        }
+        remove_country_modifier = catus_nmod_native_assimilation
+        clr_country_flag = mod_native_assimilation
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_range"
+        trigger = {
+            has_country_flag = mod_range
+        }
+        remove_country_modifier = catus_nmod_range
+        clr_country_flag = mod_range
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_ae_impact"
+        trigger = {
+            has_country_flag = mod_ae_impact
+        }
+        remove_country_modifier = catus_nmod_ae_impact
+        clr_country_flag = mod_ae_impact
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_diplomats"
+        trigger = {
+            has_country_flag = mod_diplomats
+        }
+        remove_country_modifier = catus_nmod_diplomats
+        clr_country_flag = mod_diplomats
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_diplomatic_annexation_cost"
+        trigger = {
+            has_country_flag = mod_diplomatic_annexation_cost
+        }
+        remove_country_modifier = catus_nmod_diplomatic_annexation_cost
+        clr_country_flag = mod_diplomatic_annexation_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_diplomatic_reputation"
+        trigger = {
+            has_country_flag = mod_diplomatic_reputation
+        }
+        remove_country_modifier = catus_nmod_diplomatic_reputation
+        clr_country_flag = mod_diplomatic_reputation
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_diplomatic_upkeep"
+        trigger = {
+            has_country_flag = mod_diplomatic_upkeep
+        }
+        remove_country_modifier = catus_nmod_diplomatic_upkeep
+        clr_country_flag = mod_diplomatic_upkeep
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_enemy_core_creation"
+        trigger = {
+            has_country_flag = mod_enemy_core_creation
+        }
+        remove_country_modifier = catus_nmod_enemy_core_creation
+        clr_country_flag = mod_enemy_core_creation
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_enforce_religion_cost"
+        trigger = {
+            has_country_flag = mod_enforce_religion_cost
+        }
+        remove_country_modifier = catus_nmod_enforce_religion_cost
+        clr_country_flag = mod_enforce_religion_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_fabricate_claims_time"
+        trigger = {
+            has_country_flag = mod_fabricate_claims_time
+        }
+        remove_country_modifier = catus_nmod_fabricate_claims_time
+        clr_country_flag = mod_fabricate_claims_time
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_improve_relation_modifier"
+        trigger = {
+            has_country_flag = mod_improve_relation_modifier
+        }
+        remove_country_modifier = catus_nmod_improve_relation_modifier
+        clr_country_flag = mod_improve_relation_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_justify_trade_conflict_cost"
+        trigger = {
+            has_country_flag = mod_justify_trade_conflict_cost
+        }
+        remove_country_modifier = catus_nmod_justify_trade_conflict_cost
+        clr_country_flag = mod_justify_trade_conflict_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_justify_trade_conflict_time"
+        trigger = {
+            has_country_flag = mod_justify_trade_conflict_time
+        }
+        remove_country_modifier = catus_nmod_justify_trade_conflict_time
+        clr_country_flag = mod_justify_trade_conflict_time
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_power_projection_from_insults"
+        trigger = {
+            has_country_flag = mod_power_projection_from_insults
+        }
+        remove_country_modifier = catus_nmod_power_projection_from_insults
+        clr_country_flag = mod_power_projection_from_insults
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_province_warscore_cost"
+        trigger = {
+            has_country_flag = mod_province_warscore_cost
+        }
+        remove_country_modifier = catus_nmod_province_warscore_cost
+        clr_country_flag = mod_province_warscore_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_rival_change_cost"
+        trigger = {
+            has_country_flag = mod_rival_change_cost
+        }
+        remove_country_modifier = catus_nmod_rival_change_cost
+        clr_country_flag = mod_rival_change_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_unjustified_demands"
+        trigger = {
+            has_country_flag = mod_unjustified_demands
+        }
+        remove_country_modifier = catus_nmod_unjustified_demands
+        clr_country_flag = mod_unjustified_demands
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_vassal_forcelimit_bonus"
+        trigger = {
+            has_country_flag = mod_vassal_forcelimit_bonus
+        }
+        remove_country_modifier = catus_nmod_vassal_forcelimit_bonus
+        clr_country_flag = mod_vassal_forcelimit_bonus
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_vassal_income"
+        trigger = {
+            has_country_flag = mod_vassal_income
+        }
+        remove_country_modifier = catus_nmod_vassal_income
+        clr_country_flag = mod_vassal_income
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_adm_tech_cost_modifier"
+        trigger = {
+            has_country_flag = mod_adm_tech_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_adm_tech_cost_modifier
+        clr_country_flag = mod_adm_tech_cost_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_build_cost"
+        trigger = {
+            has_country_flag = mod_build_cost
+        }
+        remove_country_modifier = catus_nmod_build_cost
+        clr_country_flag = mod_build_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_build_time"
+        trigger = {
+            has_country_flag = mod_build_time
+        }
+        remove_country_modifier = catus_nmod_build_time
+        clr_country_flag = mod_build_time
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_development_cost"
+        trigger = {
+            has_country_flag = mod_development_cost
+        }
+        remove_country_modifier = catus_nmod_development_cost
+        clr_country_flag = mod_development_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_dip_tech_cost_modifier"
+        trigger = {
+            has_country_flag = mod_dip_tech_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_dip_tech_cost_modifier
+        clr_country_flag = mod_dip_tech_cost_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_embracement_cost"
+        trigger = {
+            has_country_flag = mod_embracement_cost
+        }
+        remove_country_modifier = catus_nmod_embracement_cost
+        clr_country_flag = mod_embracement_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_institution_spread"
+        trigger = {
+            has_country_flag = mod_global_institution_spread
+        }
+        remove_country_modifier = catus_nmod_global_institution_spread
+        clr_country_flag = mod_global_institution_spread
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_tax_income"
+        trigger = {
+            has_country_flag = mod_global_tax_income
+        }
+        remove_country_modifier = catus_nmod_global_tax_income
+        clr_country_flag = mod_global_tax_income
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_tax_modifier"
+        trigger = {
+            has_country_flag = mod_global_tax_modifier
+        }
+        remove_country_modifier = catus_nmod_global_tax_modifier
+        clr_country_flag = mod_global_tax_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_inflation_action_cost"
+        trigger = {
+            has_country_flag = mod_inflation_action_cost
+        }
+        remove_country_modifier = catus_nmod_inflation_action_cost
+        clr_country_flag = mod_inflation_action_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_inflation_reduction"
+        trigger = {
+            has_country_flag = mod_inflation_reduction
+        }
+        remove_country_modifier = catus_nmod_inflation_reduction
+        clr_country_flag = mod_inflation_reduction
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_institution_spread_from_true_faith"
+        trigger = {
+            has_country_flag = mod_institution_spread_from_true_faith
+        }
+        remove_country_modifier = catus_nmod_institution_spread_from_true_faith
+        clr_country_flag = mod_institution_spread_from_true_faith
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_interest"
+        trigger = {
+            has_country_flag = mod_interest
+        }
+        remove_country_modifier = catus_nmod_interest
+        clr_country_flag = mod_interest
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_mil_tech_cost_modifier"
+        trigger = {
+            has_country_flag = mod_mil_tech_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_mil_tech_cost_modifier
+        clr_country_flag = mod_mil_tech_cost_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monthly_splendor"
+        trigger = {
+            has_country_flag = mod_monthly_splendor
+        }
+        remove_country_modifier = catus_nmod_monthly_splendor
+        clr_country_flag = mod_monthly_splendor
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_native_advancement_cost"
+        trigger = {
+            has_country_flag = mod_native_advancement_cost
+        }
+        remove_country_modifier = catus_nmod_native_advancement_cost
+        clr_country_flag = mod_native_advancement_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_production_efficiency"
+        trigger = {
+            has_country_flag = mod_production_efficiency
+        }
+        remove_country_modifier = catus_nmod_production_efficiency
+        clr_country_flag = mod_production_efficiency
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_technology_cost"
+        trigger = {
+            has_country_flag = mod_technology_cost
+        }
+        remove_country_modifier = catus_nmod_technology_cost
+        clr_country_flag = mod_technology_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_bureaucrats_influence"
+        trigger = {
+            has_country_flag = mod_bureaucrats_influence
+        }
+        remove_country_modifier = catus_nmod_bureaucrats_influence
+        clr_country_flag = mod_bureaucrats_influence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_enuchs_influence"
+        trigger = {
+            has_country_flag = mod_enuchs_influence
+        }
+        remove_country_modifier = catus_nmod_enuchs_influence
+        clr_country_flag = mod_enuchs_influence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_temples_influence"
+        trigger = {
+            has_country_flag = mod_temples_influence
+        }
+        remove_country_modifier = catus_nmod_temples_influence
+        clr_country_flag = mod_temples_influence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_mr_aristocrats_influence"
+        trigger = {
+            has_country_flag = mod_mr_aristocrats_influence
+        }
+        remove_country_modifier = catus_nmod_mr_aristocrats_influence
+        clr_country_flag = mod_mr_aristocrats_influence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_mr_guilds_influence"
+        trigger = {
+            has_country_flag = mod_mr_guilds_influence
+        }
+        remove_country_modifier = catus_nmod_mr_guilds_influence
+        clr_country_flag = mod_mr_guilds_influence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_mr_traders_influence"
+        trigger = {
+            has_country_flag = mod_mr_traders_influence
+        }
+        remove_country_modifier = catus_nmod_mr_traders_influence
+        clr_country_flag = mod_mr_traders_influence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_adm_advisor_cost"
+        trigger = {
+            has_country_flag = mod_adm_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_adm_advisor_cost
+        clr_country_flag = mod_adm_advisor_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_administrative_efficiency"
+        trigger = {
+            has_country_flag = mod_administrative_efficiency
+        }
+        remove_country_modifier = catus_nmod_administrative_efficiency
+        clr_country_flag = mod_administrative_efficiency
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_advisor_cost"
+        trigger = {
+            has_country_flag = mod_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_advisor_cost
+        clr_country_flag = mod_advisor_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_advisor_pool"
+        trigger = {
+            has_country_flag = mod_advisor_pool
+        }
+        remove_country_modifier = catus_nmod_advisor_pool
+        clr_country_flag = mod_advisor_pool
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_all_power_cost"
+        trigger = {
+            has_country_flag = mod_all_power_cost
+        }
+        remove_country_modifier = catus_nmod_all_power_cost
+        clr_country_flag = mod_all_power_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_candidate_random_bonus"
+        trigger = {
+            has_country_flag = mod_candidate_random_bonus
+        }
+        remove_country_modifier = catus_nmod_candidate_random_bonus
+        clr_country_flag = mod_candidate_random_bonus
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_core_creation"
+        trigger = {
+            has_country_flag = mod_core_creation
+        }
+        remove_country_modifier = catus_nmod_core_creation
+        clr_country_flag = mod_core_creation
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_dip_advisor_cost"
+        trigger = {
+            has_country_flag = mod_dip_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_dip_advisor_cost
+        clr_country_flag = mod_dip_advisor_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_election_cycle"
+        trigger = {
+            has_country_flag = mod_election_cycle
+        }
+        remove_country_modifier = catus_nmod_election_cycle
+        clr_country_flag = mod_election_cycle
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_envoy_travel_time"
+        trigger = {
+            has_country_flag = mod_envoy_travel_time
+        }
+        remove_country_modifier = catus_nmod_envoy_travel_time
+        clr_country_flag = mod_envoy_travel_time
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_female_advisor_chance"
+        trigger = {
+            has_country_flag = mod_female_advisor_chance
+        }
+        remove_country_modifier = catus_nmod_female_advisor_chance
+        clr_country_flag = mod_female_advisor_chance
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_free_adm_policy"
+        trigger = {
+            has_country_flag = mod_free_adm_policy
+        }
+        remove_country_modifier = catus_nmod_free_adm_policy
+        clr_country_flag = mod_free_adm_policy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_free_dip_policy"
+        trigger = {
+            has_country_flag = mod_free_dip_policy
+        }
+        remove_country_modifier = catus_nmod_free_dip_policy
+        clr_country_flag = mod_free_dip_policy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_free_mil_policy"
+        trigger = {
+            has_country_flag = mod_free_mil_policy
+        }
+        remove_country_modifier = catus_nmod_free_mil_policy
+        clr_country_flag = mod_free_mil_policy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_free_policy"
+        trigger = {
+            has_country_flag = mod_free_policy
+        }
+        remove_country_modifier = catus_nmod_free_policy
+        clr_country_flag = mod_free_policy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_heir_chance"
+        trigger = {
+            has_country_flag = mod_heir_chance
+        }
+        remove_country_modifier = catus_nmod_heir_chance
+        clr_country_flag = mod_heir_chance
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_horde_unity"
+        trigger = {
+            has_country_flag = mod_horde_unity
+        }
+        remove_country_modifier = catus_nmod_horde_unity
+        clr_country_flag = mod_horde_unity
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_idea_cost"
+        trigger = {
+            has_country_flag = mod_idea_cost
+        }
+        remove_country_modifier = catus_nmod_idea_cost
+        clr_country_flag = mod_idea_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_imperial_authority"
+        trigger = {
+            has_country_flag = mod_imperial_authority
+        }
+        remove_country_modifier = catus_nmod_imperial_authority
+        clr_country_flag = mod_imperial_authority
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_imperial_authority_value"
+        trigger = {
+            has_country_flag = mod_imperial_authority_value
+        }
+        remove_country_modifier = catus_nmod_imperial_authority_value
+        clr_country_flag = mod_imperial_authority_value
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_imperial_mandate"
+        trigger = {
+            has_country_flag = mod_imperial_mandate
+        }
+        remove_country_modifier = catus_nmod_imperial_mandate
+        clr_country_flag = mod_imperial_mandate
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_legitimacy"
+        trigger = {
+            has_country_flag = mod_legitimacy
+        }
+        remove_country_modifier = catus_nmod_legitimacy
+        clr_country_flag = mod_legitimacy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_max_absolutism"
+        trigger = {
+            has_country_flag = mod_max_absolutism
+        }
+        remove_country_modifier = catus_nmod_max_absolutism
+        clr_country_flag = mod_max_absolutism
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_max_states"
+        trigger = {
+            has_country_flag = mod_max_states
+        }
+        remove_country_modifier = catus_nmod_max_states
+        clr_country_flag = mod_max_states
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_meritocracy"
+        trigger = {
+            has_country_flag = mod_meritocracy
+        }
+        remove_country_modifier = catus_nmod_meritocracy
+        clr_country_flag = mod_meritocracy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_migration_cooldown"
+        trigger = {
+            has_country_flag = mod_migration_cooldown
+        }
+        remove_country_modifier = catus_nmod_migration_cooldown
+        clr_country_flag = mod_migration_cooldown
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_mil_advisor_cost"
+        trigger = {
+            has_country_flag = mod_mil_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_mil_advisor_cost
+        clr_country_flag = mod_mil_advisor_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monarch_admin_power"
+        trigger = {
+            has_country_flag = mod_monarch_admin_power
+        }
+        remove_country_modifier = catus_nmod_monarch_admin_power
+        clr_country_flag = mod_monarch_admin_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monarch_diplomatic_power"
+        trigger = {
+            has_country_flag = mod_monarch_diplomatic_power
+        }
+        remove_country_modifier = catus_nmod_monarch_diplomatic_power
+        clr_country_flag = mod_monarch_diplomatic_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monarch_military_power"
+        trigger = {
+            has_country_flag = mod_monarch_military_power
+        }
+        remove_country_modifier = catus_nmod_monarch_military_power
+        clr_country_flag = mod_monarch_military_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monthly_militarized_society"
+        trigger = {
+            has_country_flag = mod_monthly_militarized_society
+        }
+        remove_country_modifier = catus_nmod_monthly_militarized_society
+        clr_country_flag = mod_monthly_militarized_society
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monthly_support_heir_gain"
+        trigger = {
+            has_country_flag = mod_monthly_support_heir_gain
+        }
+        remove_country_modifier = catus_nmod_monthly_support_heir_gain
+        clr_country_flag = mod_monthly_support_heir_gain
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_possible_adm_policy"
+        trigger = {
+            has_country_flag = mod_possible_adm_policy
+        }
+        remove_country_modifier = catus_nmod_possible_adm_policy
+        clr_country_flag = mod_possible_adm_policy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_possible_dip_policy"
+        trigger = {
+            has_country_flag = mod_possible_dip_policy
+        }
+        remove_country_modifier = catus_nmod_possible_dip_policy
+        clr_country_flag = mod_possible_dip_policy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_possible_mil_policy"
+        trigger = {
+            has_country_flag = mod_possible_mil_policy
+        }
+        remove_country_modifier = catus_nmod_possible_mil_policy
+        clr_country_flag = mod_possible_mil_policy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_prestige"
+        trigger = {
+            has_country_flag = mod_prestige
+        }
+        remove_country_modifier = catus_nmod_prestige
+        clr_country_flag = mod_prestige
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_prestige_decay"
+        trigger = {
+            has_country_flag = mod_prestige_decay
+        }
+        remove_country_modifier = catus_nmod_prestige_decay
+        clr_country_flag = mod_prestige_decay
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_reelection_cost"
+        trigger = {
+            has_country_flag = mod_reelection_cost
+        }
+        remove_country_modifier = catus_nmod_reelection_cost
+        clr_country_flag = mod_reelection_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_reform_progress_growth"
+        trigger = {
+            has_country_flag = mod_reform_progress_growth
+        }
+        remove_country_modifier = catus_nmod_reform_progress_growth
+        clr_country_flag = mod_reform_progress_growth
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_republican_tradition"
+        trigger = {
+            has_country_flag = mod_republican_tradition
+        }
+        remove_country_modifier = catus_nmod_republican_tradition
+        clr_country_flag = mod_republican_tradition
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_same_culture_advisor_cost"
+        trigger = {
+            has_country_flag = mod_same_culture_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_same_culture_advisor_cost
+        clr_country_flag = mod_same_culture_advisor_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_state_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_state_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_state_maintenance_modifier
+        clr_country_flag = mod_state_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_yearly_absolutism"
+        trigger = {
+            has_country_flag = mod_yearly_absolutism
+        }
+        remove_country_modifier = catus_nmod_yearly_absolutism
+        clr_country_flag = mod_yearly_absolutism
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_yearly_corruption"
+        trigger = {
+            has_country_flag = mod_yearly_corruption
+        }
+        remove_country_modifier = catus_nmod_yearly_corruption
+        clr_country_flag = mod_yearly_corruption
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_free_leader_pool"
+        trigger = {
+            has_country_flag = mod_free_leader_pool
+        }
+        remove_country_modifier = catus_nmod_free_leader_pool
+        clr_country_flag = mod_free_leader_pool
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_leader_cost"
+        trigger = {
+            has_country_flag = mod_leader_cost
+        }
+        remove_country_modifier = catus_nmod_leader_cost
+        clr_country_flag = mod_leader_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_mercenary_cost"
+        trigger = {
+            has_country_flag = mod_mercenary_cost
+        }
+        remove_country_modifier = catus_nmod_mercenary_cost
+        clr_country_flag = mod_mercenary_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_merc_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_merc_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_merc_maintenance_modifier
+        clr_country_flag = mod_merc_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_possible_condottieri"
+        trigger = {
+            has_country_flag = mod_possible_condottieri
+        }
+        remove_country_modifier = catus_nmod_possible_condottieri
+        clr_country_flag = mod_possible_condottieri
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_possible_mercenaries"
+        trigger = {
+            has_country_flag = mod_possible_mercenaries
+        }
+        remove_country_modifier = catus_nmod_possible_mercenaries
+        clr_country_flag = mod_possible_mercenaries
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_war_exhaustion"
+        trigger = {
+            has_country_flag = mod_war_exhaustion
+        }
+        remove_country_modifier = catus_nmod_war_exhaustion
+        clr_country_flag = mod_war_exhaustion
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_war_exhaustion_cost"
+        trigger = {
+            has_country_flag = mod_war_exhaustion_cost
+        }
+        remove_country_modifier = catus_nmod_war_exhaustion_cost
+        clr_country_flag = mod_war_exhaustion_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_war_taxes_cost_modifier"
+        trigger = {
+            has_country_flag = mod_war_taxes_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_war_taxes_cost_modifier
+        clr_country_flag = mod_war_taxes_cost_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_blockade_efficiency"
+        trigger = {
+            has_country_flag = mod_blockade_efficiency
+        }
+        remove_country_modifier = catus_nmod_blockade_efficiency
+        clr_country_flag = mod_blockade_efficiency
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_capture_ship_chance"
+        trigger = {
+            has_country_flag = mod_capture_ship_chance
+        }
+        remove_country_modifier = catus_nmod_capture_ship_chance
+        clr_country_flag = mod_capture_ship_chance
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_galley_cost"
+        trigger = {
+            has_country_flag = mod_galley_cost
+        }
+        remove_country_modifier = catus_nmod_galley_cost
+        clr_country_flag = mod_galley_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_galley_power"
+        trigger = {
+            has_country_flag = mod_galley_power
+        }
+        remove_country_modifier = catus_nmod_galley_power
+        clr_country_flag = mod_galley_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_naval_engagement_modifier"
+        trigger = {
+            has_country_flag = mod_global_naval_engagement_modifier
+        }
+        remove_country_modifier = catus_nmod_global_naval_engagement_modifier
+        clr_country_flag = mod_global_naval_engagement_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_sailors"
+        trigger = {
+            has_country_flag = mod_global_sailors
+        }
+        remove_country_modifier = catus_nmod_global_sailors
+        clr_country_flag = mod_global_sailors
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_sailors_modifier"
+        trigger = {
+            has_country_flag = mod_global_sailors_modifier
+        }
+        remove_country_modifier = catus_nmod_global_sailors_modifier
+        clr_country_flag = mod_global_sailors_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_ship_cost"
+        trigger = {
+            has_country_flag = mod_global_ship_cost
+        }
+        remove_country_modifier = catus_nmod_global_ship_cost
+        clr_country_flag = mod_global_ship_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_ship_recruit_speed"
+        trigger = {
+            has_country_flag = mod_global_ship_recruit_speed
+        }
+        remove_country_modifier = catus_nmod_global_ship_recruit_speed
+        clr_country_flag = mod_global_ship_recruit_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_ship_repair"
+        trigger = {
+            has_country_flag = mod_global_ship_repair
+        }
+        remove_country_modifier = catus_nmod_global_ship_repair
+        clr_country_flag = mod_global_ship_repair
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_ship_trade_power"
+        trigger = {
+            has_country_flag = mod_global_ship_trade_power
+        }
+        remove_country_modifier = catus_nmod_global_ship_trade_power
+        clr_country_flag = mod_global_ship_trade_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_heavy_ship_cost"
+        trigger = {
+            has_country_flag = mod_heavy_ship_cost
+        }
+        remove_country_modifier = catus_nmod_heavy_ship_cost
+        clr_country_flag = mod_heavy_ship_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_heavy_ship_power"
+        trigger = {
+            has_country_flag = mod_heavy_ship_power
+        }
+        remove_country_modifier = catus_nmod_heavy_ship_power
+        clr_country_flag = mod_heavy_ship_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_leader_naval_fire"
+        trigger = {
+            has_country_flag = mod_leader_naval_fire
+        }
+        remove_country_modifier = catus_nmod_leader_naval_fire
+        clr_country_flag = mod_leader_naval_fire
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_leader_naval_manuever"
+        trigger = {
+            has_country_flag = mod_leader_naval_manuever
+        }
+        remove_country_modifier = catus_nmod_leader_naval_manuever
+        clr_country_flag = mod_leader_naval_manuever
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_leader_naval_shock"
+        trigger = {
+            has_country_flag = mod_leader_naval_shock
+        }
+        remove_country_modifier = catus_nmod_leader_naval_shock
+        clr_country_flag = mod_leader_naval_shock
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_light_ship_cost"
+        trigger = {
+            has_country_flag = mod_light_ship_cost
+        }
+        remove_country_modifier = catus_nmod_light_ship_cost
+        clr_country_flag = mod_light_ship_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_light_ship_power"
+        trigger = {
+            has_country_flag = mod_light_ship_power
+        }
+        remove_country_modifier = catus_nmod_light_ship_power
+        clr_country_flag = mod_light_ship_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_naval_attrition"
+        trigger = {
+            has_country_flag = mod_naval_attrition
+        }
+        remove_country_modifier = catus_nmod_naval_attrition
+        clr_country_flag = mod_naval_attrition
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_naval_forcelimit"
+        trigger = {
+            has_country_flag = mod_naval_forcelimit
+        }
+        remove_country_modifier = catus_nmod_naval_forcelimit
+        clr_country_flag = mod_naval_forcelimit
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_naval_forcelimit_modifier"
+        trigger = {
+            has_country_flag = mod_naval_forcelimit_modifier
+        }
+        remove_country_modifier = catus_nmod_naval_forcelimit_modifier
+        clr_country_flag = mod_naval_forcelimit_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_naval_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_naval_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_naval_maintenance_modifier
+        clr_country_flag = mod_naval_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_naval_morale"
+        trigger = {
+            has_country_flag = mod_naval_morale
+        }
+        remove_country_modifier = catus_nmod_naval_morale
+        clr_country_flag = mod_naval_morale
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_naval_tradition_from_battle"
+        trigger = {
+            has_country_flag = mod_naval_tradition_from_battle
+        }
+        remove_country_modifier = catus_nmod_naval_tradition_from_battle
+        clr_country_flag = mod_naval_tradition_from_battle
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_navy_tradition"
+        trigger = {
+            has_country_flag = mod_navy_tradition
+        }
+        remove_country_modifier = catus_nmod_navy_tradition
+        clr_country_flag = mod_navy_tradition
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_navy_tradition_decay"
+        trigger = {
+            has_country_flag = mod_navy_tradition_decay
+        }
+        remove_country_modifier = catus_nmod_navy_tradition_decay
+        clr_country_flag = mod_navy_tradition_decay
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_prestige_from_naval"
+        trigger = {
+            has_country_flag = mod_prestige_from_naval
+        }
+        remove_country_modifier = catus_nmod_prestige_from_naval
+        clr_country_flag = mod_prestige_from_naval
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_privateer_efficiency"
+        trigger = {
+            has_country_flag = mod_privateer_efficiency
+        }
+        remove_country_modifier = catus_nmod_privateer_efficiency
+        clr_country_flag = mod_privateer_efficiency
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_recover_navy_morale_speed"
+        trigger = {
+            has_country_flag = mod_recover_navy_morale_speed
+        }
+        remove_country_modifier = catus_nmod_recover_navy_morale_speed
+        clr_country_flag = mod_recover_navy_morale_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_sailor_maintenance_modifer"
+        trigger = {
+            has_country_flag = mod_sailor_maintenance_modifer
+        }
+        remove_country_modifier = catus_nmod_sailor_maintenance_modifer
+        clr_country_flag = mod_sailor_maintenance_modifer
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_sailors_recovery_speed"
+        trigger = {
+            has_country_flag = mod_sailors_recovery_speed
+        }
+        remove_country_modifier = catus_nmod_sailors_recovery_speed
+        clr_country_flag = mod_sailors_recovery_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_ship_durability"
+        trigger = {
+            has_country_flag = mod_ship_durability
+        }
+        remove_country_modifier = catus_nmod_ship_durability
+        clr_country_flag = mod_ship_durability
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_sunk_ship_morale_hit_recieved"
+        trigger = {
+            has_country_flag = mod_sunk_ship_morale_hit_recieved
+        }
+        remove_country_modifier = catus_nmod_sunk_ship_morale_hit_recieved
+        clr_country_flag = mod_sunk_ship_morale_hit_recieved
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_ship_power_propagation"
+        trigger = {
+            has_country_flag = mod_ship_power_propagation
+        }
+        remove_country_modifier = catus_nmod_ship_power_propagation
+        clr_country_flag = mod_ship_power_propagation
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_transport_cost"
+        trigger = {
+            has_country_flag = mod_transport_cost
+        }
+        remove_country_modifier = catus_nmod_transport_cost
+        clr_country_flag = mod_transport_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_transport_power"
+        trigger = {
+            has_country_flag = mod_transport_power
+        }
+        remove_country_modifier = catus_nmod_transport_power
+        clr_country_flag = mod_transport_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_church_power_modifier"
+        trigger = {
+            has_country_flag = mod_church_power_modifier
+        }
+        remove_country_modifier = catus_nmod_church_power_modifier
+        clr_country_flag = mod_church_power_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_devotion"
+        trigger = {
+            has_country_flag = mod_devotion
+        }
+        remove_country_modifier = catus_nmod_devotion
+        clr_country_flag = mod_devotion
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_heretic_missionary_strength"
+        trigger = {
+            has_country_flag = mod_global_heretic_missionary_strength
+        }
+        remove_country_modifier = catus_nmod_global_heretic_missionary_strength
+        clr_country_flag = mod_global_heretic_missionary_strength
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_missionary_strength"
+        trigger = {
+            has_country_flag = mod_global_missionary_strength
+        }
+        remove_country_modifier = catus_nmod_global_missionary_strength
+        clr_country_flag = mod_global_missionary_strength
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_harmonization_speed"
+        trigger = {
+            has_country_flag = mod_harmonization_speed
+        }
+        remove_country_modifier = catus_nmod_harmonization_speed
+        clr_country_flag = mod_harmonization_speed
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_missionaries"
+        trigger = {
+            has_country_flag = mod_missionaries
+        }
+        remove_country_modifier = catus_nmod_missionaries
+        clr_country_flag = mod_missionaries
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monthly_fervor_increase"
+        trigger = {
+            has_country_flag = mod_monthly_fervor_increase
+        }
+        remove_country_modifier = catus_nmod_monthly_fervor_increase
+        clr_country_flag = mod_monthly_fervor_increase
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monthly_karma"
+        trigger = {
+            has_country_flag = mod_monthly_karma
+        }
+        remove_country_modifier = catus_nmod_monthly_karma
+        clr_country_flag = mod_monthly_karma
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_monthly_piety"
+        trigger = {
+            has_country_flag = mod_monthly_piety
+        }
+        remove_country_modifier = catus_nmod_monthly_piety
+        clr_country_flag = mod_monthly_piety
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_papal_influence"
+        trigger = {
+            has_country_flag = mod_papal_influence
+        }
+        remove_country_modifier = catus_nmod_papal_influence
+        clr_country_flag = mod_papal_influence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_prestige_per_development_from_conversion"
+        trigger = {
+            has_country_flag = mod_prestige_per_development_from_conversion
+        }
+        remove_country_modifier = catus_nmod_prestige_per_development_from_conversion
+        clr_country_flag = mod_prestige_per_development_from_conversion
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_religious_unity"
+        trigger = {
+            has_country_flag = mod_religious_unity
+        }
+        remove_country_modifier = catus_nmod_religious_unity
+        clr_country_flag = mod_religious_unity
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_tolerance_heathen"
+        trigger = {
+            has_country_flag = mod_tolerance_heathen
+        }
+        remove_country_modifier = catus_nmod_tolerance_heathen
+        clr_country_flag = mod_tolerance_heathen
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_tolerance_heretic"
+        trigger = {
+            has_country_flag = mod_tolerance_heretic
+        }
+        remove_country_modifier = catus_nmod_tolerance_heretic
+        clr_country_flag = mod_tolerance_heretic
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_tolerance_own"
+        trigger = {
+            has_country_flag = mod_tolerance_own
+        }
+        remove_country_modifier = catus_nmod_tolerance_own
+        clr_country_flag = mod_tolerance_own
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_warscore_cost_vs_other_religion"
+        trigger = {
+            has_country_flag = mod_warscore_cost_vs_other_religion
+        }
+        remove_country_modifier = catus_nmod_warscore_cost_vs_other_religion
+        clr_country_flag = mod_warscore_cost_vs_other_religion
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_yearly_harmony"
+        trigger = {
+            has_country_flag = mod_yearly_harmony
+        }
+        remove_country_modifier = catus_nmod_yearly_harmony
+        clr_country_flag = mod_yearly_harmony
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_autonomy_change_time"
+        trigger = {
+            has_country_flag = mod_autonomy_change_time
+        }
+        remove_country_modifier = catus_nmod_autonomy_change_time
+        clr_country_flag = mod_autonomy_change_time
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_core_decay_on_your_own"
+        trigger = {
+            has_country_flag = mod_core_decay_on_your_own
+        }
+        remove_country_modifier = catus_nmod_core_decay_on_your_own
+        clr_country_flag = mod_core_decay_on_your_own
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_culture_conversion_cost"
+        trigger = {
+            has_country_flag = mod_culture_conversion_cost
+        }
+        remove_country_modifier = catus_nmod_culture_conversion_cost
+        clr_country_flag = mod_culture_conversion_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_discovered_relations_impact"
+        trigger = {
+            has_country_flag = mod_discovered_relations_impact
+        }
+        remove_country_modifier = catus_nmod_discovered_relations_impact
+        clr_country_flag = mod_discovered_relations_impact
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_autonomy"
+        trigger = {
+            has_country_flag = mod_global_autonomy
+        }
+        remove_country_modifier = catus_nmod_global_autonomy
+        clr_country_flag = mod_global_autonomy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_unrest"
+        trigger = {
+            has_country_flag = mod_global_unrest
+        }
+        remove_country_modifier = catus_nmod_global_unrest
+        clr_country_flag = mod_global_unrest
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_spy_defence"
+        trigger = {
+            has_country_flag = mod_global_spy_defence
+        }
+        remove_country_modifier = catus_nmod_global_spy_defence
+        clr_country_flag = mod_global_spy_defence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_harsh_treatment_cost"
+        trigger = {
+            has_country_flag = mod_harsh_treatment_cost
+        }
+        remove_country_modifier = catus_nmod_harsh_treatment_cost
+        clr_country_flag = mod_harsh_treatment_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_liberty_desire"
+        trigger = {
+            has_country_flag = mod_liberty_desire
+        }
+        remove_country_modifier = catus_nmod_liberty_desire
+        clr_country_flag = mod_liberty_desire
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_liberty_desire_from_subject_development"
+        trigger = {
+            has_country_flag = mod_liberty_desire_from_subject_development
+        }
+        remove_country_modifier = catus_nmod_liberty_desire_from_subject_development
+        clr_country_flag = mod_liberty_desire_from_subject_development
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_min_autonomy"
+        trigger = {
+            has_country_flag = mod_min_autonomy
+        }
+        remove_country_modifier = catus_nmod_min_autonomy
+        clr_country_flag = mod_min_autonomy
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_min_autonomy_in_territories"
+        trigger = {
+            has_country_flag = mod_min_autonomy_in_territories
+        }
+        remove_country_modifier = catus_nmod_min_autonomy_in_territories
+        clr_country_flag = mod_min_autonomy_in_territories
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_num_accepted_cultures"
+        trigger = {
+            has_country_flag = mod_num_accepted_cultures
+        }
+        remove_country_modifier = catus_nmod_num_accepted_cultures
+        clr_country_flag = mod_num_accepted_cultures
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_promote_culture_cost"
+        trigger = {
+            has_country_flag = mod_promote_culture_cost
+        }
+        remove_country_modifier = catus_nmod_promote_culture_cost
+        clr_country_flag = mod_promote_culture_cost
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_rebel_support_efficiency"
+        trigger = {
+            has_country_flag = mod_rebel_support_efficiency
+        }
+        remove_country_modifier = catus_nmod_rebel_support_efficiency
+        clr_country_flag = mod_rebel_support_efficiency
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_reduced_liberty_desire"
+        trigger = {
+            has_country_flag = mod_reduced_liberty_desire
+        }
+        remove_country_modifier = catus_nmod_reduced_liberty_desire
+        clr_country_flag = mod_reduced_liberty_desire
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_reduced_liberty_desire_on_same_continent"
+        trigger = {
+            has_country_flag = mod_reduced_liberty_desire_on_same_continent
+        }
+        remove_country_modifier = catus_nmod_reduced_liberty_desire_on_same_continent
+        clr_country_flag = mod_reduced_liberty_desire_on_same_continent
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_spy_offence"
+        trigger = {
+            has_country_flag = mod_spy_offence
+        }
+        remove_country_modifier = catus_nmod_spy_offence
+        clr_country_flag = mod_spy_offence
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_stability_cost_modifier"
+        trigger = {
+            has_country_flag = mod_stability_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_stability_cost_modifier
+        clr_country_flag = mod_stability_cost_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_years_of_nationalism"
+        trigger = {
+            has_country_flag = mod_years_of_nationalism
+        }
+        remove_country_modifier = catus_nmod_years_of_nationalism
+        clr_country_flag = mod_years_of_nationalism
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_caravan_power"
+        trigger = {
+            has_country_flag = mod_caravan_power
+        }
+        remove_country_modifier = catus_nmod_caravan_power
+        clr_country_flag = mod_caravan_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_embargo_efficiency"
+        trigger = {
+            has_country_flag = mod_embargo_efficiency
+        }
+        remove_country_modifier = catus_nmod_embargo_efficiency
+        clr_country_flag = mod_embargo_efficiency
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_foreign_trade_power"
+        trigger = {
+            has_country_flag = mod_global_foreign_trade_power
+        }
+        remove_country_modifier = catus_nmod_global_foreign_trade_power
+        clr_country_flag = mod_global_foreign_trade_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_own_trade_power"
+        trigger = {
+            has_country_flag = mod_global_own_trade_power
+        }
+        remove_country_modifier = catus_nmod_global_own_trade_power
+        clr_country_flag = mod_global_own_trade_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_prov_trade_power_modifier"
+        trigger = {
+            has_country_flag = mod_global_prov_trade_power_modifier
+        }
+        remove_country_modifier = catus_nmod_global_prov_trade_power_modifier
+        clr_country_flag = mod_global_prov_trade_power_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_trade_goods_size_modifier"
+        trigger = {
+            has_country_flag = mod_global_trade_goods_size_modifier
+        }
+        remove_country_modifier = catus_nmod_global_trade_goods_size_modifier
+        clr_country_flag = mod_global_trade_goods_size_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_global_trade_power"
+        trigger = {
+            has_country_flag = mod_global_trade_power
+        }
+        remove_country_modifier = catus_nmod_global_trade_power
+        clr_country_flag = mod_global_trade_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_merchants"
+        trigger = {
+            has_country_flag = mod_merchants
+        }
+        remove_country_modifier = catus_nmod_merchants
+        clr_country_flag = mod_merchants
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_placed_merchant_power"
+        trigger = {
+            has_country_flag = mod_placed_merchant_power
+        }
+        remove_country_modifier = catus_nmod_placed_merchant_power
+        clr_country_flag = mod_placed_merchant_power
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_trade_efficiency"
+        trigger = {
+            has_country_flag = mod_trade_efficiency
+        }
+        remove_country_modifier = catus_nmod_trade_efficiency
+        clr_country_flag = mod_trade_efficiency
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_trade_range_modifier"
+        trigger = {
+            has_country_flag = mod_trade_range_modifier
+        }
+        remove_country_modifier = catus_nmod_trade_range_modifier
+        clr_country_flag = mod_trade_range_modifier
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+    option = {
+        name = "catus_events_trade_steering"
+        trigger = {
+            has_country_flag = mod_trade_steering
+        }
+        remove_country_modifier = catus_nmod_trade_steering
+        clr_country_flag = mod_trade_steering
+        country_event = {
+            id = catus_events_remove.91
+        }
+    }
+}
+
+country_event = {
+	id = catus_events_remove.91
+	title = "catus_events_remove.title"
+	desc = "catus_events_remove.desc"
+	picture = TEMPORAL_RIFT_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_colonisation.17"
+		trigger = {
+            any_country = {
+                has_country_modifier = catus_colonisation
+            }
+        }
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    has_country_modifier = catus_colonisation
+                }
+                remove_country_modifier = catus_colonisation
+            }
+        }
+		country_event = {
+			id = catus_events_remove.91
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.34"
+		trigger = {
+			or = {
+				any_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion
+					}
+				}
+				any_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion_max
+					}
+				}
+			}
+        }
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    has_opinion_modifier = {
+                        who = ROOT
+                        modifier = cheat_add_opinion
+                    }
+                }
+                remove_opinion = {
+                    who = ROOT
+                    modifier = cheat_add_opinion
+                }
+                reverse_remove_opinion = {
+                    who = ROOT
+                    modifier = cheat_add_opinion
+                }
+            }
+            every_country = {
+                limit = {
+                    has_opinion_modifier = {
+                        who = ROOT
+                        modifier = cheat_add_opinion_max
+                    }
+                }
+                remove_opinion = {
+                    who = ROOT
+                    modifier = cheat_add_opinion_max
+                }
+                reverse_remove_opinion = {
+                    who = ROOT
+                    modifier = cheat_add_opinion_max
+                }
+            }
+        }
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.9"
+		trigger = {
+			has_country_flag = mod_unrest
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_unrest
+			clr_country_flag = mod_unrest
+		}
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.12"
+		trigger = {
+			has_country_flag = mod_powerreduction
+		}
+		remove_country_modifier = catus_powerreduction
+		clr_country_flag = mod_powerreduction
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.23"
+		trigger = {
+			has_country_flag = mod_movementspeed
+		}
+		remove_country_modifier = catus_movementspeed
+		clr_country_flag = mod_movementspeed
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.9"
+		trigger = {
+			has_country_flag = mod_military
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_lmorale
+			remove_country_modifier = catus_nmorale
+			remove_country_modifier = catus_infantry
+			remove_country_modifier = catus_cavalry
+			remove_country_modifier = catus_artillery
+			remove_country_modifier = catus_hship
+			remove_country_modifier = catus_lship
+			remove_country_modifier = catus_galley
+			remove_country_modifier = catus_transport
+			clr_country_flag = mod_military
+		}
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.23"
+		trigger = {
+			has_country_flag = mod_hreopinion
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+			}
+			remove_country_modifier = catus_diprep
+			clr_country_flag = mod_hreopinion
+		}
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.26"
+		trigger = {
+			has_country_flag = mod_aereduction
+		}
+		remove_country_modifier = catus_aereduction
+		clr_country_flag = mod_aereduction
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.28"
+		trigger = {
+			has_country_flag = mod_moresubjects
+		}
+		remove_country_modifier = catus_moresubjects
+		clr_country_flag = mod_moresubjects
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.30"
+		trigger = {
+			has_country_flag = mod_diprep
+		}
+		remove_country_modifier = catus_diprep
+		clr_country_flag = mod_diprep
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.3"
+		trigger = {
+			has_country_flag = mod_colonisation
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_colonisation
+			clr_country_flag = mod_colonisation
+		}
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.5"
+		trigger = {
+			or = {
+				has_global_flag = mod_masscol_1
+				has_global_flag = mod_masscol_2
+				has_global_flag = mod_masscol_3
+				has_global_flag = mod_masscol_4
+				has_global_flag = mod_masscol_5
+				has_global_flag = mod_masscol_6
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_colonisation
+			}
+			every_province = {
+				limit = {
+						base_tax = 150
+				}
+				hidden_effect = {
+					add_base_tax = -150
+				}
+			}
+			clr_global_flag = mod_masscol_1
+			clr_global_flag = mod_masscol_2
+			clr_global_flag = mod_masscol_3
+			clr_global_flag = mod_masscol_4
+			clr_global_flag = mod_masscol_5
+			clr_global_flag = mod_masscol_6
+		}
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.11"
+		trigger = {
+			has_country_flag = mod_alwaysrebels
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_alwaysrebels
+			clr_country_flag = mod_alwaysrebels
+		}
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.13"
+		trigger = {
+			has_global_flag = mod_gloalwaysrebels
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_alwaysrebels
+			}
+			clr_global_flag = mod_gloalwaysrebels
+		}
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.15"
+		trigger = {
+			has_country_flag = mod_allpowerreduction
+		}
+		every_country = {
+			remove_country_modifier = catus_powerreduction
+		}
+		clr_global_flag = mod_allpowerreduction
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.4"
+		trigger = {
+			has_country_flag = mod_negpowerreduction
+		}
+		remove_country_modifier = catus_negpowerreduction
+		clr_country_flag = mod_negpowerreduction
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.6"
+		trigger = {
+			has_country_flag = mod_nomadic_conquest
+		}
+		remove_country_modifier = nomadic_conquest
+		clr_country_flag = mod_nomadic_conquest
+		country_event = {
+			id = catus_events_remove.1
+		}
+	}
+ #####################################################################################################
+    option = {
+        name = "catus_events_amount_of_banners"
+        trigger = {
+            has_country_flag = mod_amount_of_banners
+        }
+        remove_country_modifier = catus_nmod_amount_of_banners
+        clr_country_flag = mod_amount_of_banners
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_army_tradition"
+        trigger = {
+            has_country_flag = mod_army_tradition
+        }
+        remove_country_modifier = catus_nmod_army_tradition
+        clr_country_flag = mod_army_tradition
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_army_tradition_decay"
+        trigger = {
+            has_country_flag = mod_army_tradition_decay
+        }
+        remove_country_modifier = catus_nmod_army_tradition_decay
+        clr_country_flag = mod_army_tradition_decay
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_army_tradition_from_battle"
+        trigger = {
+            has_country_flag = mod_army_tradition_from_battle
+        }
+        remove_country_modifier = catus_nmod_army_tradition_from_battle
+        clr_country_flag = mod_army_tradition_from_battle
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_artillery_bonus_vs_fort"
+        trigger = {
+            has_country_flag = mod_artillery_bonus_vs_fort
+        }
+        remove_country_modifier = catus_nmod_artillery_bonus_vs_fort
+        clr_country_flag = mod_artillery_bonus_vs_fort
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_artillery_cost"
+        trigger = {
+            has_country_flag = mod_artillery_cost
+        }
+        remove_country_modifier = catus_nmod_artillery_cost
+        clr_country_flag = mod_artillery_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_artillery_power"
+        trigger = {
+            has_country_flag = mod_artillery_power
+        }
+        remove_country_modifier = catus_nmod_artillery_power
+        clr_country_flag = mod_artillery_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_backrow_artillery_damage"
+        trigger = {
+            has_country_flag = mod_backrow_artillery_damage
+        }
+        remove_country_modifier = catus_nmod_backrow_artillery_damage
+        clr_country_flag = mod_backrow_artillery_damage
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_cavalry_cost"
+        trigger = {
+            has_country_flag = mod_cavalry_cost
+        }
+        remove_country_modifier = catus_nmod_cavalry_cost
+        clr_country_flag = mod_cavalry_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_cavalry_flanking"
+        trigger = {
+            has_country_flag = mod_cavalry_flanking
+        }
+        remove_country_modifier = catus_nmod_cavalry_flanking
+        clr_country_flag = mod_cavalry_flanking
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_cavalry_power"
+        trigger = {
+            has_country_flag = mod_cavalry_power
+        }
+        remove_country_modifier = catus_nmod_cavalry_power
+        clr_country_flag = mod_cavalry_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_cav_to_inf_ratio"
+        trigger = {
+            has_country_flag = mod_cav_to_inf_ratio
+        }
+        remove_country_modifier = catus_nmod_cav_to_inf_ratio
+        clr_country_flag = mod_cav_to_inf_ratio
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_defensiveness"
+        trigger = {
+            has_country_flag = mod_defensiveness
+        }
+        remove_country_modifier = catus_nmod_defensiveness
+        clr_country_flag = mod_defensiveness
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_discipline"
+        trigger = {
+            has_country_flag = mod_discipline
+        }
+        remove_country_modifier = catus_nmod_discipline
+        clr_country_flag = mod_discipline
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_drill_decay_modifier"
+        trigger = {
+            has_country_flag = mod_drill_decay_modifier
+        }
+        remove_country_modifier = catus_nmod_drill_decay_modifier
+        clr_country_flag = mod_drill_decay_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_drill_gain_modifier"
+        trigger = {
+            has_country_flag = mod_drill_gain_modifier
+        }
+        remove_country_modifier = catus_nmod_drill_gain_modifier
+        clr_country_flag = mod_drill_gain_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_fire_damage"
+        trigger = {
+            has_country_flag = mod_fire_damage
+        }
+        remove_country_modifier = catus_nmod_fire_damage
+        clr_country_flag = mod_fire_damage
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_fire_damage_received"
+        trigger = {
+            has_country_flag = mod_fire_damage_received
+        }
+        remove_country_modifier = catus_nmod_fire_damage_received
+        clr_country_flag = mod_fire_damage_received
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_fort_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_fort_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_fort_maintenance_modifier
+        clr_country_flag = mod_fort_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_garrison_size"
+        trigger = {
+            has_country_flag = mod_garrison_size
+        }
+        remove_country_modifier = catus_nmod_garrison_size
+        clr_country_flag = mod_garrison_size
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_general_cost"
+        trigger = {
+            has_country_flag = mod_general_cost
+        }
+        remove_country_modifier = catus_nmod_general_cost
+        clr_country_flag = mod_general_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_garrison_growth"
+        trigger = {
+            has_country_flag = mod_global_garrison_growth
+        }
+        remove_country_modifier = catus_nmod_global_garrison_growth
+        clr_country_flag = mod_global_garrison_growth
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_manpower"
+        trigger = {
+            has_country_flag = mod_global_manpower
+        }
+        remove_country_modifier = catus_nmod_global_manpower
+        clr_country_flag = mod_global_manpower
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_manpower_modifier"
+        trigger = {
+            has_country_flag = mod_global_manpower_modifier
+        }
+        remove_country_modifier = catus_nmod_global_manpower_modifier
+        clr_country_flag = mod_global_manpower_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_regiment_cost"
+        trigger = {
+            has_country_flag = mod_global_regiment_cost
+        }
+        remove_country_modifier = catus_nmod_global_regiment_cost
+        clr_country_flag = mod_global_regiment_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_regiment_recruit_speed"
+        trigger = {
+            has_country_flag = mod_global_regiment_recruit_speed
+        }
+        remove_country_modifier = catus_nmod_global_regiment_recruit_speed
+        clr_country_flag = mod_global_regiment_recruit_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_hostile_attrition"
+        trigger = {
+            has_country_flag = mod_hostile_attrition
+        }
+        remove_country_modifier = catus_nmod_hostile_attrition
+        clr_country_flag = mod_hostile_attrition
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_infantry_cost"
+        trigger = {
+            has_country_flag = mod_infantry_cost
+        }
+        remove_country_modifier = catus_nmod_infantry_cost
+        clr_country_flag = mod_infantry_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_infantry_power"
+        trigger = {
+            has_country_flag = mod_infantry_power
+        }
+        remove_country_modifier = catus_nmod_infantry_power
+        clr_country_flag = mod_infantry_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_land_attrition"
+        trigger = {
+            has_country_flag = mod_land_attrition
+        }
+        remove_country_modifier = catus_nmod_land_attrition
+        clr_country_flag = mod_land_attrition
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_land_forcelimit"
+        trigger = {
+            has_country_flag = mod_land_forcelimit
+        }
+        remove_country_modifier = catus_nmod_land_forcelimit
+        clr_country_flag = mod_land_forcelimit
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_land_forcelimit_modifier"
+        trigger = {
+            has_country_flag = mod_land_forcelimit_modifier
+        }
+        remove_country_modifier = catus_nmod_land_forcelimit_modifier
+        clr_country_flag = mod_land_forcelimit_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_land_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_land_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_land_maintenance_modifier
+        clr_country_flag = mod_land_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_land_morale"
+        trigger = {
+            has_country_flag = mod_land_morale
+        }
+        remove_country_modifier = catus_nmod_land_morale
+        clr_country_flag = mod_land_morale
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_leader_land_fire"
+        trigger = {
+            has_country_flag = mod_leader_land_fire
+        }
+        remove_country_modifier = catus_nmod_leader_land_fire
+        clr_country_flag = mod_leader_land_fire
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_leader_land_manuever"
+        trigger = {
+            has_country_flag = mod_leader_land_manuever
+        }
+        remove_country_modifier = catus_nmod_leader_land_manuever
+        clr_country_flag = mod_leader_land_manuever
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_leader_land_shock"
+        trigger = {
+            has_country_flag = mod_leader_land_shock
+        }
+        remove_country_modifier = catus_nmod_leader_land_shock
+        clr_country_flag = mod_leader_land_shock
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_leader_siege"
+        trigger = {
+            has_country_flag = mod_leader_siege
+        }
+        remove_country_modifier = catus_nmod_leader_siege
+        clr_country_flag = mod_leader_siege
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_loot_amount"
+        trigger = {
+            has_country_flag = mod_loot_amount
+        }
+        remove_country_modifier = catus_nmod_loot_amount
+        clr_country_flag = mod_loot_amount
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_manpower_recovery_speed"
+        trigger = {
+            has_country_flag = mod_manpower_recovery_speed
+        }
+        remove_country_modifier = catus_nmod_manpower_recovery_speed
+        clr_country_flag = mod_manpower_recovery_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_mercenary_discipline"
+        trigger = {
+            has_country_flag = mod_mercenary_discipline
+        }
+        remove_country_modifier = catus_nmod_mercenary_discipline
+        clr_country_flag = mod_mercenary_discipline
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_movement_speed"
+        trigger = {
+            has_country_flag = mod_movement_speed
+        }
+        remove_country_modifier = catus_nmod_movement_speed
+        clr_country_flag = mod_movement_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_possible_condottieri"
+        trigger = {
+            has_country_flag = mod_possible_condottieri
+        }
+        remove_country_modifier = catus_nmod_possible_condottieri
+        clr_country_flag = mod_possible_condottieri
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_prestige_from_land"
+        trigger = {
+            has_country_flag = mod_prestige_from_land
+        }
+        remove_country_modifier = catus_nmod_prestige_from_land
+        clr_country_flag = mod_prestige_from_land
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_raze_power_gain"
+        trigger = {
+            has_country_flag = mod_raze_power_gain
+        }
+        remove_country_modifier = catus_nmod_raze_power_gain
+        clr_country_flag = mod_raze_power_gain
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_recover_army_morale_speed"
+        trigger = {
+            has_country_flag = mod_recover_army_morale_speed
+        }
+        remove_country_modifier = catus_nmod_recover_army_morale_speed
+        clr_country_flag = mod_recover_army_morale_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_reinforce_cost_modifier"
+        trigger = {
+            has_country_flag = mod_reinforce_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_reinforce_cost_modifier
+        clr_country_flag = mod_reinforce_cost_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_reinforce_speed"
+        trigger = {
+            has_country_flag = mod_reinforce_speed
+        }
+        remove_country_modifier = catus_nmod_reinforce_speed
+        clr_country_flag = mod_reinforce_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_reserves_organisation"
+        trigger = {
+            has_country_flag = mod_reserves_organisation
+        }
+        remove_country_modifier = catus_nmod_reserves_organisation
+        clr_country_flag = mod_reserves_organisation
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_rival_border_fort_maintenance"
+        trigger = {
+            has_country_flag = mod_rival_border_fort_maintenance
+        }
+        remove_country_modifier = catus_nmod_rival_border_fort_maintenance
+        clr_country_flag = mod_rival_border_fort_maintenance
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_siege_blockade_progress"
+        trigger = {
+            has_country_flag = mod_siege_blockade_progress
+        }
+        remove_country_modifier = catus_nmod_siege_blockade_progress
+        clr_country_flag = mod_siege_blockade_progress
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_shock_damage"
+        trigger = {
+            has_country_flag = mod_shock_damage
+        }
+        remove_country_modifier = catus_nmod_shock_damage
+        clr_country_flag = mod_shock_damage
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_shock_damage_received"
+        trigger = {
+            has_country_flag = mod_shock_damage_received
+        }
+        remove_country_modifier = catus_nmod_shock_damage_received
+        clr_country_flag = mod_shock_damage_received
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_siege_ability"
+        trigger = {
+            has_country_flag = mod_siege_ability
+        }
+        remove_country_modifier = catus_nmod_siege_ability
+        clr_country_flag = mod_siege_ability
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_yearly_army_professionalism"
+        trigger = {
+            has_country_flag = mod_yearly_army_professionalism
+        }
+        remove_country_modifier = catus_nmod_yearly_army_professionalism
+        clr_country_flag = mod_yearly_army_professionalism
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_colonists"
+        trigger = {
+            has_country_flag = mod_colonists
+        }
+        remove_country_modifier = catus_nmod_colonists
+        clr_country_flag = mod_colonists
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_colonist_placement_chance"
+        trigger = {
+            has_country_flag = mod_colonist_placement_chance
+        }
+        remove_country_modifier = catus_nmod_colonist_placement_chance
+        clr_country_flag = mod_colonist_placement_chance
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_colonial_growth"
+        trigger = {
+            has_country_flag = mod_global_colonial_growth
+        }
+        remove_country_modifier = catus_nmod_global_colonial_growth
+        clr_country_flag = mod_global_colonial_growth
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_tariffs"
+        trigger = {
+            has_country_flag = mod_global_tariffs
+        }
+        remove_country_modifier = catus_nmod_global_tariffs
+        clr_country_flag = mod_global_tariffs
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_native_uprising_chance"
+        trigger = {
+            has_country_flag = mod_native_uprising_chance
+        }
+        remove_country_modifier = catus_nmod_native_uprising_chance
+        clr_country_flag = mod_native_uprising_chance
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_native_assimilation"
+        trigger = {
+            has_country_flag = mod_native_assimilation
+        }
+        remove_country_modifier = catus_nmod_native_assimilation
+        clr_country_flag = mod_native_assimilation
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_range"
+        trigger = {
+            has_country_flag = mod_range
+        }
+        remove_country_modifier = catus_nmod_range
+        clr_country_flag = mod_range
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_ae_impact"
+        trigger = {
+            has_country_flag = mod_ae_impact
+        }
+        remove_country_modifier = catus_nmod_ae_impact
+        clr_country_flag = mod_ae_impact
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_diplomats"
+        trigger = {
+            has_country_flag = mod_diplomats
+        }
+        remove_country_modifier = catus_nmod_diplomats
+        clr_country_flag = mod_diplomats
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_diplomatic_annexation_cost"
+        trigger = {
+            has_country_flag = mod_diplomatic_annexation_cost
+        }
+        remove_country_modifier = catus_nmod_diplomatic_annexation_cost
+        clr_country_flag = mod_diplomatic_annexation_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_diplomatic_reputation"
+        trigger = {
+            has_country_flag = mod_diplomatic_reputation
+        }
+        remove_country_modifier = catus_nmod_diplomatic_reputation
+        clr_country_flag = mod_diplomatic_reputation
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_diplomatic_upkeep"
+        trigger = {
+            has_country_flag = mod_diplomatic_upkeep
+        }
+        remove_country_modifier = catus_nmod_diplomatic_upkeep
+        clr_country_flag = mod_diplomatic_upkeep
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_enemy_core_creation"
+        trigger = {
+            has_country_flag = mod_enemy_core_creation
+        }
+        remove_country_modifier = catus_nmod_enemy_core_creation
+        clr_country_flag = mod_enemy_core_creation
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_enforce_religion_cost"
+        trigger = {
+            has_country_flag = mod_enforce_religion_cost
+        }
+        remove_country_modifier = catus_nmod_enforce_religion_cost
+        clr_country_flag = mod_enforce_religion_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_fabricate_claims_time"
+        trigger = {
+            has_country_flag = mod_fabricate_claims_time
+        }
+        remove_country_modifier = catus_nmod_fabricate_claims_time
+        clr_country_flag = mod_fabricate_claims_time
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_improve_relation_modifier"
+        trigger = {
+            has_country_flag = mod_improve_relation_modifier
+        }
+        remove_country_modifier = catus_nmod_improve_relation_modifier
+        clr_country_flag = mod_improve_relation_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_justify_trade_conflict_cost"
+        trigger = {
+            has_country_flag = mod_justify_trade_conflict_cost
+        }
+        remove_country_modifier = catus_nmod_justify_trade_conflict_cost
+        clr_country_flag = mod_justify_trade_conflict_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_justify_trade_conflict_time"
+        trigger = {
+            has_country_flag = mod_justify_trade_conflict_time
+        }
+        remove_country_modifier = catus_nmod_justify_trade_conflict_time
+        clr_country_flag = mod_justify_trade_conflict_time
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_power_projection_from_insults"
+        trigger = {
+            has_country_flag = mod_power_projection_from_insults
+        }
+        remove_country_modifier = catus_nmod_power_projection_from_insults
+        clr_country_flag = mod_power_projection_from_insults
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_province_warscore_cost"
+        trigger = {
+            has_country_flag = mod_province_warscore_cost
+        }
+        remove_country_modifier = catus_nmod_province_warscore_cost
+        clr_country_flag = mod_province_warscore_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_rival_change_cost"
+        trigger = {
+            has_country_flag = mod_rival_change_cost
+        }
+        remove_country_modifier = catus_nmod_rival_change_cost
+        clr_country_flag = mod_rival_change_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_unjustified_demands"
+        trigger = {
+            has_country_flag = mod_unjustified_demands
+        }
+        remove_country_modifier = catus_nmod_unjustified_demands
+        clr_country_flag = mod_unjustified_demands
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_vassal_forcelimit_bonus"
+        trigger = {
+            has_country_flag = mod_vassal_forcelimit_bonus
+        }
+        remove_country_modifier = catus_nmod_vassal_forcelimit_bonus
+        clr_country_flag = mod_vassal_forcelimit_bonus
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_vassal_income"
+        trigger = {
+            has_country_flag = mod_vassal_income
+        }
+        remove_country_modifier = catus_nmod_vassal_income
+        clr_country_flag = mod_vassal_income
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_adm_tech_cost_modifier"
+        trigger = {
+            has_country_flag = mod_adm_tech_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_adm_tech_cost_modifier
+        clr_country_flag = mod_adm_tech_cost_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_build_cost"
+        trigger = {
+            has_country_flag = mod_build_cost
+        }
+        remove_country_modifier = catus_nmod_build_cost
+        clr_country_flag = mod_build_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_build_time"
+        trigger = {
+            has_country_flag = mod_build_time
+        }
+        remove_country_modifier = catus_nmod_build_time
+        clr_country_flag = mod_build_time
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_development_cost"
+        trigger = {
+            has_country_flag = mod_development_cost
+        }
+        remove_country_modifier = catus_nmod_development_cost
+        clr_country_flag = mod_development_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_dip_tech_cost_modifier"
+        trigger = {
+            has_country_flag = mod_dip_tech_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_dip_tech_cost_modifier
+        clr_country_flag = mod_dip_tech_cost_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_embracement_cost"
+        trigger = {
+            has_country_flag = mod_embracement_cost
+        }
+        remove_country_modifier = catus_nmod_embracement_cost
+        clr_country_flag = mod_embracement_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_institution_spread"
+        trigger = {
+            has_country_flag = mod_global_institution_spread
+        }
+        remove_country_modifier = catus_nmod_global_institution_spread
+        clr_country_flag = mod_global_institution_spread
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_tax_income"
+        trigger = {
+            has_country_flag = mod_global_tax_income
+        }
+        remove_country_modifier = catus_nmod_global_tax_income
+        clr_country_flag = mod_global_tax_income
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_tax_modifier"
+        trigger = {
+            has_country_flag = mod_global_tax_modifier
+        }
+        remove_country_modifier = catus_nmod_global_tax_modifier
+        clr_country_flag = mod_global_tax_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_inflation_action_cost"
+        trigger = {
+            has_country_flag = mod_inflation_action_cost
+        }
+        remove_country_modifier = catus_nmod_inflation_action_cost
+        clr_country_flag = mod_inflation_action_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_inflation_reduction"
+        trigger = {
+            has_country_flag = mod_inflation_reduction
+        }
+        remove_country_modifier = catus_nmod_inflation_reduction
+        clr_country_flag = mod_inflation_reduction
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_institution_spread_from_true_faith"
+        trigger = {
+            has_country_flag = mod_institution_spread_from_true_faith
+        }
+        remove_country_modifier = catus_nmod_institution_spread_from_true_faith
+        clr_country_flag = mod_institution_spread_from_true_faith
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_interest"
+        trigger = {
+            has_country_flag = mod_interest
+        }
+        remove_country_modifier = catus_nmod_interest
+        clr_country_flag = mod_interest
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_mil_tech_cost_modifier"
+        trigger = {
+            has_country_flag = mod_mil_tech_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_mil_tech_cost_modifier
+        clr_country_flag = mod_mil_tech_cost_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monthly_splendor"
+        trigger = {
+            has_country_flag = mod_monthly_splendor
+        }
+        remove_country_modifier = catus_nmod_monthly_splendor
+        clr_country_flag = mod_monthly_splendor
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_native_advancement_cost"
+        trigger = {
+            has_country_flag = mod_native_advancement_cost
+        }
+        remove_country_modifier = catus_nmod_native_advancement_cost
+        clr_country_flag = mod_native_advancement_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_production_efficiency"
+        trigger = {
+            has_country_flag = mod_production_efficiency
+        }
+        remove_country_modifier = catus_nmod_production_efficiency
+        clr_country_flag = mod_production_efficiency
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_technology_cost"
+        trigger = {
+            has_country_flag = mod_technology_cost
+        }
+        remove_country_modifier = catus_nmod_technology_cost
+        clr_country_flag = mod_technology_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_bureaucrats_influence"
+        trigger = {
+            has_country_flag = mod_bureaucrats_influence
+        }
+        remove_country_modifier = catus_nmod_bureaucrats_influence
+        clr_country_flag = mod_bureaucrats_influence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_enuchs_influence"
+        trigger = {
+            has_country_flag = mod_enuchs_influence
+        }
+        remove_country_modifier = catus_nmod_enuchs_influence
+        clr_country_flag = mod_enuchs_influence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_temples_influence"
+        trigger = {
+            has_country_flag = mod_temples_influence
+        }
+        remove_country_modifier = catus_nmod_temples_influence
+        clr_country_flag = mod_temples_influence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_mr_aristocrats_influence"
+        trigger = {
+            has_country_flag = mod_mr_aristocrats_influence
+        }
+        remove_country_modifier = catus_nmod_mr_aristocrats_influence
+        clr_country_flag = mod_mr_aristocrats_influence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_mr_guilds_influence"
+        trigger = {
+            has_country_flag = mod_mr_guilds_influence
+        }
+        remove_country_modifier = catus_nmod_mr_guilds_influence
+        clr_country_flag = mod_mr_guilds_influence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_mr_traders_influence"
+        trigger = {
+            has_country_flag = mod_mr_traders_influence
+        }
+        remove_country_modifier = catus_nmod_mr_traders_influence
+        clr_country_flag = mod_mr_traders_influence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_adm_advisor_cost"
+        trigger = {
+            has_country_flag = mod_adm_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_adm_advisor_cost
+        clr_country_flag = mod_adm_advisor_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_administrative_efficiency"
+        trigger = {
+            has_country_flag = mod_administrative_efficiency
+        }
+        remove_country_modifier = catus_nmod_administrative_efficiency
+        clr_country_flag = mod_administrative_efficiency
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_advisor_cost"
+        trigger = {
+            has_country_flag = mod_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_advisor_cost
+        clr_country_flag = mod_advisor_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_advisor_pool"
+        trigger = {
+            has_country_flag = mod_advisor_pool
+        }
+        remove_country_modifier = catus_nmod_advisor_pool
+        clr_country_flag = mod_advisor_pool
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_all_power_cost"
+        trigger = {
+            has_country_flag = mod_all_power_cost
+        }
+        remove_country_modifier = catus_nmod_all_power_cost
+        clr_country_flag = mod_all_power_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_candidate_random_bonus"
+        trigger = {
+            has_country_flag = mod_candidate_random_bonus
+        }
+        remove_country_modifier = catus_nmod_candidate_random_bonus
+        clr_country_flag = mod_candidate_random_bonus
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_core_creation"
+        trigger = {
+            has_country_flag = mod_core_creation
+        }
+        remove_country_modifier = catus_nmod_core_creation
+        clr_country_flag = mod_core_creation
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_dip_advisor_cost"
+        trigger = {
+            has_country_flag = mod_dip_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_dip_advisor_cost
+        clr_country_flag = mod_dip_advisor_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_election_cycle"
+        trigger = {
+            has_country_flag = mod_election_cycle
+        }
+        remove_country_modifier = catus_nmod_election_cycle
+        clr_country_flag = mod_election_cycle
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_envoy_travel_time"
+        trigger = {
+            has_country_flag = mod_envoy_travel_time
+        }
+        remove_country_modifier = catus_nmod_envoy_travel_time
+        clr_country_flag = mod_envoy_travel_time
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_female_advisor_chance"
+        trigger = {
+            has_country_flag = mod_female_advisor_chance
+        }
+        remove_country_modifier = catus_nmod_female_advisor_chance
+        clr_country_flag = mod_female_advisor_chance
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_free_adm_policy"
+        trigger = {
+            has_country_flag = mod_free_adm_policy
+        }
+        remove_country_modifier = catus_nmod_free_adm_policy
+        clr_country_flag = mod_free_adm_policy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_free_dip_policy"
+        trigger = {
+            has_country_flag = mod_free_dip_policy
+        }
+        remove_country_modifier = catus_nmod_free_dip_policy
+        clr_country_flag = mod_free_dip_policy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_free_mil_policy"
+        trigger = {
+            has_country_flag = mod_free_mil_policy
+        }
+        remove_country_modifier = catus_nmod_free_mil_policy
+        clr_country_flag = mod_free_mil_policy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_free_policy"
+        trigger = {
+            has_country_flag = mod_free_policy
+        }
+        remove_country_modifier = catus_nmod_free_policy
+        clr_country_flag = mod_free_policy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_heir_chance"
+        trigger = {
+            has_country_flag = mod_heir_chance
+        }
+        remove_country_modifier = catus_nmod_heir_chance
+        clr_country_flag = mod_heir_chance
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_horde_unity"
+        trigger = {
+            has_country_flag = mod_horde_unity
+        }
+        remove_country_modifier = catus_nmod_horde_unity
+        clr_country_flag = mod_horde_unity
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_idea_cost"
+        trigger = {
+            has_country_flag = mod_idea_cost
+        }
+        remove_country_modifier = catus_nmod_idea_cost
+        clr_country_flag = mod_idea_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_imperial_authority"
+        trigger = {
+            has_country_flag = mod_imperial_authority
+        }
+        remove_country_modifier = catus_nmod_imperial_authority
+        clr_country_flag = mod_imperial_authority
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_imperial_authority_value"
+        trigger = {
+            has_country_flag = mod_imperial_authority_value
+        }
+        remove_country_modifier = catus_nmod_imperial_authority_value
+        clr_country_flag = mod_imperial_authority_value
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_imperial_mandate"
+        trigger = {
+            has_country_flag = mod_imperial_mandate
+        }
+        remove_country_modifier = catus_nmod_imperial_mandate
+        clr_country_flag = mod_imperial_mandate
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_legitimacy"
+        trigger = {
+            has_country_flag = mod_legitimacy
+        }
+        remove_country_modifier = catus_nmod_legitimacy
+        clr_country_flag = mod_legitimacy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_max_absolutism"
+        trigger = {
+            has_country_flag = mod_max_absolutism
+        }
+        remove_country_modifier = catus_nmod_max_absolutism
+        clr_country_flag = mod_max_absolutism
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_max_states"
+        trigger = {
+            has_country_flag = mod_max_states
+        }
+        remove_country_modifier = catus_nmod_max_states
+        clr_country_flag = mod_max_states
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_meritocracy"
+        trigger = {
+            has_country_flag = mod_meritocracy
+        }
+        remove_country_modifier = catus_nmod_meritocracy
+        clr_country_flag = mod_meritocracy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_migration_cooldown"
+        trigger = {
+            has_country_flag = mod_migration_cooldown
+        }
+        remove_country_modifier = catus_nmod_migration_cooldown
+        clr_country_flag = mod_migration_cooldown
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_mil_advisor_cost"
+        trigger = {
+            has_country_flag = mod_mil_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_mil_advisor_cost
+        clr_country_flag = mod_mil_advisor_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monarch_admin_power"
+        trigger = {
+            has_country_flag = mod_monarch_admin_power
+        }
+        remove_country_modifier = catus_nmod_monarch_admin_power
+        clr_country_flag = mod_monarch_admin_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monarch_diplomatic_power"
+        trigger = {
+            has_country_flag = mod_monarch_diplomatic_power
+        }
+        remove_country_modifier = catus_nmod_monarch_diplomatic_power
+        clr_country_flag = mod_monarch_diplomatic_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monarch_military_power"
+        trigger = {
+            has_country_flag = mod_monarch_military_power
+        }
+        remove_country_modifier = catus_nmod_monarch_military_power
+        clr_country_flag = mod_monarch_military_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monthly_militarized_society"
+        trigger = {
+            has_country_flag = mod_monthly_militarized_society
+        }
+        remove_country_modifier = catus_nmod_monthly_militarized_society
+        clr_country_flag = mod_monthly_militarized_society
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monthly_support_heir_gain"
+        trigger = {
+            has_country_flag = mod_monthly_support_heir_gain
+        }
+        remove_country_modifier = catus_nmod_monthly_support_heir_gain
+        clr_country_flag = mod_monthly_support_heir_gain
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_possible_adm_policy"
+        trigger = {
+            has_country_flag = mod_possible_adm_policy
+        }
+        remove_country_modifier = catus_nmod_possible_adm_policy
+        clr_country_flag = mod_possible_adm_policy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_possible_dip_policy"
+        trigger = {
+            has_country_flag = mod_possible_dip_policy
+        }
+        remove_country_modifier = catus_nmod_possible_dip_policy
+        clr_country_flag = mod_possible_dip_policy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_possible_mil_policy"
+        trigger = {
+            has_country_flag = mod_possible_mil_policy
+        }
+        remove_country_modifier = catus_nmod_possible_mil_policy
+        clr_country_flag = mod_possible_mil_policy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_prestige"
+        trigger = {
+            has_country_flag = mod_prestige
+        }
+        remove_country_modifier = catus_nmod_prestige
+        clr_country_flag = mod_prestige
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_prestige_decay"
+        trigger = {
+            has_country_flag = mod_prestige_decay
+        }
+        remove_country_modifier = catus_nmod_prestige_decay
+        clr_country_flag = mod_prestige_decay
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_reelection_cost"
+        trigger = {
+            has_country_flag = mod_reelection_cost
+        }
+        remove_country_modifier = catus_nmod_reelection_cost
+        clr_country_flag = mod_reelection_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_reform_progress_growth"
+        trigger = {
+            has_country_flag = mod_reform_progress_growth
+        }
+        remove_country_modifier = catus_nmod_reform_progress_growth
+        clr_country_flag = mod_reform_progress_growth
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_republican_tradition"
+        trigger = {
+            has_country_flag = mod_republican_tradition
+        }
+        remove_country_modifier = catus_nmod_republican_tradition
+        clr_country_flag = mod_republican_tradition
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_same_culture_advisor_cost"
+        trigger = {
+            has_country_flag = mod_same_culture_advisor_cost
+        }
+        remove_country_modifier = catus_nmod_same_culture_advisor_cost
+        clr_country_flag = mod_same_culture_advisor_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_state_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_state_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_state_maintenance_modifier
+        clr_country_flag = mod_state_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_yearly_absolutism"
+        trigger = {
+            has_country_flag = mod_yearly_absolutism
+        }
+        remove_country_modifier = catus_nmod_yearly_absolutism
+        clr_country_flag = mod_yearly_absolutism
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_yearly_corruption"
+        trigger = {
+            has_country_flag = mod_yearly_corruption
+        }
+        remove_country_modifier = catus_nmod_yearly_corruption
+        clr_country_flag = mod_yearly_corruption
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_free_leader_pool"
+        trigger = {
+            has_country_flag = mod_free_leader_pool
+        }
+        remove_country_modifier = catus_nmod_free_leader_pool
+        clr_country_flag = mod_free_leader_pool
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_leader_cost"
+        trigger = {
+            has_country_flag = mod_leader_cost
+        }
+        remove_country_modifier = catus_nmod_leader_cost
+        clr_country_flag = mod_leader_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_mercenary_cost"
+        trigger = {
+            has_country_flag = mod_mercenary_cost
+        }
+        remove_country_modifier = catus_nmod_mercenary_cost
+        clr_country_flag = mod_mercenary_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_merc_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_merc_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_merc_maintenance_modifier
+        clr_country_flag = mod_merc_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_possible_condottieri"
+        trigger = {
+            has_country_flag = mod_possible_condottieri
+        }
+        remove_country_modifier = catus_nmod_possible_condottieri
+        clr_country_flag = mod_possible_condottieri
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_possible_mercenaries"
+        trigger = {
+            has_country_flag = mod_possible_mercenaries
+        }
+        remove_country_modifier = catus_nmod_possible_mercenaries
+        clr_country_flag = mod_possible_mercenaries
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_war_exhaustion"
+        trigger = {
+            has_country_flag = mod_war_exhaustion
+        }
+        remove_country_modifier = catus_nmod_war_exhaustion
+        clr_country_flag = mod_war_exhaustion
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_war_exhaustion_cost"
+        trigger = {
+            has_country_flag = mod_war_exhaustion_cost
+        }
+        remove_country_modifier = catus_nmod_war_exhaustion_cost
+        clr_country_flag = mod_war_exhaustion_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_war_taxes_cost_modifier"
+        trigger = {
+            has_country_flag = mod_war_taxes_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_war_taxes_cost_modifier
+        clr_country_flag = mod_war_taxes_cost_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_blockade_efficiency"
+        trigger = {
+            has_country_flag = mod_blockade_efficiency
+        }
+        remove_country_modifier = catus_nmod_blockade_efficiency
+        clr_country_flag = mod_blockade_efficiency
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_capture_ship_chance"
+        trigger = {
+            has_country_flag = mod_capture_ship_chance
+        }
+        remove_country_modifier = catus_nmod_capture_ship_chance
+        clr_country_flag = mod_capture_ship_chance
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_galley_cost"
+        trigger = {
+            has_country_flag = mod_galley_cost
+        }
+        remove_country_modifier = catus_nmod_galley_cost
+        clr_country_flag = mod_galley_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_galley_power"
+        trigger = {
+            has_country_flag = mod_galley_power
+        }
+        remove_country_modifier = catus_nmod_galley_power
+        clr_country_flag = mod_galley_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_naval_engagement_modifier"
+        trigger = {
+            has_country_flag = mod_global_naval_engagement_modifier
+        }
+        remove_country_modifier = catus_nmod_global_naval_engagement_modifier
+        clr_country_flag = mod_global_naval_engagement_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_sailors"
+        trigger = {
+            has_country_flag = mod_global_sailors
+        }
+        remove_country_modifier = catus_nmod_global_sailors
+        clr_country_flag = mod_global_sailors
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_sailors_modifier"
+        trigger = {
+            has_country_flag = mod_global_sailors_modifier
+        }
+        remove_country_modifier = catus_nmod_global_sailors_modifier
+        clr_country_flag = mod_global_sailors_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_ship_cost"
+        trigger = {
+            has_country_flag = mod_global_ship_cost
+        }
+        remove_country_modifier = catus_nmod_global_ship_cost
+        clr_country_flag = mod_global_ship_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_ship_recruit_speed"
+        trigger = {
+            has_country_flag = mod_global_ship_recruit_speed
+        }
+        remove_country_modifier = catus_nmod_global_ship_recruit_speed
+        clr_country_flag = mod_global_ship_recruit_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_ship_repair"
+        trigger = {
+            has_country_flag = mod_global_ship_repair
+        }
+        remove_country_modifier = catus_nmod_global_ship_repair
+        clr_country_flag = mod_global_ship_repair
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_ship_trade_power"
+        trigger = {
+            has_country_flag = mod_global_ship_trade_power
+        }
+        remove_country_modifier = catus_nmod_global_ship_trade_power
+        clr_country_flag = mod_global_ship_trade_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_heavy_ship_cost"
+        trigger = {
+            has_country_flag = mod_heavy_ship_cost
+        }
+        remove_country_modifier = catus_nmod_heavy_ship_cost
+        clr_country_flag = mod_heavy_ship_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_heavy_ship_power"
+        trigger = {
+            has_country_flag = mod_heavy_ship_power
+        }
+        remove_country_modifier = catus_nmod_heavy_ship_power
+        clr_country_flag = mod_heavy_ship_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_leader_naval_fire"
+        trigger = {
+            has_country_flag = mod_leader_naval_fire
+        }
+        remove_country_modifier = catus_nmod_leader_naval_fire
+        clr_country_flag = mod_leader_naval_fire
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_leader_naval_manuever"
+        trigger = {
+            has_country_flag = mod_leader_naval_manuever
+        }
+        remove_country_modifier = catus_nmod_leader_naval_manuever
+        clr_country_flag = mod_leader_naval_manuever
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_leader_naval_shock"
+        trigger = {
+            has_country_flag = mod_leader_naval_shock
+        }
+        remove_country_modifier = catus_nmod_leader_naval_shock
+        clr_country_flag = mod_leader_naval_shock
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_light_ship_cost"
+        trigger = {
+            has_country_flag = mod_light_ship_cost
+        }
+        remove_country_modifier = catus_nmod_light_ship_cost
+        clr_country_flag = mod_light_ship_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_light_ship_power"
+        trigger = {
+            has_country_flag = mod_light_ship_power
+        }
+        remove_country_modifier = catus_nmod_light_ship_power
+        clr_country_flag = mod_light_ship_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_naval_attrition"
+        trigger = {
+            has_country_flag = mod_naval_attrition
+        }
+        remove_country_modifier = catus_nmod_naval_attrition
+        clr_country_flag = mod_naval_attrition
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_naval_forcelimit"
+        trigger = {
+            has_country_flag = mod_naval_forcelimit
+        }
+        remove_country_modifier = catus_nmod_naval_forcelimit
+        clr_country_flag = mod_naval_forcelimit
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_naval_forcelimit_modifier"
+        trigger = {
+            has_country_flag = mod_naval_forcelimit_modifier
+        }
+        remove_country_modifier = catus_nmod_naval_forcelimit_modifier
+        clr_country_flag = mod_naval_forcelimit_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_naval_maintenance_modifier"
+        trigger = {
+            has_country_flag = mod_naval_maintenance_modifier
+        }
+        remove_country_modifier = catus_nmod_naval_maintenance_modifier
+        clr_country_flag = mod_naval_maintenance_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_naval_morale"
+        trigger = {
+            has_country_flag = mod_naval_morale
+        }
+        remove_country_modifier = catus_nmod_naval_morale
+        clr_country_flag = mod_naval_morale
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_naval_tradition_from_battle"
+        trigger = {
+            has_country_flag = mod_naval_tradition_from_battle
+        }
+        remove_country_modifier = catus_nmod_naval_tradition_from_battle
+        clr_country_flag = mod_naval_tradition_from_battle
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_navy_tradition"
+        trigger = {
+            has_country_flag = mod_navy_tradition
+        }
+        remove_country_modifier = catus_nmod_navy_tradition
+        clr_country_flag = mod_navy_tradition
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_navy_tradition_decay"
+        trigger = {
+            has_country_flag = mod_navy_tradition_decay
+        }
+        remove_country_modifier = catus_nmod_navy_tradition_decay
+        clr_country_flag = mod_navy_tradition_decay
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_prestige_from_naval"
+        trigger = {
+            has_country_flag = mod_prestige_from_naval
+        }
+        remove_country_modifier = catus_nmod_prestige_from_naval
+        clr_country_flag = mod_prestige_from_naval
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_privateer_efficiency"
+        trigger = {
+            has_country_flag = mod_privateer_efficiency
+        }
+        remove_country_modifier = catus_nmod_privateer_efficiency
+        clr_country_flag = mod_privateer_efficiency
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_recover_navy_morale_speed"
+        trigger = {
+            has_country_flag = mod_recover_navy_morale_speed
+        }
+        remove_country_modifier = catus_nmod_recover_navy_morale_speed
+        clr_country_flag = mod_recover_navy_morale_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_sailor_maintenance_modifer"
+        trigger = {
+            has_country_flag = mod_sailor_maintenance_modifer
+        }
+        remove_country_modifier = catus_nmod_sailor_maintenance_modifer
+        clr_country_flag = mod_sailor_maintenance_modifer
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_sailors_recovery_speed"
+        trigger = {
+            has_country_flag = mod_sailors_recovery_speed
+        }
+        remove_country_modifier = catus_nmod_sailors_recovery_speed
+        clr_country_flag = mod_sailors_recovery_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_ship_durability"
+        trigger = {
+            has_country_flag = mod_ship_durability
+        }
+        remove_country_modifier = catus_nmod_ship_durability
+        clr_country_flag = mod_ship_durability
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_sunk_ship_morale_hit_recieved"
+        trigger = {
+            has_country_flag = mod_sunk_ship_morale_hit_recieved
+        }
+        remove_country_modifier = catus_nmod_sunk_ship_morale_hit_recieved
+        clr_country_flag = mod_sunk_ship_morale_hit_recieved
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_ship_power_propagation"
+        trigger = {
+            has_country_flag = mod_ship_power_propagation
+        }
+        remove_country_modifier = catus_nmod_ship_power_propagation
+        clr_country_flag = mod_ship_power_propagation
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_transport_cost"
+        trigger = {
+            has_country_flag = mod_transport_cost
+        }
+        remove_country_modifier = catus_nmod_transport_cost
+        clr_country_flag = mod_transport_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_transport_power"
+        trigger = {
+            has_country_flag = mod_transport_power
+        }
+        remove_country_modifier = catus_nmod_transport_power
+        clr_country_flag = mod_transport_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_church_power_modifier"
+        trigger = {
+            has_country_flag = mod_church_power_modifier
+        }
+        remove_country_modifier = catus_nmod_church_power_modifier
+        clr_country_flag = mod_church_power_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_devotion"
+        trigger = {
+            has_country_flag = mod_devotion
+        }
+        remove_country_modifier = catus_nmod_devotion
+        clr_country_flag = mod_devotion
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_heretic_missionary_strength"
+        trigger = {
+            has_country_flag = mod_global_heretic_missionary_strength
+        }
+        remove_country_modifier = catus_nmod_global_heretic_missionary_strength
+        clr_country_flag = mod_global_heretic_missionary_strength
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_missionary_strength"
+        trigger = {
+            has_country_flag = mod_global_missionary_strength
+        }
+        remove_country_modifier = catus_nmod_global_missionary_strength
+        clr_country_flag = mod_global_missionary_strength
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_harmonization_speed"
+        trigger = {
+            has_country_flag = mod_harmonization_speed
+        }
+        remove_country_modifier = catus_nmod_harmonization_speed
+        clr_country_flag = mod_harmonization_speed
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_missionaries"
+        trigger = {
+            has_country_flag = mod_missionaries
+        }
+        remove_country_modifier = catus_nmod_missionaries
+        clr_country_flag = mod_missionaries
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monthly_fervor_increase"
+        trigger = {
+            has_country_flag = mod_monthly_fervor_increase
+        }
+        remove_country_modifier = catus_nmod_monthly_fervor_increase
+        clr_country_flag = mod_monthly_fervor_increase
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monthly_karma"
+        trigger = {
+            has_country_flag = mod_monthly_karma
+        }
+        remove_country_modifier = catus_nmod_monthly_karma
+        clr_country_flag = mod_monthly_karma
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_monthly_piety"
+        trigger = {
+            has_country_flag = mod_monthly_piety
+        }
+        remove_country_modifier = catus_nmod_monthly_piety
+        clr_country_flag = mod_monthly_piety
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_papal_influence"
+        trigger = {
+            has_country_flag = mod_papal_influence
+        }
+        remove_country_modifier = catus_nmod_papal_influence
+        clr_country_flag = mod_papal_influence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_prestige_per_development_from_conversion"
+        trigger = {
+            has_country_flag = mod_prestige_per_development_from_conversion
+        }
+        remove_country_modifier = catus_nmod_prestige_per_development_from_conversion
+        clr_country_flag = mod_prestige_per_development_from_conversion
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_religious_unity"
+        trigger = {
+            has_country_flag = mod_religious_unity
+        }
+        remove_country_modifier = catus_nmod_religious_unity
+        clr_country_flag = mod_religious_unity
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_tolerance_heathen"
+        trigger = {
+            has_country_flag = mod_tolerance_heathen
+        }
+        remove_country_modifier = catus_nmod_tolerance_heathen
+        clr_country_flag = mod_tolerance_heathen
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_tolerance_heretic"
+        trigger = {
+            has_country_flag = mod_tolerance_heretic
+        }
+        remove_country_modifier = catus_nmod_tolerance_heretic
+        clr_country_flag = mod_tolerance_heretic
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_tolerance_own"
+        trigger = {
+            has_country_flag = mod_tolerance_own
+        }
+        remove_country_modifier = catus_nmod_tolerance_own
+        clr_country_flag = mod_tolerance_own
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_warscore_cost_vs_other_religion"
+        trigger = {
+            has_country_flag = mod_warscore_cost_vs_other_religion
+        }
+        remove_country_modifier = catus_nmod_warscore_cost_vs_other_religion
+        clr_country_flag = mod_warscore_cost_vs_other_religion
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_yearly_harmony"
+        trigger = {
+            has_country_flag = mod_yearly_harmony
+        }
+        remove_country_modifier = catus_nmod_yearly_harmony
+        clr_country_flag = mod_yearly_harmony
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_autonomy_change_time"
+        trigger = {
+            has_country_flag = mod_autonomy_change_time
+        }
+        remove_country_modifier = catus_nmod_autonomy_change_time
+        clr_country_flag = mod_autonomy_change_time
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_core_decay_on_your_own"
+        trigger = {
+            has_country_flag = mod_core_decay_on_your_own
+        }
+        remove_country_modifier = catus_nmod_core_decay_on_your_own
+        clr_country_flag = mod_core_decay_on_your_own
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_culture_conversion_cost"
+        trigger = {
+            has_country_flag = mod_culture_conversion_cost
+        }
+        remove_country_modifier = catus_nmod_culture_conversion_cost
+        clr_country_flag = mod_culture_conversion_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_discovered_relations_impact"
+        trigger = {
+            has_country_flag = mod_discovered_relations_impact
+        }
+        remove_country_modifier = catus_nmod_discovered_relations_impact
+        clr_country_flag = mod_discovered_relations_impact
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_autonomy"
+        trigger = {
+            has_country_flag = mod_global_autonomy
+        }
+        remove_country_modifier = catus_nmod_global_autonomy
+        clr_country_flag = mod_global_autonomy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_unrest"
+        trigger = {
+            has_country_flag = mod_global_unrest
+        }
+        remove_country_modifier = catus_nmod_global_unrest
+        clr_country_flag = mod_global_unrest
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_spy_defence"
+        trigger = {
+            has_country_flag = mod_global_spy_defence
+        }
+        remove_country_modifier = catus_nmod_global_spy_defence
+        clr_country_flag = mod_global_spy_defence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_harsh_treatment_cost"
+        trigger = {
+            has_country_flag = mod_harsh_treatment_cost
+        }
+        remove_country_modifier = catus_nmod_harsh_treatment_cost
+        clr_country_flag = mod_harsh_treatment_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_liberty_desire"
+        trigger = {
+            has_country_flag = mod_liberty_desire
+        }
+        remove_country_modifier = catus_nmod_liberty_desire
+        clr_country_flag = mod_liberty_desire
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_liberty_desire_from_subject_development"
+        trigger = {
+            has_country_flag = mod_liberty_desire_from_subject_development
+        }
+        remove_country_modifier = catus_nmod_liberty_desire_from_subject_development
+        clr_country_flag = mod_liberty_desire_from_subject_development
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_min_autonomy"
+        trigger = {
+            has_country_flag = mod_min_autonomy
+        }
+        remove_country_modifier = catus_nmod_min_autonomy
+        clr_country_flag = mod_min_autonomy
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_min_autonomy_in_territories"
+        trigger = {
+            has_country_flag = mod_min_autonomy_in_territories
+        }
+        remove_country_modifier = catus_nmod_min_autonomy_in_territories
+        clr_country_flag = mod_min_autonomy_in_territories
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_num_accepted_cultures"
+        trigger = {
+            has_country_flag = mod_num_accepted_cultures
+        }
+        remove_country_modifier = catus_nmod_num_accepted_cultures
+        clr_country_flag = mod_num_accepted_cultures
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_promote_culture_cost"
+        trigger = {
+            has_country_flag = mod_promote_culture_cost
+        }
+        remove_country_modifier = catus_nmod_promote_culture_cost
+        clr_country_flag = mod_promote_culture_cost
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_rebel_support_efficiency"
+        trigger = {
+            has_country_flag = mod_rebel_support_efficiency
+        }
+        remove_country_modifier = catus_nmod_rebel_support_efficiency
+        clr_country_flag = mod_rebel_support_efficiency
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_reduced_liberty_desire"
+        trigger = {
+            has_country_flag = mod_reduced_liberty_desire
+        }
+        remove_country_modifier = catus_nmod_reduced_liberty_desire
+        clr_country_flag = mod_reduced_liberty_desire
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_reduced_liberty_desire_on_same_continent"
+        trigger = {
+            has_country_flag = mod_reduced_liberty_desire_on_same_continent
+        }
+        remove_country_modifier = catus_nmod_reduced_liberty_desire_on_same_continent
+        clr_country_flag = mod_reduced_liberty_desire_on_same_continent
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_spy_offence"
+        trigger = {
+            has_country_flag = mod_spy_offence
+        }
+        remove_country_modifier = catus_nmod_spy_offence
+        clr_country_flag = mod_spy_offence
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_stability_cost_modifier"
+        trigger = {
+            has_country_flag = mod_stability_cost_modifier
+        }
+        remove_country_modifier = catus_nmod_stability_cost_modifier
+        clr_country_flag = mod_stability_cost_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_years_of_nationalism"
+        trigger = {
+            has_country_flag = mod_years_of_nationalism
+        }
+        remove_country_modifier = catus_nmod_years_of_nationalism
+        clr_country_flag = mod_years_of_nationalism
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_caravan_power"
+        trigger = {
+            has_country_flag = mod_caravan_power
+        }
+        remove_country_modifier = catus_nmod_caravan_power
+        clr_country_flag = mod_caravan_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_embargo_efficiency"
+        trigger = {
+            has_country_flag = mod_embargo_efficiency
+        }
+        remove_country_modifier = catus_nmod_embargo_efficiency
+        clr_country_flag = mod_embargo_efficiency
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_foreign_trade_power"
+        trigger = {
+            has_country_flag = mod_global_foreign_trade_power
+        }
+        remove_country_modifier = catus_nmod_global_foreign_trade_power
+        clr_country_flag = mod_global_foreign_trade_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_own_trade_power"
+        trigger = {
+            has_country_flag = mod_global_own_trade_power
+        }
+        remove_country_modifier = catus_nmod_global_own_trade_power
+        clr_country_flag = mod_global_own_trade_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_prov_trade_power_modifier"
+        trigger = {
+            has_country_flag = mod_global_prov_trade_power_modifier
+        }
+        remove_country_modifier = catus_nmod_global_prov_trade_power_modifier
+        clr_country_flag = mod_global_prov_trade_power_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_trade_goods_size_modifier"
+        trigger = {
+            has_country_flag = mod_global_trade_goods_size_modifier
+        }
+        remove_country_modifier = catus_nmod_global_trade_goods_size_modifier
+        clr_country_flag = mod_global_trade_goods_size_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_global_trade_power"
+        trigger = {
+            has_country_flag = mod_global_trade_power
+        }
+        remove_country_modifier = catus_nmod_global_trade_power
+        clr_country_flag = mod_global_trade_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_merchants"
+        trigger = {
+            has_country_flag = mod_merchants
+        }
+        remove_country_modifier = catus_nmod_merchants
+        clr_country_flag = mod_merchants
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_placed_merchant_power"
+        trigger = {
+            has_country_flag = mod_placed_merchant_power
+        }
+        remove_country_modifier = catus_nmod_placed_merchant_power
+        clr_country_flag = mod_placed_merchant_power
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_trade_efficiency"
+        trigger = {
+            has_country_flag = mod_trade_efficiency
+        }
+        remove_country_modifier = catus_nmod_trade_efficiency
+        clr_country_flag = mod_trade_efficiency
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_trade_range_modifier"
+        trigger = {
+            has_country_flag = mod_trade_range_modifier
+        }
+        remove_country_modifier = catus_nmod_trade_range_modifier
+        clr_country_flag = mod_trade_range_modifier
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+    option = {
+        name = "catus_events_trade_steering"
+        trigger = {
+            has_country_flag = mod_trade_steering
+        }
+        remove_country_modifier = catus_nmod_trade_steering
+        clr_country_flag = mod_trade_steering
+        country_event = {
+            id = catus_events_remove.1
+        }
+    }
+}

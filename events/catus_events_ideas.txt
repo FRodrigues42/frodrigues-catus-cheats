@@ -1,0 +1,871 @@
+namespace = catus_events_ideas
+
+country_event = {
+	id = catus_events_ideas.1
+	title = "catus_events_ideas.title"
+	desc = "catus_events_ideas.desc"
+	picture = UNIVERSITY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_provinces.1
+		}
+	}
+
+	option = {
+		name = "catus_events_ideas.1"
+		trigger = {
+			not = {
+				full_idea_group = aristocracy_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = aristocracy_ideas
+			add_idea = noble_knights
+			add_idea = military_traditions
+			add_idea = local_nobility
+			add_idea = serfdom
+			add_idea = noble_officers
+			add_idea = international_nobility
+			add_idea = noble_resilience
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.2"
+		trigger = {
+			not = {
+				full_idea_group = plutocracy_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = plutocracy_ideas
+			add_idea = tradition_of_payment
+			add_idea = abolished_serfdom
+			add_idea = bill_of_rights
+			add_idea = free_merchants
+			add_idea = free_subjects
+			add_idea = free_cities
+			add_idea = emancipation
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.3"
+		trigger = {
+			not = {
+				full_idea_group = innovativeness_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = innovativeness_ideas
+			add_idea = patron_of_art
+			add_idea = empiricism
+			add_idea = scientific_revolution
+			add_idea = dynamic_court
+			add_idea = resilient_state
+			add_idea = optimism
+			add_idea = formalized_officer_corps
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.4"
+		trigger = {
+			not = {
+				full_idea_group = religious_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = religious_ideas
+			add_idea = missionary_schools
+			add_idea = church_attendance_duty
+			add_idea = divine_supremacy
+			add_idea = devoutness
+			add_idea = religious_tradition
+			add_idea = inquisition
+			add_idea = deus_vult
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.5"
+		trigger = {
+			not = {
+				full_idea_group = spy_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = spy_ideas
+			add_idea = efficient_spies
+			add_idea = agent_training
+			add_idea = vetting
+			add_idea = state_propaganda
+			add_idea = claim_fabrication
+			add_idea = privateers
+			add_idea = audit_checks
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.6"
+		trigger = {
+			not = {
+				full_idea_group = diplomatic_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = diplomatic_ideas
+			add_idea = foreign_embassies
+			add_idea = cabinet
+			add_idea = grand_banquets
+			add_idea = benign_diplomats
+			add_idea = experienced_diplomats
+			add_idea = flexible_negotiation
+			add_idea = diplomatic_corps
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.7"
+		trigger = {
+			not = {
+				full_idea_group = offensive_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = offensive_ideas
+			add_idea = bayonet_leaders
+			add_idea = national_conscripts
+			add_idea = superior_firepower
+			add_idea = glorious_arms
+			add_idea = engineer_corps
+			add_idea = grand_army
+			add_idea = napoleonic_warfare
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.8"
+		trigger = {
+			not = {
+				full_idea_group = defensive_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = defensive_ideas
+			add_idea = battlefield_commisions
+			add_idea = military_drill
+			add_idea = improved_manuever
+			add_idea = regimental_system
+			add_idea = defensive_mentality
+			add_idea = supply_trains
+			add_idea = improved_foraging
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.9"
+		trigger = {
+			not = {
+				full_idea_group = trade_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = trade_ideas
+			add_idea = shrewd_commerce_practise
+			add_idea = free_trade
+			add_idea = merchant_adventures
+			add_idea = national_trade_policy
+			add_idea = overseas_merchants
+			add_idea = trade_manipulation
+			add_idea = fast_negotiations
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.10"
+		trigger = {
+			not = {
+				full_idea_group = economic_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = economic_ideas
+			add_idea = bureaucracy
+			add_idea = organised_construction
+			add_idea = national_bank
+			add_idea = debt_and_loans
+			add_idea = centralization
+			add_idea = nationalistic_enthusiasm
+			add_idea = smithian_economics
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.11"
+		trigger = {
+			not = {
+				full_idea_group = exploration_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = exploration_ideas
+			add_idea = colonial_ventures
+			add_idea = quest_for_the_new_world
+			add_idea = overseas_exploration
+			add_idea = land_of_opportunity
+			add_idea = vice_roys
+			add_idea = free_colonies
+			add_idea = global_empire
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.12"
+		trigger = {
+			not = {
+				full_idea_group = maritime_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = maritime_ideas
+			add_idea = sea_hawks
+			add_idea = merchant_marine
+			add_idea = sheltered_ports
+			add_idea = grand_navy
+			add_idea = ships_penny
+			add_idea = merchant_traditions
+			add_idea = naval_fighting_instruction
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.13"
+		trigger = {
+			not = {
+				full_idea_group = quality_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = quality_ideas
+			add_idea = private_to_marshal
+			add_idea = quality_education
+			add_idea = finest_of_horses
+			add_idea = escort_ships
+			add_idea = naval_drill
+			add_idea = copper_bottoms
+			add_idea = massed_battery
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.14"
+		trigger = {
+			not = {
+				full_idea_group = quantity_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = quantity_ideas
+			add_idea = mass_army
+			add_idea = the_young_can_serve
+			add_idea = enforced_service
+			add_idea = the_old_and_infirm
+			add_idea = camp_followers
+			add_idea = garrison_conscription
+			add_idea = expanded_supply_trains
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.15"
+		trigger = {
+			not = {
+				full_idea_group = expansion_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = expansion_ideas
+			add_idea = additional_colonists
+			add_idea = additional_merchants
+			add_idea = faster_colonists
+			add_idea = factories
+			add_idea = additional_diplomats
+			add_idea = general_colonization_law
+			add_idea = competetive_merchants
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.17"
+		trigger = {
+			not = {
+				full_idea_group = administrative_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = administrative_ideas
+			add_idea = organised_mercenary_payment
+			add_idea = adaptability
+			add_idea = benefits_for_mercenaries
+			add_idea = bookkeeping
+			add_idea = organised_mercenary_recruitment
+			add_idea = administrative_efficiency_idea
+			add_idea = civil_servants
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.19"
+		trigger = {
+			not = {
+				full_idea_group = humanist_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = humanist_ideas
+			add_idea = tolerance_idea
+			add_idea = local_traditions
+			add_idea = ecumenism
+			add_idea = indirect_rule
+			add_idea = cultural_ties
+			add_idea = benevolence
+			add_idea = humanist_tolerance
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.20"
+		trigger = {
+			not = {
+				full_idea_group = influence_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = influence_ideas
+			add_idea = tribute_system
+			add_idea = additional_loyalist_recruitment
+			add_idea = integrated_elites
+			add_idea = buffer_states
+			add_idea = diplomatic_influence
+			add_idea = postal_service
+			add_idea = marcher_lords
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.21"
+		trigger = {
+			not = {
+				full_idea_group = naval_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = naval_ideas
+			add_idea = boarding_parties
+			add_idea = improved_rams
+			add_idea = naval_cadets
+			add_idea = naval_glory
+			add_idea = press_gangs
+			add_idea = oak_forests_for_ships
+			add_idea = superior_seamanship
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+
+}
+
+country_event = {
+	id = catus_events_ideas.91
+	title = "catus_events_ideas.title"
+	desc = "catus_events_ideas.desc"
+	picture = UNIVERSITY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_provinces.1
+		}
+	}
+
+	option = {
+		name = "catus_events_ideas.1"
+		trigger = {
+			not = {
+				full_idea_group = aristocracy_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = aristocracy_ideas
+			add_idea = noble_knights
+			add_idea = military_traditions
+			add_idea = local_nobility
+			add_idea = serfdom
+			add_idea = noble_officers
+			add_idea = international_nobility
+			add_idea = noble_resilience
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.2"
+		trigger = {
+			not = {
+				full_idea_group = plutocracy_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = plutocracy_ideas
+			add_idea = tradition_of_payment
+			add_idea = abolished_serfdom
+			add_idea = bill_of_rights
+			add_idea = free_merchants
+			add_idea = free_subjects
+			add_idea = free_cities
+			add_idea = emancipation
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.3"
+		trigger = {
+			not = {
+				full_idea_group = innovativeness_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = innovativeness_ideas
+			add_idea = patron_of_art
+			add_idea = empiricism
+			add_idea = scientific_revolution
+			add_idea = dynamic_court
+			add_idea = resilient_state
+			add_idea = optimism
+			add_idea = formalized_officer_corps
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.4"
+		trigger = {
+			not = {
+				full_idea_group = religious_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = religious_ideas
+			add_idea = missionary_schools
+			add_idea = church_attendance_duty
+			add_idea = divine_supremacy
+			add_idea = devoutness
+			add_idea = religious_tradition
+			add_idea = inquisition
+			add_idea = deus_vult
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.5"
+		trigger = {
+			not = {
+				full_idea_group = spy_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = spy_ideas
+			add_idea = efficient_spies
+			add_idea = agent_training
+			add_idea = vetting
+			add_idea = state_propaganda
+			add_idea = claim_fabrication
+			add_idea = privateers
+			add_idea = audit_checks
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.6"
+		trigger = {
+			not = {
+				full_idea_group = diplomatic_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = diplomatic_ideas
+			add_idea = foreign_embassies
+			add_idea = cabinet
+			add_idea = grand_banquets
+			add_idea = benign_diplomats
+			add_idea = experienced_diplomats
+			add_idea = flexible_negotiation
+			add_idea = diplomatic_corps
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.7"
+		trigger = {
+			not = {
+				full_idea_group = offensive_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = offensive_ideas
+			add_idea = bayonet_leaders
+			add_idea = national_conscripts
+			add_idea = superior_firepower
+			add_idea = glorious_arms
+			add_idea = engineer_corps
+			add_idea = grand_army
+			add_idea = napoleonic_warfare
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.8"
+		trigger = {
+			not = {
+				full_idea_group = defensive_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = defensive_ideas
+			add_idea = battlefield_commisions
+			add_idea = military_drill
+			add_idea = improved_manuever
+			add_idea = regimental_system
+			add_idea = defensive_mentality
+			add_idea = supply_trains
+			add_idea = improved_foraging
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.9"
+		trigger = {
+			not = {
+				full_idea_group = trade_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = trade_ideas
+			add_idea = shrewd_commerce_practise
+			add_idea = free_trade
+			add_idea = merchant_adventures
+			add_idea = national_trade_policy
+			add_idea = overseas_merchants
+			add_idea = trade_manipulation
+			add_idea = fast_negotiations
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.10"
+		trigger = {
+			not = {
+				full_idea_group = economic_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = economic_ideas
+			add_idea = bureaucracy
+			add_idea = organised_construction
+			add_idea = national_bank
+			add_idea = debt_and_loans
+			add_idea = centralization
+			add_idea = nationalistic_enthusiasm
+			add_idea = smithian_economics
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.11"
+		trigger = {
+			not = {
+				full_idea_group = exploration_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = exploration_ideas
+			add_idea = colonial_ventures
+			add_idea = quest_for_the_new_world
+			add_idea = overseas_exploration
+			add_idea = land_of_opportunity
+			add_idea = vice_roys
+			add_idea = free_colonies
+			add_idea = global_empire
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.12"
+		trigger = {
+			not = {
+				full_idea_group = maritime_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = maritime_ideas
+			add_idea = sea_hawks
+			add_idea = merchant_marine
+			add_idea = sheltered_ports
+			add_idea = grand_navy
+			add_idea = ships_penny
+			add_idea = merchant_traditions
+			add_idea = naval_fighting_instruction
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.13"
+		trigger = {
+			not = {
+				full_idea_group = quality_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = quality_ideas
+			add_idea = private_to_marshal
+			add_idea = quality_education
+			add_idea = finest_of_horses
+			add_idea = escort_ships
+			add_idea = naval_drill
+			add_idea = copper_bottoms
+			add_idea = massed_battery
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.14"
+		trigger = {
+			not = {
+				full_idea_group = quantity_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = quantity_ideas
+			add_idea = mass_army
+			add_idea = the_young_can_serve
+			add_idea = enforced_service
+			add_idea = the_old_and_infirm
+			add_idea = camp_followers
+			add_idea = garrison_conscription
+			add_idea = expanded_supply_trains
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.15"
+		trigger = {
+			not = {
+				full_idea_group = expansion_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = expansion_ideas
+			add_idea = additional_colonists
+			add_idea = additional_merchants
+			add_idea = faster_colonists
+			add_idea = factories
+			add_idea = additional_diplomats
+			add_idea = general_colonization_law
+			add_idea = competetive_merchants
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.17"
+		trigger = {
+			not = {
+				full_idea_group = administrative_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = administrative_ideas
+			add_idea = organised_mercenary_payment
+			add_idea = adaptability
+			add_idea = benefits_for_mercenaries
+			add_idea = bookkeeping
+			add_idea = organised_mercenary_recruitment
+			add_idea = administrative_efficiency_idea
+			add_idea = civil_servants
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.19"
+		trigger = {
+			not = {
+				full_idea_group = humanist_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = humanist_ideas
+			add_idea = tolerance_idea
+			add_idea = local_traditions
+			add_idea = ecumenism
+			add_idea = indirect_rule
+			add_idea = cultural_ties
+			add_idea = benevolence
+			add_idea = humanist_tolerance
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.20"
+		trigger = {
+			not = {
+				full_idea_group = influence_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = influence_ideas
+			add_idea = tribute_system
+			add_idea = additional_loyalist_recruitment
+			add_idea = integrated_elites
+			add_idea = buffer_states
+			add_idea = diplomatic_influence
+			add_idea = postal_service
+			add_idea = marcher_lords
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_ideas.21"
+		trigger = {
+			not = {
+				full_idea_group = naval_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = naval_ideas
+			add_idea = boarding_parties
+			add_idea = improved_rams
+			add_idea = naval_cadets
+			add_idea = naval_glory
+			add_idea = press_gangs
+			add_idea = oak_forests_for_ships
+			add_idea = superior_seamanship
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+
+}

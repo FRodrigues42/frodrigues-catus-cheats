@@ -1,0 +1,299 @@
+#5
+country_decisions = {
+	
+	catus_hotmenu_toggle_on = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+				has_country_flag = cheatsh_on
+			}
+		}
+		allow = {
+			not = {
+				ai = yes
+				has_country_flag = cheatsh_on
+			}
+		}
+		effect = {
+			set_country_flag = cheatsh_on
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_hotmenu_toggle_off = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+		}
+		effect = {
+			clr_country_flag = cheatsh_on
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	catus_hm_3 = {
+		major = no
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+			any_owned_province = {
+				is_colony = yes
+			}
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+			any_owned_province = {
+				is_colony = yes
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					is_colony = yes
+				}
+				add_colonysize = 1000
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	catus_hm_1 = {
+		major = no
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+		}
+		effect = {
+			define_general = {
+				fire = 9999
+				shock = 9999
+				manuever = 9999
+				siege = 9999
+			}
+			capital_scope = {
+				hidden_effect = {
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+				}
+				infantry = ROOT
+				cavalry = ROOT
+				artillery = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_hm_4 = {
+		major = no
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+			any_owned_province = {
+				has_port = yes
+				region = capital
+			}
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+			any_owned_province = {
+				has_port = yes
+				region = capital
+			}
+		}
+		effect = {
+			define_admiral = {
+				fire = 9999
+				shock = 9999
+				manuever = 9999
+				siege = 9999
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					region = capital
+				}
+				hidden_effect = {
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+					transport = ROOT
+				}
+				transport = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_hm_5 = {
+		major = no
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+			any_owned_province = {
+				has_port = yes
+				region = capital
+			}
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+			any_owned_province = {
+				has_port = yes
+				region = capital
+			}
+		}
+		effect = {
+			define_admiral = {
+				fire = 9999
+				shock = 9999
+				manuever = 9999
+				siege = 9999
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					region = capital
+				}
+				hidden_effect = {
+					heavy_ship = ROOT
+					heavy_ship = ROOT
+					heavy_ship = ROOT
+					light_ship = ROOT
+					light_ship = ROOT
+					light_ship = ROOT
+					galley = ROOT
+					galley = ROOT
+					galley = ROOT
+				}
+				heavy_ship = ROOT
+				light_ship = ROOT
+				galley = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_hm_2 = {
+		major = no
+		potential = {
+			not = {
+				ai = yes
+				and = {
+					adm = 6
+					mil = 6
+					dip = 6
+				}
+			}
+			has_country_flag = cheatsh_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheatsh_on
+		}
+		effect = {
+			change_adm = 6
+			change_dip = 6
+			change_mil = 6
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

@@ -1,0 +1,18 @@
+namespace = catus_events_changelog
+
+country_event = {
+	id = catus_events_changelog.1
+	title = "catus_events_changelog.title"
+	desc = "catus_events_changelog.desc"
+	picture = BIG_BOOK_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+
+}

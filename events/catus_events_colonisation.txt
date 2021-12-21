@@ -1,0 +1,2411 @@
+namespace = catus_events_colonisation
+
+country_event = {
+	id = catus_events_colonisation.1
+	title = "catus_events_colonisation.title"
+	desc = "catus_events_colonisation.desc"
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_colonisation.2"
+		trigger = {
+			not = {
+				has_country_flag = mod_colonisation
+			}
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = catus_colonisation
+				duration = -1
+			}
+			set_country_flag = mod_colonisation
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.3"
+		trigger = {
+			has_country_flag = mod_colonisation
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_colonisation
+			clr_country_flag = mod_colonisation
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.4.1"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_1
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { continent = europe }
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+			}
+			europe = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_1
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.4.2"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_2
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						capital_scope = { superregion = north_america_superregion }
+						capital_scope = { superregion = south_america_superregion }
+						capital_scope = { superregion = central_america_superregion }
+					}
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			north_america_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			south_america_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			central_america_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_2
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.4.3"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_3
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						capital_scope = { superregion = india_superregion }
+					}
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			india_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_3
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.4.4"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_4
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						capital_scope = { superregion = africa_superregion }
+					}
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			africa_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_4
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.4.5"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_5
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						culture_group = japanese_g
+					}
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			every_province = {
+				limit = {
+					and = {
+						culture_group = japanese_g
+						is_capital = yes
+					}
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_5
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.4.6"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_6
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			every_province = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_6
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.5"
+		trigger = {
+			or = {
+				has_global_flag = mod_masscol_1
+				has_global_flag = mod_masscol_2
+				has_global_flag = mod_masscol_3
+				has_global_flag = mod_masscol_4
+				has_global_flag = mod_masscol_5
+				has_global_flag = mod_masscol_6
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_colonisation
+			}
+			every_province = {
+				limit = {
+						base_tax = 150
+				}
+				hidden_effect = {
+					add_base_tax = -150
+				}
+			}
+			clr_global_flag = mod_masscol_1
+			clr_global_flag = mod_masscol_2
+			clr_global_flag = mod_masscol_3
+			clr_global_flag = mod_masscol_4
+			clr_global_flag = mod_masscol_5
+			clr_global_flag = mod_masscol_6
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.10"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = europe }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_new.11"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = asia }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.12"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = africa }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.13"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = north_america }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.14"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = south_america }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.15"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = oceania }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.16"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						or = {
+							capital_scope = { continent = europe }
+							capital_scope = { continent = asia }
+						}
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.15"
+		hidden_effect = {
+			every_country = {
+				collapse_nation = yes
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.16"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						and = {
+							culture = PREV
+							owner = {
+								and = {
+									not = {
+										owned_by = PREV
+									}
+									ai = yes
+								}
+							}
+						}
+					}
+					cede_province = PREV
+					if = {
+						limit = {
+							not = {
+								is_core = PREV
+							}
+						}
+						add_core = PREV
+					}
+				}
+				every_province = {
+					limit = {
+						and = {
+							culture = PREV
+							is_empty = yes
+						}
+					}
+					cede_province = PREV
+					if = {
+						limit = {
+							not = {
+								is_core = PREV
+							}
+						}
+						add_core = PREV
+					}
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.10"
+		trigger = {
+			not = {
+				has_country_flag = mod_alwaysrebels
+			}
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = catus_alwaysrebels
+				duration = -1
+			}
+			set_country_flag = mod_alwaysrebels
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.11"
+		trigger = {
+			has_country_flag = mod_alwaysrebels
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_alwaysrebels
+			clr_country_flag = mod_alwaysrebels
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.12"
+		trigger = {
+			not = {
+				has_global_flag = mod_gloalwaysrebels
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				add_country_modifier = {
+					name = catus_alwaysrebels
+					duration = -1
+				}
+			}
+			set_global_flag = mod_gloalwaysrebels
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.13"
+		trigger = {
+			has_global_flag = mod_gloalwaysrebels
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_alwaysrebels
+			}
+			clr_global_flag = mod_gloalwaysrebels
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.6"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						and = {
+							or = {
+								owned_by = PREV
+								is_core = PREV
+								is_claim = PREV
+							}
+							is_capital = no
+						}
+					}
+					cede_province = observer
+					remove_core = PREV
+					remove_claim = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.7"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						or = {
+							is_core = PREV
+							is_claim = PREV
+							owned_by = PREV
+						}
+					}
+					cede_province = observer
+					remove_core = PREV
+					remove_claim = PREV
+				}
+			}
+			every_province = {
+				limit = {
+					is_empty = yes
+					or = {
+						continent = europe
+						continent = asia
+						continent = africa
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+				random_country = {
+					limit = {
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = random_target
+				}
+				cede_province = event_target:random_target
+				add_core = event_target:random_target
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.8"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						and = {
+							or = {
+								is_core = PREV
+								is_claim = PREV
+								owned_by = PREV
+							}
+						}
+					}
+					remove_core = PREV
+					remove_claim = PREV
+					cede_province = observer
+				}
+			}
+			
+			random_province = {
+				limit = {
+					and = {
+						or = {
+							continent = europe
+							continent = asia
+							continent = africa
+						}
+						not = {
+							region = british_isles_region
+							region = japan_region
+							region = east_africa_region
+						}
+						is_island = no
+					}
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+				
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				every_empty_neighbor_province = {
+					cede_province = event_target:test_target1
+					add_core = event_target:test_target1
+					change_culture = event_target:test_target1
+					change_religion = event_target:test_target1
+				}
+			}
+			set_variable = { which = counter value = 50 }
+			while = {
+				limit = {
+					check_variable = { which = counter value = 0 }
+				}
+
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+							tag = event_target:test_target1
+						}
+					}
+					save_event_target_as = test_target2
+				}
+				event_target:test_target1 = {
+					every_owned_province = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target2
+							add_core = event_target:test_target2
+							change_culture = event_target:test_target2
+							change_religion = event_target:test_target2
+						}
+					}
+				}
+				
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+							tag = event_target:test_target2
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				event_target:test_target2 = {
+					every_owned_province = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target1
+							add_core = event_target:test_target1
+							change_culture = event_target:test_target1
+							change_religion = event_target:test_target1
+						}
+					}
+				}
+				
+				subtract_variable = { which = counter value = 1 }
+			}
+			
+			
+			random_province = {
+				limit = {
+					or = {
+						continent = north_america
+						continent = south_america
+					}
+					is_island = no
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				every_empty_neighbor_province = {
+					cede_province = event_target:test_target1
+					add_core = event_target:test_target1
+					change_culture = event_target:test_target1
+					change_religion = event_target:test_target1
+				}
+			}
+			set_variable = { which = counter value = 50 }
+			while = {
+				limit = {
+					check_variable = { which = counter value = 0 }
+				}
+
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+							tag = event_target:test_target1
+						}
+					}
+					save_event_target_as = test_target2
+				}
+				event_target:test_target1 = {
+					every_owned_province = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target2
+							add_core = event_target:test_target2
+							change_culture = event_target:test_target2
+							change_religion = event_target:test_target2
+						}
+					}
+				}
+				
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+							tag = event_target:test_target2
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				event_target:test_target2 = {
+					every_owned_province = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target1
+							add_core = event_target:test_target1
+							change_culture = event_target:test_target1
+							change_religion = event_target:test_target1
+						}
+					}
+				}
+				
+				subtract_variable = { which = counter value = 1 }
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.9"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						or = {
+							is_core = PREV
+							is_claim = PREV
+							owned_by = PREV
+						}
+					}
+					remove_core = PREV
+					remove_claim = PREV
+					cede_province = observer
+				}
+			}
+			
+			random_province = {
+				limit = {
+					is_empty = yes
+					or = {
+						continent = europe
+						continent = asia
+						continent = africa
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+
+			capital_scope = {
+				every_empty_neighbor_province = {
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
+			
+			capital_scope = {
+				every_neighbor_province = {
+					limit = {
+						controlled_by = ROOT
+					}
+					every_empty_neighbor_province = {
+						cede_province = ROOT
+						add_core = ROOT
+						change_culture = ROOT
+						change_religion = ROOT
+					}
+				}
+			}
+			
+			set_variable = {
+				which = variable_name
+				value = 500
+			}
+			
+			while = {
+				limit = {
+					check_variable = { which = variable_name value = 0 }
+				}
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				random_province = {
+					limit = {
+						is_empty = yes
+						or = {
+							continent = europe
+							continent = asia
+							continent = africa
+							continent = north_america
+							continent = south_america
+							continent = oceania
+						}
+					}
+					cede_province = event_target:test_target1
+					add_core = event_target:test_target1
+					change_culture = event_target:test_target1
+					change_religion = event_target:test_target1
+				}
+				event_target:test_target1 = {
+					capital_scope = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target1
+							add_core = event_target:test_target1
+							change_culture = event_target:test_target1
+							change_religion = event_target:test_target1
+						}
+					}
+					capital_scope = {
+						every_neighbor_province = {
+							limit = {
+								controlled_by = event_target:test_target1
+							}
+							every_empty_neighbor_province = {
+								cede_province = event_target:test_target1
+								add_core = event_target:test_target1
+								change_culture = event_target:test_target1
+								change_religion = event_target:test_target1
+							}
+						}
+					}
+					
+				}
+
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = test_target2
+				}
+				random_province = {
+					limit = {
+						is_empty = yes
+						or = {
+							continent = europe
+							continent = asia
+							continent = africa
+							continent = north_america
+							continent = south_america
+							continent = oceania
+						}
+					}
+					cede_province = event_target:test_target2
+					add_core = event_target:test_target2
+					change_culture = event_target:test_target2
+					change_religion = event_target:test_target2
+				}
+				event_target:test_target2 = {
+					capital_scope = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target2
+							add_core = event_target:test_target2
+							change_culture = event_target:test_target2
+							change_religion = event_target:test_target2
+						}
+					}
+					capital_scope = {
+						every_neighbor_province = {
+							limit = {
+								controlled_by = event_target:test_target2
+							}
+							every_empty_neighbor_province = {
+								cede_province = event_target:test_target2
+								add_core = event_target:test_target2
+								change_culture = event_target:test_target2
+								change_religion = event_target:test_target2
+							}
+						}
+					}
+				}
+
+				subtract_variable = { which = variable_name value = 1 }
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.14"
+		trigger = {
+			not = {
+				has_country_flag = mod_allpowerreduction
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				add_country_modifier = {
+					name = catus_powerreduction
+					duration = -1
+				}
+				set_primitive = no
+			}
+			set_global_flag = mod_allpowerreduction
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.15"
+		trigger = {
+			has_country_flag = mod_allpowerreduction
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_powerreduction
+			}
+			clr_global_flag = mod_allpowerreduction
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.16"
+		hidden_effect = {
+			every_country = {
+				add_adm_tech = 99
+				add_dip_tech = 99
+				add_mil_tech = 99
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.3"
+		trigger = {
+			not = {
+				has_country_flag = mod_negpowerreduction
+			}
+		}
+		add_country_modifier = {
+			name = catus_negpowerreduction
+			duration = -1
+		}
+		set_country_flag = mod_negpowerreduction
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.4"
+		trigger = {
+			has_country_flag = mod_negpowerreduction
+		}
+		remove_country_modifier = catus_negpowerreduction
+		clr_country_flag = mod_negpowerreduction
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.5"
+		trigger = {
+			not = {
+				has_country_flag = mod_nomadic_conquest
+			}
+		}
+		add_country_modifier = {
+			name = nomadic_conquest
+			duration = -1
+		}
+		set_country_flag = nomadic_conquest
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.6"
+		trigger = {
+			has_country_flag = mod_nomadic_conquest
+		}
+		remove_country_modifier = nomadic_conquest
+		clr_country_flag = mod_nomadic_conquest
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.7"
+		trigger = {
+			not = {
+				primary_culture = israeli 
+			}
+		}
+		change_primary_culture = israeli
+		country_event = {
+			id = catus_events_colonisation.91
+		}
+	}
+
+}
+
+country_event = {
+	id = catus_events_colonisation.91
+	title = "catus_events_colonisation.title"
+	desc = "catus_events_colonisation.desc"
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_colonisation.2"
+		trigger = {
+			not = {
+				has_country_flag = mod_colonisation
+			}
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = catus_colonisation
+				duration = -1
+			}
+			set_country_flag = mod_colonisation
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.3"
+		trigger = {
+			has_country_flag = mod_colonisation
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_colonisation
+			clr_country_flag = mod_colonisation
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.4.1"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_1
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { continent = europe }
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+			}
+			europe = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_1
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.4.2"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_2
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						capital_scope = { superregion = north_america_superregion }
+						capital_scope = { superregion = south_america_superregion }
+						capital_scope = { superregion = central_america_superregion }
+					}
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			north_america_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			south_america_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			central_america_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_2
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.4.3"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_3
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						capital_scope = { superregion = india_superregion }
+					}
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			india_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_3
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.4.4"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_4
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						capital_scope = { superregion = africa_superregion }
+					}
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			africa_superregion = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_4
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.4.5"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_5
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						culture_group = japanese_g
+					}
+				}
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			every_province = {
+				limit = {
+					and = {
+						culture_group = japanese_g
+						is_capital = yes
+					}
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_5
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.4.6"
+		trigger = {
+			not = {
+				has_global_flag = mod_masscol_6
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				#add_idea_group = exploration_ideas
+				#add_idea = colonial_ventures
+				#add_idea = quest_for_the_new_world
+				#add_idea = overseas_exploration
+				#add_idea = land_of_opportunity
+				#add_idea = vice_roys
+				#add_idea = free_colonies
+				#add_idea = global_empire
+				add_country_modifier = {
+					name = catus_colonisation
+					duration = -1
+				}
+				set_primitive = no
+			}
+			every_province = {
+				limit = {
+						is_capital = yes
+				}
+				hidden_effect = {
+					add_base_tax = 150
+				}
+			}
+			set_global_flag = mod_masscol_6
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.5"
+		trigger = {
+			or = {
+				has_global_flag = mod_masscol_1
+				has_global_flag = mod_masscol_2
+				has_global_flag = mod_masscol_3
+				has_global_flag = mod_masscol_4
+				has_global_flag = mod_masscol_5
+				has_global_flag = mod_masscol_6
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_colonisation
+			}
+			every_province = {
+				limit = {
+						base_tax = 150
+				}
+				hidden_effect = {
+					add_base_tax = -150
+				}
+			}
+			clr_global_flag = mod_masscol_1
+			clr_global_flag = mod_masscol_2
+			clr_global_flag = mod_masscol_3
+			clr_global_flag = mod_masscol_4
+			clr_global_flag = mod_masscol_5
+			clr_global_flag = mod_masscol_6
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.10"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = europe }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_new.11"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = asia }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.12"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = africa }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.13"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = north_america }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.14"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = south_america }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.15"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						capital_scope = { continent = oceania }
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.16"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					not = {
+						or = {
+							capital_scope = { continent = europe }
+							capital_scope = { continent = asia }
+						}
+					}
+				}
+				every_owned_province = {
+					cede_province = observer
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.15"
+		hidden_effect = {
+			every_country = {
+				collapse_nation = yes
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.16"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						and = {
+							culture = PREV
+							owner = {
+								and = {
+									not = {
+										owned_by = PREV
+									}
+									ai = yes
+								}
+							}
+						}
+					}
+					cede_province = PREV
+					if = {
+						limit = {
+							not = {
+								is_core = PREV
+							}
+						}
+						add_core = PREV
+					}
+				}
+				every_province = {
+					limit = {
+						and = {
+							culture = PREV
+							is_empty = yes
+						}
+					}
+					cede_province = PREV
+					if = {
+						limit = {
+							not = {
+								is_core = PREV
+							}
+						}
+						add_core = PREV
+					}
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.10"
+		trigger = {
+			not = {
+				has_country_flag = mod_alwaysrebels
+			}
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = catus_alwaysrebels
+				duration = -1
+			}
+			set_country_flag = mod_alwaysrebels
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.11"
+		trigger = {
+			has_country_flag = mod_alwaysrebels
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_alwaysrebels
+			clr_country_flag = mod_alwaysrebels
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.12"
+		trigger = {
+			not = {
+				has_global_flag = mod_gloalwaysrebels
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				add_country_modifier = {
+					name = catus_alwaysrebels
+					duration = -1
+				}
+			}
+			set_global_flag = mod_gloalwaysrebels
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.13"
+		trigger = {
+			has_global_flag = mod_gloalwaysrebels
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_alwaysrebels
+			}
+			clr_global_flag = mod_gloalwaysrebels
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.6"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						and = {
+							or = {
+								owned_by = PREV
+								is_core = PREV
+								is_claim = PREV
+							}
+							is_capital = no
+						}
+					}
+					cede_province = observer
+					remove_core = PREV
+					remove_claim = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.7"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						or = {
+							is_core = PREV
+							is_claim = PREV
+							owned_by = PREV
+						}
+					}
+					cede_province = observer
+					remove_core = PREV
+					remove_claim = PREV
+				}
+			}
+			every_province = {
+				limit = {
+					is_empty = yes
+					or = {
+						continent = europe
+						continent = asia
+						continent = africa
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+				random_country = {
+					limit = {
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = random_target
+				}
+				cede_province = event_target:random_target
+				add_core = event_target:random_target
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.8"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						and = {
+							or = {
+								is_core = PREV
+								is_claim = PREV
+								owned_by = PREV
+							}
+						}
+					}
+					remove_core = PREV
+					remove_claim = PREV
+					cede_province = observer
+				}
+			}
+			
+			random_province = {
+				limit = {
+					and = {
+						or = {
+							continent = europe
+							continent = asia
+							continent = africa
+						}
+						not = {
+							region = british_isles_region
+							region = japan_region
+							region = east_africa_region
+						}
+						is_island = no
+					}
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+				
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				every_empty_neighbor_province = {
+					cede_province = event_target:test_target1
+					add_core = event_target:test_target1
+					change_culture = event_target:test_target1
+					change_religion = event_target:test_target1
+				}
+			}
+			set_variable = { which = counter value = 50 }
+			while = {
+				limit = {
+					check_variable = { which = counter value = 0 }
+				}
+
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+							tag = event_target:test_target1
+						}
+					}
+					save_event_target_as = test_target2
+				}
+				event_target:test_target1 = {
+					every_owned_province = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target2
+							add_core = event_target:test_target2
+							change_culture = event_target:test_target2
+							change_religion = event_target:test_target2
+						}
+					}
+				}
+				
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+							tag = event_target:test_target2
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				event_target:test_target2 = {
+					every_owned_province = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target1
+							add_core = event_target:test_target1
+							change_culture = event_target:test_target1
+							change_religion = event_target:test_target1
+						}
+					}
+				}
+				
+				subtract_variable = { which = counter value = 1 }
+			}
+			
+			
+			random_province = {
+				limit = {
+					or = {
+						continent = north_america
+						continent = south_america
+					}
+					is_island = no
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				every_empty_neighbor_province = {
+					cede_province = event_target:test_target1
+					add_core = event_target:test_target1
+					change_culture = event_target:test_target1
+					change_religion = event_target:test_target1
+				}
+			}
+			set_variable = { which = counter value = 50 }
+			while = {
+				limit = {
+					check_variable = { which = counter value = 0 }
+				}
+
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+							tag = event_target:test_target1
+						}
+					}
+					save_event_target_as = test_target2
+				}
+				event_target:test_target1 = {
+					every_owned_province = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target2
+							add_core = event_target:test_target2
+							change_culture = event_target:test_target2
+							change_religion = event_target:test_target2
+						}
+					}
+				}
+				
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+							tag = event_target:test_target2
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				event_target:test_target2 = {
+					every_owned_province = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target1
+							add_core = event_target:test_target1
+							change_culture = event_target:test_target1
+							change_religion = event_target:test_target1
+						}
+					}
+				}
+				
+				subtract_variable = { which = counter value = 1 }
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.9"
+		hidden_effect = {
+			every_country = {
+				every_province = {
+					limit = {
+						or = {
+							is_core = PREV
+							is_claim = PREV
+							owned_by = PREV
+						}
+					}
+					remove_core = PREV
+					remove_claim = PREV
+					cede_province = observer
+				}
+			}
+			
+			random_province = {
+				limit = {
+					is_empty = yes
+					or = {
+						continent = europe
+						continent = asia
+						continent = africa
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+
+			capital_scope = {
+				every_empty_neighbor_province = {
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
+			
+			capital_scope = {
+				every_neighbor_province = {
+					limit = {
+						controlled_by = ROOT
+					}
+					every_empty_neighbor_province = {
+						cede_province = ROOT
+						add_core = ROOT
+						change_culture = ROOT
+						change_religion = ROOT
+					}
+				}
+			}
+			
+			set_variable = {
+				which = variable_name
+				value = 500
+			}
+			
+			while = {
+				limit = {
+					check_variable = { which = variable_name value = 0 }
+				}
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = test_target1
+				}
+				random_province = {
+					limit = {
+						is_empty = yes
+						or = {
+							continent = europe
+							continent = asia
+							continent = africa
+							continent = north_america
+							continent = south_america
+							continent = oceania
+						}
+					}
+					cede_province = event_target:test_target1
+					add_core = event_target:test_target1
+					change_culture = event_target:test_target1
+					change_religion = event_target:test_target1
+				}
+				event_target:test_target1 = {
+					capital_scope = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target1
+							add_core = event_target:test_target1
+							change_culture = event_target:test_target1
+							change_religion = event_target:test_target1
+						}
+					}
+					capital_scope = {
+						every_neighbor_province = {
+							limit = {
+								controlled_by = event_target:test_target1
+							}
+							every_empty_neighbor_province = {
+								cede_province = event_target:test_target1
+								add_core = event_target:test_target1
+								change_culture = event_target:test_target1
+								change_religion = event_target:test_target1
+							}
+						}
+					}
+					
+				}
+
+				random_country = {
+					limit = {
+						exists = no
+						not = {
+							tag = REB
+							tag = NAT
+							tag = PIR
+						}
+					}
+					save_event_target_as = test_target2
+				}
+				random_province = {
+					limit = {
+						is_empty = yes
+						or = {
+							continent = europe
+							continent = asia
+							continent = africa
+							continent = north_america
+							continent = south_america
+							continent = oceania
+						}
+					}
+					cede_province = event_target:test_target2
+					add_core = event_target:test_target2
+					change_culture = event_target:test_target2
+					change_religion = event_target:test_target2
+				}
+				event_target:test_target2 = {
+					capital_scope = {
+						every_empty_neighbor_province = {
+							cede_province = event_target:test_target2
+							add_core = event_target:test_target2
+							change_culture = event_target:test_target2
+							change_religion = event_target:test_target2
+						}
+					}
+					capital_scope = {
+						every_neighbor_province = {
+							limit = {
+								controlled_by = event_target:test_target2
+							}
+							every_empty_neighbor_province = {
+								cede_province = event_target:test_target2
+								add_core = event_target:test_target2
+								change_culture = event_target:test_target2
+								change_religion = event_target:test_target2
+							}
+						}
+					}
+				}
+
+				subtract_variable = { which = variable_name value = 1 }
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.14"
+		trigger = {
+			not = {
+				has_country_flag = mod_allpowerreduction
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				add_country_modifier = {
+					name = catus_powerreduction
+					duration = -1
+				}
+				set_primitive = no
+			}
+			set_global_flag = mod_allpowerreduction
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_colonisation.15"
+		trigger = {
+			has_country_flag = mod_allpowerreduction
+		}
+		hidden_effect = {
+			every_country = {
+				remove_country_modifier = catus_powerreduction
+			}
+			clr_global_flag = mod_allpowerreduction
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+	option = {
+		name = "catus_events_colonisation.16"
+		hidden_effect = {
+			every_country = {
+				add_adm_tech = 99
+				add_dip_tech = 99
+				add_mil_tech = 99
+			}
+		}
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.3"
+		trigger = {
+			not = {
+				has_country_flag = mod_negpowerreduction
+			}
+		}
+		add_country_modifier = {
+			name = catus_negpowerreduction
+			duration = -1
+		}
+		set_country_flag = mod_negpowerreduction
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.4"
+		trigger = {
+			has_country_flag = mod_negpowerreduction
+		}
+		remove_country_modifier = catus_negpowerreduction
+		clr_country_flag = mod_negpowerreduction
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.5"
+		trigger = {
+			not = {
+				has_country_flag = mod_nomadic_conquest
+			}
+		}
+		add_country_modifier = {
+			name = nomadic_conquest
+			duration = -1
+		}
+		set_country_flag = nomadic_conquest
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.6"
+		trigger = {
+			has_country_flag = mod_nomadic_conquest
+		}
+		remove_country_modifier = nomadic_conquest
+		clr_country_flag = mod_nomadic_conquest
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_new.7"
+		trigger = {
+			not = {
+				primary_culture = israeli 
+			}
+		}
+		change_primary_culture = israeli
+		country_event = {
+			id = catus_events_colonisation.1
+		}
+	}
+
+}

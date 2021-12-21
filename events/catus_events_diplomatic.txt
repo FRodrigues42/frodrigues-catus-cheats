@@ -1,0 +1,1061 @@
+namespace = catus_events_diplomatic
+
+country_event = {
+	id = catus_events_diplomatic.1
+	title = "catus_events_diplomatic.title"
+	desc = "catus_events_diplomatic.desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			save_global_event_target_as = capital_target
+		}
+	}
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_diplomatic.34"
+		trigger = {
+			or = {
+				any_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion
+					}
+				}
+				any_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion_max
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion
+					}
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion
+				}
+			}
+			every_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion_max
+					}
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.33"
+		trigger = {
+			is_subject = yes
+		}
+		grant_independence = yes
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.19"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -1000
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.20"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_subject_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = cheat_add_opinion_max
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = cheat_add_opinion_max
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.25"
+		trigger = {
+			not = {
+				has_country_flag = mod_aereduction
+			}
+		}
+		add_country_modifier = {
+			name = catus_aereduction
+			duration = -1
+		}
+		set_country_flag = mod_aereduction
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.26"
+		trigger = {
+			has_country_flag = mod_aereduction
+		}
+		remove_country_modifier = catus_aereduction
+		clr_country_flag = mod_aereduction
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.27"
+		trigger = {
+			not = {
+				has_country_flag = mod_moresubjects
+			}
+		}
+		add_country_modifier = {
+			name = catus_moresubjects
+			duration = -1
+		}
+		set_country_flag = mod_moresubjects
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.28"
+		trigger = {
+			has_country_flag = mod_moresubjects
+		}
+		remove_country_modifier = catus_moresubjects
+		clr_country_flag = mod_moresubjects
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.22"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.21
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.32"
+		country_event = {
+			id = catus_events_sub_formation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.21"
+		every_country = {
+			limit = {
+				capital_scope = { region = event_target:capital_target }
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = daimyo_vassal
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.23"
+		every_country = {
+			limit = {
+				capital_scope = { superregion = ROOT }
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = daimyo_vassal
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.31"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_subject_country = {
+			add_idea_group = exploration_ideas
+			add_idea = colonial_ventures
+			add_idea = quest_for_the_new_world
+			add_idea = overseas_exploration
+			add_idea = land_of_opportunity
+			add_idea = vice_roys
+			add_idea = free_colonies
+			add_idea = global_empire
+			add_idea_group = expansion_ideas
+			add_idea = additional_colonists
+			add_idea = additional_merchants
+			add_idea = faster_colonists
+			add_idea = factories
+			add_idea = additional_diplomats
+			add_idea = general_colonization_law
+			add_idea = competetive_merchants
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.2"
+		release_all_subjects = yes
+		release_all_subjects = yes
+		release_all_subjects = yes
+		release_all_subjects = yes
+		release_all_subjects = yes
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.14"
+		hidden_effect = {
+			every_subject_country = {
+				every_owned_province = {
+					cede_province = ROOT
+					if = {
+						limit = {
+							not = {
+								is_core = ROOT
+							}
+						}
+						add_core = ROOT
+					}
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.10"
+		hidden_effect = {
+			every_country = {
+				create_alliance = ROOT
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.11"
+		hidden_effect = {
+			every_country = {
+				every_country = {
+					limit = {
+						not = {
+							alliance_with = PREV
+						}
+					}
+					create_alliance = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.12"
+		hidden_effect = {
+			every_province = {
+				add_permanent_claim = ROOT
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.13"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { continent = europe }
+				}
+				europe = {
+					add_permanent_claim = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.17"
+		trigger = {
+			any_country = {
+				coalition_target = ROOT
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					coalition_target = ROOT
+				}
+				declare_war = ROOT
+				white_peace = ROOT
+				remove_opinion = {
+					who = ROOT
+					modifier = had_war_with_us
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = had_war_with_us
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = declared_war_on_us
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.29"
+		trigger = {
+			not = {
+				has_country_flag = mod_diprep
+			}
+		}
+		add_country_modifier = {
+			name = catus_diprep
+			duration = -1
+		}
+		set_country_flag = mod_diprep
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.30"
+		trigger = {
+			has_country_flag = mod_diprep
+		}
+		remove_country_modifier = catus_diprep
+		clr_country_flag = mod_diprep
+		country_event = {
+			id = catus_events_diplomatic.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.99"
+		country_event = {
+			id = catus_events_formation.1
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_diplomatic.91
+	title = "catus_events_diplomatic.title"
+	desc = "catus_events_diplomatic.desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			save_global_event_target_as = capital_target
+		}
+	}
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_diplomatic.34"
+		trigger = {
+			or = {
+				any_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion
+					}
+				}
+				any_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion_max
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion
+					}
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion
+				}
+			}
+			every_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cheat_add_opinion_max
+					}
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.33"
+		trigger = {
+			is_subject = yes
+		}
+		grant_independence = yes
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.19"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -1000
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.20"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_subject_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = cheat_add_opinion_max
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = cheat_add_opinion_max
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.25"
+		trigger = {
+			not = {
+				has_country_flag = mod_aereduction
+			}
+		}
+		add_country_modifier = {
+			name = catus_aereduction
+			duration = -1
+		}
+		set_country_flag = mod_aereduction
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.26"
+		trigger = {
+			has_country_flag = mod_aereduction
+		}
+		remove_country_modifier = catus_aereduction
+		clr_country_flag = mod_aereduction
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.27"
+		trigger = {
+			not = {
+				has_country_flag = mod_moresubjects
+			}
+		}
+		add_country_modifier = {
+			name = catus_moresubjects
+			duration = -1
+		}
+		set_country_flag = mod_moresubjects
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.28"
+		trigger = {
+			has_country_flag = mod_moresubjects
+		}
+		remove_country_modifier = catus_moresubjects
+		clr_country_flag = mod_moresubjects
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.22"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.21
+		}
+	}
+
+	option = {
+		name = "catus_events_diplomatic.32"
+		country_event = {
+			id = catus_events_sub_formation.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.21"
+		every_country = {
+			limit = {
+				capital_scope = { region = event_target:capital_target }
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = daimyo_vassal
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.23"
+		every_country = {
+			limit = {
+				capital_scope = { superregion = ROOT }
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = daimyo_vassal
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.31"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_subject_country = {
+			add_idea_group = exploration_ideas
+			add_idea = colonial_ventures
+			add_idea = quest_for_the_new_world
+			add_idea = overseas_exploration
+			add_idea = land_of_opportunity
+			add_idea = vice_roys
+			add_idea = free_colonies
+			add_idea = global_empire
+			add_idea_group = expansion_ideas
+			add_idea = additional_colonists
+			add_idea = additional_merchants
+			add_idea = faster_colonists
+			add_idea = factories
+			add_idea = additional_diplomats
+			add_idea = general_colonization_law
+			add_idea = competetive_merchants
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.2"
+		release_all_subjects = yes
+		release_all_subjects = yes
+		release_all_subjects = yes
+		release_all_subjects = yes
+		release_all_subjects = yes
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.14"
+		hidden_effect = {
+			every_subject_country = {
+				every_owned_province = {
+					cede_province = ROOT
+					if = {
+						limit = {
+							not = {
+								is_core = ROOT
+							}
+						}
+						add_core = ROOT
+					}
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.10"
+		hidden_effect = {
+			every_country = {
+				create_alliance = ROOT
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.11"
+		hidden_effect = {
+			every_country = {
+				every_country = {
+					limit = {
+						not = {
+							alliance_with = PREV
+						}
+					}
+					create_alliance = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.12"
+		hidden_effect = {
+			every_province = {
+				add_permanent_claim = ROOT
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.13"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { continent = europe }
+				}
+				europe = {
+					add_permanent_claim = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.17"
+		trigger = {
+			any_country = {
+				coalition_target = ROOT
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					coalition_target = ROOT
+				}
+				declare_war = ROOT
+				white_peace = ROOT
+				remove_opinion = {
+					who = ROOT
+					modifier = had_war_with_us
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = had_war_with_us
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = declared_war_on_us
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.29"
+		trigger = {
+			not = {
+				has_country_flag = mod_diprep
+			}
+		}
+		add_country_modifier = {
+			name = catus_diprep
+			duration = -1
+		}
+		set_country_flag = mod_diprep
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.30"
+		trigger = {
+			has_country_flag = mod_diprep
+		}
+		remove_country_modifier = catus_diprep
+		clr_country_flag = mod_diprep
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_diplomatic.99"
+		country_event = {
+			id = catus_events_formation.1
+		}
+	}
+}
+################################################################################
+country_event = {
+	id = catus_events_diplomatic.21
+	title = "catus_events_diplomatic.101.title"
+	desc = "catus_events_diplomatic.101.desc"
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_subject.1"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = vassal
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_subject.2"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = march
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_subject.3"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = daimyo_vassal
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_subject.4"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = personal_union
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_subject.5"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = client_vassal
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_subject.6"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = client_march
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_subject.7"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = colony
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_subject.8"
+		trigger = {
+			any_country = {
+				is_subject_of = ROOT
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+}

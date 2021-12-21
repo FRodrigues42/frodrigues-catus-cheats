@@ -1,0 +1,925 @@
+cctakeover = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		FROM = {
+			every_owned_province = {
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+		}
+    }
+    
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccreligion = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			any_owned_province = {
+				not = { religion = ROOT }
+			}
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		FROM = {
+			change_religion = ROOT
+			every_owned_province = {
+				limit = {
+					not = { religion = ROOT }
+				}
+				change_religion = ROOT
+			}
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccculture = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			any_owned_province = {
+				not = { culture_group = ROOT }
+			}
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		FROM = {
+			change_primary_culture = ROOT
+			every_owned_province = {
+				limit = {
+					not = { culture_group = ROOT }
+				}
+				change_culture = ROOT
+			}
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+# cccore = {
+	# category = cheats
+	
+    # require_acceptance = no
+    
+    # is_visible = {
+		# FROM = {
+			# every_owned_province = {
+				# limit = {
+					# not = {
+						# is_core = ROOT
+					# }
+				# }
+			# }
+		# }
+		# not = {
+			# ai = yes
+		# }
+		# has_country_flag = cheats_on2
+    # }
+    
+    # is_allowed = {
+		# not = {
+			# ai = yes
+		# }
+		# has_country_flag = cheats_on2
+    # }
+    
+    # on_accept = {
+		# FROM = {
+			# every_owned_province = {
+				# limit = {
+					# not = {
+						# is_core = ROOT
+					# }
+				# }
+				# add_core = ROOT
+			# }
+		# }
+	# }
+	
+    # ai_will_do = {
+        # always = no
+    # }
+# }
+
+ccremove = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		FROM = {
+			every_owned_province = {
+				cede_province = observer
+			}
+		}
+		every_province = {
+			add_colonysize = -1000
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccvassal = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			not = { vassal_of = ROOT }
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		vassalize = FROM
+		# create_subject = {
+		# 	subject_type = vassal
+		# 	subject = FROM
+		# }
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccpunionjunior = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			NOT = { junior_union_with = ROOT }
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		create_union = FROM
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccalliance = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			not = { alliance_with = ROOT }
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		create_alliance = FROM
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccpeace = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			war_with = ROOT
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		white_peace = FROM
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccindependence = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			is_subject = yes
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		FROM = {
+			grant_independence = yes
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccopiniontrust = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		add_trust = {
+			who = FROM
+			value = 100
+			mutual = yes
+		}
+		add_opinion = {
+			who = FROM
+			modifier = cheat_add_opinion
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = cheat_add_opinion
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccopiniontrustremove = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cheat_add_opinion
+			}
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		remove_opinion = {
+			who = FROM
+			modifier = cheat_add_opinion
+		}
+		reverse_remove_opinion = {
+			who = FROM
+			modifier = cheat_add_opinion
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccopiniontrustmax = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		add_trust = {
+			who = FROM
+			value = 100
+			mutual = yes
+		}
+		add_opinion = {
+			who = FROM
+			modifier = cheat_add_opinion_max
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = cheat_add_opinion_max
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccopiniontrustremovemax = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cheat_add_opinion_max
+			}
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		remove_opinion = {
+			who = FROM
+			modifier = cheat_add_opinion_max
+		}
+		reverse_remove_opinion = {
+			who = FROM
+			modifier = cheat_add_opinion_max
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccreleaseallnations = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			num_of_subjects = 1
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		FROM = {
+			release_all_subjects = yes
+			release_all_subjects = yes
+			release_all_subjects = yes
+			release_all_subjects = yes
+			release_all_subjects = yes
+			release_all_subjects = yes
+			release_all_subjects = yes
+			release_all_subjects = yes
+			release_all_subjects = yes
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccforcepeace = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		FROM = {
+			is_at_war = yes
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		every_country = {
+			limit = {
+				war_with = FROM
+			}
+			FROM = {
+				white_peace = PREV
+			}
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+cctakeoverculture = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		any_province = {
+			culture = FROM
+			not = {
+				owned_by = FROM
+				owned_by = ROOT
+			}
+		}
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		every_province = {
+			limit = {
+				and = {
+					culture = FROM
+					not = {
+						owned_by = FROM
+						owned_by = ROOT
+					}
+				}
+			}
+			cede_province = FROM
+			if = {
+				limit = {
+					not = {
+						is_core = FROM
+					}
+				}
+				add_core = FROM
+			}
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+cctagchange = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		switch_tag = FROM
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+cckillunits = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		every_province = {
+			kill_units = {
+				who = FROM
+			}
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+ccspawnrebels = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		FROM = {
+			every_owned_province = {
+				create_revolt = 100
+			}
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+cckillleader = {
+	category = cheats
+	
+    require_acceptance = no
+    
+    is_visible = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    is_allowed = {
+		not = {
+			ai = yes
+		}
+		has_country_flag = cheats_on2
+    }
+    
+    on_accept = {
+		FROM = {
+			kill_ruler = yes
+			kill_heir = yes
+			define_ruler = {
+				name = "Interregnum"
+				regent = yes
+				adm = 0
+				dip = 0
+				mil = 0
+			}
+		}
+	}
+	
+    ai_will_do = {
+        always = no
+    }
+}
+
+# cccolonisationbonus = {
+# 	category = cheats
+	
+#     require_acceptance = no
+    
+#     is_visible = {
+# 		FROM = {
+# 			not = {
+# 				has_country_modifier = catus_colonisation
+# 			}
+# 		}
+# 		not = {
+# 			ai = yes
+# 		}
+# 		has_country_flag = cheats_on2
+#     }
+    
+#     is_allowed = {
+# 		not = {
+# 			ai = yes
+# 		}
+# 		has_country_flag = cheats_on2
+#     }
+    
+#     on_accept = {
+# 		FROM = {
+# 			add_country_modifier = {
+# 				name = catus_colonisation
+# 				duration = -1
+# 			}
+# 		}
+# 	}
+	
+#     ai_will_do = {
+#         always = no
+#     }
+# }
+
+# cccolonisationbonusremove = {
+# 	category = cheats
+	
+#     require_acceptance = no
+    
+#     is_visible = {
+# 		FROM = {
+# 			has_country_modifier = catus_colonisation
+# 		}
+# 		not = {
+# 			ai = yes
+# 		}
+# 		has_country_flag = cheats_on2
+#     }
+    
+#     is_allowed = {
+# 		not = {
+# 			ai = yes
+# 		}
+# 		has_country_flag = cheats_on2
+#     }
+    
+#     on_accept = {
+# 		FROM = {
+# 			remove_country_modifier = catus_colonisation
+# 		}
+# 	}
+	
+#     ai_will_do = {
+#         always = no
+#     }
+# }
+
+##################################################################################################################################################################################################################################################################################################################################################################################
+# ccmingsplosion = {
+# 	category = cheats
+	
+#     require_acceptance = no
+    
+#     is_visible = {
+# 		not = {
+# 			ai = yes
+# 		}
+# 		has_country_flag = cheats_on2
+#     }
+    
+#     is_allowed = {
+# 		not = {
+# 			ai = yes
+# 		}
+# 		has_country_flag = cheats_on2
+#     }
+    
+#     on_accept = {
+# 		every_country = {
+# 			limit = {
+# 				exists = no
+# 			}
+# 			FROM = {
+# 				release = PREV
+# 			}
+# 		}
+# 	}
+	
+#     ai_will_do = {
+#         always = no
+#     }
+# }
+
+# cccollapsenation = {
+# 	category = cheats
+	
+#     require_acceptance = no
+    
+#     is_visible = {
+# 		not = {
+# 			ai = yes
+# 		}
+# 		has_country_flag = cheats_on2
+#     }
+    
+#     is_allowed = {
+# 		not = {
+# 			ai = yes
+# 		}
+# 		has_country_flag = cheats_on2
+#     }
+    
+#     on_accept = {
+# 		FROM = {
+# 			collapse_nation = yes
+# 		}
+# 	}
+	
+#     ai_will_do = {
+#         always = no
+#     }
+# }

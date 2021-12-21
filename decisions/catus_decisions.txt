@@ -1,0 +1,363 @@
+country_decisions = {
+
+	catus_toggle2_on = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+				has_country_flag = cheats_on2
+			}
+		}
+		allow = {
+			not = {
+				ai = yes
+				has_country_flag = cheats_on2
+			}
+		}
+		effect = {
+			set_country_flag = cheats_on2
+			set_global_flag = first_on
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_toggle2_off = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on2
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on2
+		}
+		effect = {
+			clr_country_flag = cheats_on2
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_toggle_on = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+				has_country_flag = cheats_on
+			}
+		}
+		allow = {
+			not = {
+				ai = yes
+				has_country_flag = cheats_on
+			}
+		}
+		effect = {
+			set_country_flag = cheats_on
+#			if = {
+#				limit = { not = { has_global_flag = first_on } }
+#				country_event = { id = catus_events_changelog.1 }
+#			}
+			set_global_flag = first_on
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_toggle_off = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			clr_country_flag = cheats_on
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_common = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_common.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_control = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_control.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_military = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_military.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_events_culgovrel = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_culgovrel.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_events_provinces = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_provinces.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_events_hreeur = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_hreeur.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	catus_events_diplomatic = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_diplomatic.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_events_colonisation = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_colonisation.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_events_reform = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+			is_primitive = yes
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+			is_primitive = yes
+		}
+		effect = {
+			country_event = { id = catus_events_reform.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_remove = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_remove.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_modifier2 = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_modifier.2 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	catus_new = {
+		major = yes
+		potential = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		allow = {
+			not = {
+				ai = yes
+			}
+			has_country_flag = cheats_on
+		}
+		effect = {
+			country_event = { id = catus_events_new.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

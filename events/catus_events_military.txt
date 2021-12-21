@@ -1,0 +1,1207 @@
+namespace = catus_events_military
+
+country_event = {
+	id = catus_events_military.1
+	title = "catus_events_military.title"
+	desc = "catus_events_military.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_military.1"
+		define_explorer = {
+			fire = 9999
+			shock = 9999
+			manuever = 9999
+			siege = 9999
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.2"
+		define_conquistador = {
+			fire = 9999
+			shock = 9999
+			manuever = 9999
+			siege = 9999
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.1a"
+		define_admiral = {
+			fire = 9999
+			shock = 9999
+			manuever = 9999
+			siege = 9999
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.2a"
+		define_general = {
+			fire = 9999
+			shock = 9999
+			manuever = 9999
+			siege = 9999
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.27"
+		define_explorer = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.28"
+		define_conquistador = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.29"
+		define_admiral = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.30"
+		define_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.3"
+		capital_scope = {
+			hidden_effect = {
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+			}
+			infantry = ROOT
+			cavalry = ROOT
+			artillery = ROOT
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.4"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+				region = capital
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				region = capital
+			}
+			hidden_effect = {
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+			}
+			heavy_ship = ROOT
+			light_ship = ROOT
+			galley = ROOT
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.5"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+				region = capital
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				region = capital
+			}
+			hidden_effect = {
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+			}
+			transport = ROOT
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.6"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			hidden_effect = {
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+			}
+			heavy_ship = ROOT
+			light_ship = ROOT
+			galley = ROOT
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.7"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			hidden_effect = {
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+			}
+			transport = ROOT
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.21"
+		add_manpower = 100
+		add_sailors = 10000
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.8"
+		trigger = {
+			not = {
+				has_country_flag = mod_military
+			}
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = catus_lmorale
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_nmorale
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_infantry
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_cavalry
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_artillery
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_hship
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_lship
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_galley
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_transport
+				duration = -1
+			}
+			set_country_flag = mod_military
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.9"
+		trigger = {
+			has_country_flag = mod_military
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_lmorale
+			remove_country_modifier = catus_nmorale
+			remove_country_modifier = catus_infantry
+			remove_country_modifier = catus_cavalry
+			remove_country_modifier = catus_artillery
+			remove_country_modifier = catus_hship
+			remove_country_modifier = catus_lship
+			remove_country_modifier = catus_galley
+			remove_country_modifier = catus_transport
+			clr_country_flag = mod_military
+		}
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.10"
+		trigger = {
+			not = {
+				has_country_flag = mod_military
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.101
+			}
+			set_country_flag = mod_military
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.26"
+		trigger = {
+			not = {army_professionalism = 1}
+		}
+		add_army_professionalism = 1
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.24"
+		country_event = {
+			id = catus_events_units.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.22"
+		trigger = {
+			not = {
+				has_country_flag = mod_movementspeed
+			}
+		}
+		add_country_modifier = {
+			name = catus_movementspeed
+			duration = -1
+		}
+		set_country_flag = mod_movementspeed
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.23"
+		trigger = {
+			has_country_flag = mod_movementspeed
+		}
+		remove_country_modifier = catus_movementspeed
+		clr_country_flag = mod_movementspeed
+		country_event = {
+			id = catus_events_military.91
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.91
+	title = "catus_events_military.title"
+	desc = "catus_events_military.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "catus_events_military.1"
+		define_explorer = {
+			fire = 9999
+			shock = 9999
+			manuever = 9999
+			siege = 9999
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.2"
+		define_conquistador = {
+			fire = 9999
+			shock = 9999
+			manuever = 9999
+			siege = 9999
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.1a"
+		define_admiral = {
+			fire = 9999
+			shock = 9999
+			manuever = 9999
+			siege = 9999
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.2a"
+		define_general = {
+			fire = 9999
+			shock = 9999
+			manuever = 9999
+			siege = 9999
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.27"
+		define_explorer = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.28"
+		define_conquistador = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.29"
+		define_admiral = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.30"
+		define_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.3"
+		capital_scope = {
+			hidden_effect = {
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+			}
+			infantry = ROOT
+			cavalry = ROOT
+			artillery = ROOT
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.4"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+				region = capital
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				region = capital
+			}
+			hidden_effect = {
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+			}
+			heavy_ship = ROOT
+			light_ship = ROOT
+			galley = ROOT
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.5"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+				region = capital
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				region = capital
+			}
+			hidden_effect = {
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+			}
+			transport = ROOT
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.6"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			hidden_effect = {
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				heavy_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+			}
+			heavy_ship = ROOT
+			light_ship = ROOT
+			galley = ROOT
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.7"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			hidden_effect = {
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+			}
+			transport = ROOT
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.21"
+		add_manpower = 100
+		add_sailors = 10000
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.8"
+		trigger = {
+			not = {
+				has_country_flag = mod_military
+			}
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = catus_lmorale
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_nmorale
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_infantry
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_cavalry
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_artillery
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_hship
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_lship
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_galley
+				duration = -1
+			}
+			add_country_modifier = {
+				name = catus_transport
+				duration = -1
+			}
+			set_country_flag = mod_military
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.9"
+		trigger = {
+			has_country_flag = mod_military
+		}
+		hidden_effect = {
+			remove_country_modifier = catus_lmorale
+			remove_country_modifier = catus_nmorale
+			remove_country_modifier = catus_infantry
+			remove_country_modifier = catus_cavalry
+			remove_country_modifier = catus_artillery
+			remove_country_modifier = catus_hship
+			remove_country_modifier = catus_lship
+			remove_country_modifier = catus_galley
+			remove_country_modifier = catus_transport
+			clr_country_flag = mod_military
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.10"
+		trigger = {
+			not = {
+				has_country_flag = mod_military
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.101
+			}
+			set_country_flag = mod_military
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.26"
+		trigger = {
+			not = {army_professionalism = 1}
+		}
+		add_army_professionalism = 1
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.24"
+		country_event = {
+			id = catus_events_units.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.22"
+		trigger = {
+			not = {
+				has_country_flag = mod_movementspeed
+			}
+		}
+		add_country_modifier = {
+			name = catus_movementspeed
+			duration = -1
+		}
+		set_country_flag = mod_movementspeed
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.23"
+		trigger = {
+			has_country_flag = mod_movementspeed
+		}
+		remove_country_modifier = catus_movementspeed
+		clr_country_flag = mod_movementspeed
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+}
+######################################################################################################
+country_event = {
+	id = catus_events_military.101
+	title = "catus_events_military.101.title"
+	desc = "catus_events_military.101.desc"
+	picture = LAND_MILITARY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.102
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.101"
+		add_country_modifier = {
+			name = catus_lmorale
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.102
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.102
+	title = "catus_events_military.102.title"
+	desc = "catus_events_military.102.desc"
+	picture = NAVAL_MILITARY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.103
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.102"
+		add_country_modifier = {
+			name = catus_nmorale
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.103
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.103
+	title = "catus_events_military.103.title"
+	desc = "catus_events_military.103.desc"
+	picture = LAND_MILITARY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.104
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.103"
+		add_country_modifier = {
+			name = catus_infantry
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.104
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.104
+	title = "catus_events_military.104.title"
+	desc = "catus_events_military.104.desc"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.105
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.104"
+		add_country_modifier = {
+			name = catus_cavalry
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.105
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.105
+	title = "catus_events_military.105.title"
+	desc = "catus_events_military.105.desc"
+	picture = INVENTION_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.106
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.105"
+		add_country_modifier = {
+			name = catus_artillery
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.106
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.106
+	title = "catus_events_military.106.title"
+	desc = "catus_events_military.106.desc"
+	picture = SHIP_SAILING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.107
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.106"
+		add_country_modifier = {
+			name = catus_hship
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.107
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.107
+	title = "catus_events_military.107.title"
+	desc = "catus_events_military.107.desc"
+	picture = HARBOUR_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.108
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.107"
+		add_country_modifier = {
+			name = catus_lship
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.108
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.108
+	title = "catus_events_military.108.title"
+	desc = "catus_events_military.108.desc"
+	picture = SHIP_SAILING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.109
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.108"
+		add_country_modifier = {
+			name = catus_galley
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = catus_events_military.109
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_military.109
+	title = "catus_events_military.109.title"
+	desc = "catus_events_military.109.desc"
+	picture = NAVAL_MILITARY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_military_exit"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.109"
+		add_country_modifier = {
+			name = catus_transport
+			duration = -1
+		}
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+}

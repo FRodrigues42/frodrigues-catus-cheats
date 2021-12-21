@@ -1,0 +1,4779 @@
+namespace = catus_events_units
+
+country_event = {
+	id = catus_events_units.1
+	title = "catus_events_units.title"
+	desc = "catus_events_units.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_military.1
+		}
+	}
+
+	option = {
+			name = "catus_events_units.1"
+			capital_scope = {
+					hidden_effect = {
+							adal_guerilla_warfare = ROOT
+							adal_guerilla_warfare = ROOT
+							adal_guerilla_warfare = ROOT
+							adal_guerilla_warfare = ROOT
+							adal_guerilla_warfare = ROOT
+							adal_guerilla_warfare = ROOT
+							adal_guerilla_warfare = ROOT
+							adal_guerilla_warfare = ROOT
+							adal_guerilla_warfare = ROOT
+					}
+					adal_guerilla_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.2"
+			capital_scope = {
+					hidden_effect = {
+							adal_gunpowder_warfare = ROOT
+							adal_gunpowder_warfare = ROOT
+							adal_gunpowder_warfare = ROOT
+							adal_gunpowder_warfare = ROOT
+							adal_gunpowder_warfare = ROOT
+							adal_gunpowder_warfare = ROOT
+							adal_gunpowder_warfare = ROOT
+							adal_gunpowder_warfare = ROOT
+							adal_gunpowder_warfare = ROOT
+					}
+					adal_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.3"
+			capital_scope = {
+					hidden_effect = {
+							african_abyssinian_cavalry = ROOT
+							african_abyssinian_cavalry = ROOT
+							african_abyssinian_cavalry = ROOT
+							african_abyssinian_cavalry = ROOT
+							african_abyssinian_cavalry = ROOT
+							african_abyssinian_cavalry = ROOT
+							african_abyssinian_cavalry = ROOT
+							african_abyssinian_cavalry = ROOT
+							african_abyssinian_cavalry = ROOT
+					}
+					african_abyssinian_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.4"
+			capital_scope = {
+					hidden_effect = {
+							african_abyssinian_light_cavalry = ROOT
+							african_abyssinian_light_cavalry = ROOT
+							african_abyssinian_light_cavalry = ROOT
+							african_abyssinian_light_cavalry = ROOT
+							african_abyssinian_light_cavalry = ROOT
+							african_abyssinian_light_cavalry = ROOT
+							african_abyssinian_light_cavalry = ROOT
+							african_abyssinian_light_cavalry = ROOT
+							african_abyssinian_light_cavalry = ROOT
+					}
+					african_abyssinian_light_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.5"
+			capital_scope = {
+					hidden_effect = {
+							african_clubmen = ROOT
+							african_clubmen = ROOT
+							african_clubmen = ROOT
+							african_clubmen = ROOT
+							african_clubmen = ROOT
+							african_clubmen = ROOT
+							african_clubmen = ROOT
+							african_clubmen = ROOT
+							african_clubmen = ROOT
+					}
+					african_clubmen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.6"
+			capital_scope = {
+					hidden_effect = {
+							african_cuirassier = ROOT
+							african_cuirassier = ROOT
+							african_cuirassier = ROOT
+							african_cuirassier = ROOT
+							african_cuirassier = ROOT
+							african_cuirassier = ROOT
+							african_cuirassier = ROOT
+							african_cuirassier = ROOT
+							african_cuirassier = ROOT
+					}
+					african_cuirassier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.7"
+			capital_scope = {
+					hidden_effect = {
+							african_dragoon = ROOT
+							african_dragoon = ROOT
+							african_dragoon = ROOT
+							african_dragoon = ROOT
+							african_dragoon = ROOT
+							african_dragoon = ROOT
+							african_dragoon = ROOT
+							african_dragoon = ROOT
+							african_dragoon = ROOT
+					}
+					african_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.8"
+			capital_scope = {
+					hidden_effect = {
+							african_hill_warfare = ROOT
+							african_hill_warfare = ROOT
+							african_hill_warfare = ROOT
+							african_hill_warfare = ROOT
+							african_hill_warfare = ROOT
+							african_hill_warfare = ROOT
+							african_hill_warfare = ROOT
+							african_hill_warfare = ROOT
+							african_hill_warfare = ROOT
+					}
+					african_hill_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.9"
+			capital_scope = {
+					hidden_effect = {
+							african_hussar = ROOT
+							african_hussar = ROOT
+							african_hussar = ROOT
+							african_hussar = ROOT
+							african_hussar = ROOT
+							african_hussar = ROOT
+							african_hussar = ROOT
+							african_hussar = ROOT
+							african_hussar = ROOT
+					}
+					african_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.10"
+			capital_scope = {
+					hidden_effect = {
+							african_mandelaku = ROOT
+							african_mandelaku = ROOT
+							african_mandelaku = ROOT
+							african_mandelaku = ROOT
+							african_mandelaku = ROOT
+							african_mandelaku = ROOT
+							african_mandelaku = ROOT
+							african_mandelaku = ROOT
+							african_mandelaku = ROOT
+					}
+					african_mandelaku = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.11"
+			capital_scope = {
+					hidden_effect = {
+							african_mossi_horsemen = ROOT
+							african_mossi_horsemen = ROOT
+							african_mossi_horsemen = ROOT
+							african_mossi_horsemen = ROOT
+							african_mossi_horsemen = ROOT
+							african_mossi_horsemen = ROOT
+							african_mossi_horsemen = ROOT
+							african_mossi_horsemen = ROOT
+							african_mossi_horsemen = ROOT
+					}
+					african_mossi_horsemen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.12"
+			capital_scope = {
+					hidden_effect = {
+							african_somali_cavalry = ROOT
+							african_somali_cavalry = ROOT
+							african_somali_cavalry = ROOT
+							african_somali_cavalry = ROOT
+							african_somali_cavalry = ROOT
+							african_somali_cavalry = ROOT
+							african_somali_cavalry = ROOT
+							african_somali_cavalry = ROOT
+							african_somali_cavalry = ROOT
+					}
+					african_somali_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.13"
+			capital_scope = {
+					hidden_effect = {
+							african_spearmen = ROOT
+							african_spearmen = ROOT
+							african_spearmen = ROOT
+							african_spearmen = ROOT
+							african_spearmen = ROOT
+							african_spearmen = ROOT
+							african_spearmen = ROOT
+							african_spearmen = ROOT
+							african_spearmen = ROOT
+					}
+					african_spearmen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.14"
+			capital_scope = {
+					hidden_effect = {
+							african_swarm = ROOT
+							african_swarm = ROOT
+							african_swarm = ROOT
+							african_swarm = ROOT
+							african_swarm = ROOT
+							african_swarm = ROOT
+							african_swarm = ROOT
+							african_swarm = ROOT
+							african_swarm = ROOT
+					}
+					african_swarm = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.15"
+			capital_scope = {
+					hidden_effect = {
+							african_tuareg_cavalry = ROOT
+							african_tuareg_cavalry = ROOT
+							african_tuareg_cavalry = ROOT
+							african_tuareg_cavalry = ROOT
+							african_tuareg_cavalry = ROOT
+							african_tuareg_cavalry = ROOT
+							african_tuareg_cavalry = ROOT
+							african_tuareg_cavalry = ROOT
+							african_tuareg_cavalry = ROOT
+					}
+					african_tuareg_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.16"
+			capital_scope = {
+					hidden_effect = {
+							african_western_franchise_warfare = ROOT
+							african_western_franchise_warfare = ROOT
+							african_western_franchise_warfare = ROOT
+							african_western_franchise_warfare = ROOT
+							african_western_franchise_warfare = ROOT
+							african_western_franchise_warfare = ROOT
+							african_western_franchise_warfare = ROOT
+							african_western_franchise_warfare = ROOT
+							african_western_franchise_warfare = ROOT
+					}
+					african_western_franchise_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.17"
+			capital_scope = {
+					hidden_effect = {
+							afsharid_reformed_infantry = ROOT
+							afsharid_reformed_infantry = ROOT
+							afsharid_reformed_infantry = ROOT
+							afsharid_reformed_infantry = ROOT
+							afsharid_reformed_infantry = ROOT
+							afsharid_reformed_infantry = ROOT
+							afsharid_reformed_infantry = ROOT
+							afsharid_reformed_infantry = ROOT
+							afsharid_reformed_infantry = ROOT
+					}
+					afsharid_reformed_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.18"
+			capital_scope = {
+					hidden_effect = {
+							afsharid_reformed = ROOT
+							afsharid_reformed = ROOT
+							afsharid_reformed = ROOT
+							afsharid_reformed = ROOT
+							afsharid_reformed = ROOT
+							afsharid_reformed = ROOT
+							afsharid_reformed = ROOT
+							afsharid_reformed = ROOT
+							afsharid_reformed = ROOT
+					}
+					afsharid_reformed = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.19"
+			capital_scope = {
+					hidden_effect = {
+							algonkin_tomahawk_charge = ROOT
+							algonkin_tomahawk_charge = ROOT
+							algonkin_tomahawk_charge = ROOT
+							algonkin_tomahawk_charge = ROOT
+							algonkin_tomahawk_charge = ROOT
+							algonkin_tomahawk_charge = ROOT
+							algonkin_tomahawk_charge = ROOT
+							algonkin_tomahawk_charge = ROOT
+							algonkin_tomahawk_charge = ROOT
+					}
+					algonkin_tomahawk_charge = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.20"
+			capital_scope = {
+					hidden_effect = {
+							ali_bey_reformed_infantry = ROOT
+							ali_bey_reformed_infantry = ROOT
+							ali_bey_reformed_infantry = ROOT
+							ali_bey_reformed_infantry = ROOT
+							ali_bey_reformed_infantry = ROOT
+							ali_bey_reformed_infantry = ROOT
+							ali_bey_reformed_infantry = ROOT
+							ali_bey_reformed_infantry = ROOT
+							ali_bey_reformed_infantry = ROOT
+					}
+					ali_bey_reformed_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.21"
+			capital_scope = {
+					hidden_effect = {
+							american_western_franchise_warfare = ROOT
+							american_western_franchise_warfare = ROOT
+							american_western_franchise_warfare = ROOT
+							american_western_franchise_warfare = ROOT
+							american_western_franchise_warfare = ROOT
+							american_western_franchise_warfare = ROOT
+							american_western_franchise_warfare = ROOT
+							american_western_franchise_warfare = ROOT
+							american_western_franchise_warfare = ROOT
+					}
+					american_western_franchise_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.22"
+			capital_scope = {
+					hidden_effect = {
+							anglofrench_line = ROOT
+							anglofrench_line = ROOT
+							anglofrench_line = ROOT
+							anglofrench_line = ROOT
+							anglofrench_line = ROOT
+							anglofrench_line = ROOT
+							anglofrench_line = ROOT
+							anglofrench_line = ROOT
+							anglofrench_line = ROOT
+					}
+					anglofrench_line = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.23"
+			capital_scope = {
+					hidden_effect = {
+							apache_guerilla = ROOT
+							apache_guerilla = ROOT
+							apache_guerilla = ROOT
+							apache_guerilla = ROOT
+							apache_guerilla = ROOT
+							apache_guerilla = ROOT
+							apache_guerilla = ROOT
+							apache_guerilla = ROOT
+							apache_guerilla = ROOT
+					}
+					apache_guerilla = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.25"
+			capital_scope = {
+					hidden_effect = {
+							asian_arquebusier = ROOT
+							asian_arquebusier = ROOT
+							asian_arquebusier = ROOT
+							asian_arquebusier = ROOT
+							asian_arquebusier = ROOT
+							asian_arquebusier = ROOT
+							asian_arquebusier = ROOT
+							asian_arquebusier = ROOT
+							asian_arquebusier = ROOT
+					}
+					asian_arquebusier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.26"
+			capital_scope = {
+					hidden_effect = {
+							asian_charge_cavalry = ROOT
+							asian_charge_cavalry = ROOT
+							asian_charge_cavalry = ROOT
+							asian_charge_cavalry = ROOT
+							asian_charge_cavalry = ROOT
+							asian_charge_cavalry = ROOT
+							asian_charge_cavalry = ROOT
+							asian_charge_cavalry = ROOT
+							asian_charge_cavalry = ROOT
+					}
+					asian_charge_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.27"
+			capital_scope = {
+					hidden_effect = {
+							asian_mass_infantry = ROOT
+							asian_mass_infantry = ROOT
+							asian_mass_infantry = ROOT
+							asian_mass_infantry = ROOT
+							asian_mass_infantry = ROOT
+							asian_mass_infantry = ROOT
+							asian_mass_infantry = ROOT
+							asian_mass_infantry = ROOT
+							asian_mass_infantry = ROOT
+					}
+					asian_mass_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.28"
+			capital_scope = {
+					hidden_effect = {
+							asian_musketeer = ROOT
+							asian_musketeer = ROOT
+							asian_musketeer = ROOT
+							asian_musketeer = ROOT
+							asian_musketeer = ROOT
+							asian_musketeer = ROOT
+							asian_musketeer = ROOT
+							asian_musketeer = ROOT
+							asian_musketeer = ROOT
+					}
+					asian_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.29"
+			capital_scope = {
+					hidden_effect = {
+							austrian_grenzer = ROOT
+							austrian_grenzer = ROOT
+							austrian_grenzer = ROOT
+							austrian_grenzer = ROOT
+							austrian_grenzer = ROOT
+							austrian_grenzer = ROOT
+							austrian_grenzer = ROOT
+							austrian_grenzer = ROOT
+							austrian_grenzer = ROOT
+					}
+					austrian_grenzer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.30"
+			capital_scope = {
+					hidden_effect = {
+							austrian_hussar = ROOT
+							austrian_hussar = ROOT
+							austrian_hussar = ROOT
+							austrian_hussar = ROOT
+							austrian_hussar = ROOT
+							austrian_hussar = ROOT
+							austrian_hussar = ROOT
+							austrian_hussar = ROOT
+							austrian_hussar = ROOT
+					}
+					austrian_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.31"
+			capital_scope = {
+					hidden_effect = {
+							austrian_jaeger = ROOT
+							austrian_jaeger = ROOT
+							austrian_jaeger = ROOT
+							austrian_jaeger = ROOT
+							austrian_jaeger = ROOT
+							austrian_jaeger = ROOT
+							austrian_jaeger = ROOT
+							austrian_jaeger = ROOT
+							austrian_jaeger = ROOT
+					}
+					austrian_jaeger = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.32"
+			capital_scope = {
+					hidden_effect = {
+							austrian_tercio = ROOT
+							austrian_tercio = ROOT
+							austrian_tercio = ROOT
+							austrian_tercio = ROOT
+							austrian_tercio = ROOT
+							austrian_tercio = ROOT
+							austrian_tercio = ROOT
+							austrian_tercio = ROOT
+							austrian_tercio = ROOT
+					}
+					austrian_tercio = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.33"
+			capital_scope = {
+					hidden_effect = {
+							austrian_white_coat = ROOT
+							austrian_white_coat = ROOT
+							austrian_white_coat = ROOT
+							austrian_white_coat = ROOT
+							austrian_white_coat = ROOT
+							austrian_white_coat = ROOT
+							austrian_white_coat = ROOT
+							austrian_white_coat = ROOT
+							austrian_white_coat = ROOT
+					}
+					austrian_white_coat = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.34"
+			capital_scope = {
+					hidden_effect = {
+							aztec_gunpowder_warfare = ROOT
+							aztec_gunpowder_warfare = ROOT
+							aztec_gunpowder_warfare = ROOT
+							aztec_gunpowder_warfare = ROOT
+							aztec_gunpowder_warfare = ROOT
+							aztec_gunpowder_warfare = ROOT
+							aztec_gunpowder_warfare = ROOT
+							aztec_gunpowder_warfare = ROOT
+							aztec_gunpowder_warfare = ROOT
+					}
+					aztec_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.35"
+			capital_scope = {
+					hidden_effect = {
+							aztec_hill_warfare = ROOT
+							aztec_hill_warfare = ROOT
+							aztec_hill_warfare = ROOT
+							aztec_hill_warfare = ROOT
+							aztec_hill_warfare = ROOT
+							aztec_hill_warfare = ROOT
+							aztec_hill_warfare = ROOT
+							aztec_hill_warfare = ROOT
+							aztec_hill_warfare = ROOT
+					}
+					aztec_hill_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.36"
+			capital_scope = {
+					hidden_effect = {
+							aztec_tribal_warfare = ROOT
+							aztec_tribal_warfare = ROOT
+							aztec_tribal_warfare = ROOT
+							aztec_tribal_warfare = ROOT
+							aztec_tribal_warfare = ROOT
+							aztec_tribal_warfare = ROOT
+							aztec_tribal_warfare = ROOT
+							aztec_tribal_warfare = ROOT
+							aztec_tribal_warfare = ROOT
+					}
+					aztec_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.37"
+			capital_scope = {
+					hidden_effect = {
+							bantu_gunpowder_warfare = ROOT
+							bantu_gunpowder_warfare = ROOT
+							bantu_gunpowder_warfare = ROOT
+							bantu_gunpowder_warfare = ROOT
+							bantu_gunpowder_warfare = ROOT
+							bantu_gunpowder_warfare = ROOT
+							bantu_gunpowder_warfare = ROOT
+							bantu_gunpowder_warfare = ROOT
+							bantu_gunpowder_warfare = ROOT
+					}
+					bantu_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.38"
+			capital_scope = {
+					hidden_effect = {
+							bantu_plains_warfare = ROOT
+							bantu_plains_warfare = ROOT
+							bantu_plains_warfare = ROOT
+							bantu_plains_warfare = ROOT
+							bantu_plains_warfare = ROOT
+							bantu_plains_warfare = ROOT
+							bantu_plains_warfare = ROOT
+							bantu_plains_warfare = ROOT
+							bantu_plains_warfare = ROOT
+					}
+					bantu_plains_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.39"
+			capital_scope = {
+					hidden_effect = {
+							bantu_tribal_warfare = ROOT
+							bantu_tribal_warfare = ROOT
+							bantu_tribal_warfare = ROOT
+							bantu_tribal_warfare = ROOT
+							bantu_tribal_warfare = ROOT
+							bantu_tribal_warfare = ROOT
+							bantu_tribal_warfare = ROOT
+							bantu_tribal_warfare = ROOT
+							bantu_tribal_warfare = ROOT
+					}
+					bantu_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.40"
+			capital_scope = {
+					hidden_effect = {
+							bardiche_infantry = ROOT
+							bardiche_infantry = ROOT
+							bardiche_infantry = ROOT
+							bardiche_infantry = ROOT
+							bardiche_infantry = ROOT
+							bardiche_infantry = ROOT
+							bardiche_infantry = ROOT
+							bardiche_infantry = ROOT
+							bardiche_infantry = ROOT
+					}
+					bardiche_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.42"
+			capital_scope = {
+					hidden_effect = {
+							bhonsle_cavalry = ROOT
+							bhonsle_cavalry = ROOT
+							bhonsle_cavalry = ROOT
+							bhonsle_cavalry = ROOT
+							bhonsle_cavalry = ROOT
+							bhonsle_cavalry = ROOT
+							bhonsle_cavalry = ROOT
+							bhonsle_cavalry = ROOT
+							bhonsle_cavalry = ROOT
+					}
+					bhonsle_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.43"
+			capital_scope = {
+					hidden_effect = {
+							bhonsle_infantry = ROOT
+							bhonsle_infantry = ROOT
+							bhonsle_infantry = ROOT
+							bhonsle_infantry = ROOT
+							bhonsle_infantry = ROOT
+							bhonsle_infantry = ROOT
+							bhonsle_infantry = ROOT
+							bhonsle_infantry = ROOT
+							bhonsle_infantry = ROOT
+					}
+					bhonsle_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.45"
+			capital_scope = {
+					hidden_effect = {
+							british_hussar = ROOT
+							british_hussar = ROOT
+							british_hussar = ROOT
+							british_hussar = ROOT
+							british_hussar = ROOT
+							british_hussar = ROOT
+							british_hussar = ROOT
+							british_hussar = ROOT
+							british_hussar = ROOT
+					}
+					british_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.46"
+			capital_scope = {
+					hidden_effect = {
+							british_redcoat = ROOT
+							british_redcoat = ROOT
+							british_redcoat = ROOT
+							british_redcoat = ROOT
+							british_redcoat = ROOT
+							british_redcoat = ROOT
+							british_redcoat = ROOT
+							british_redcoat = ROOT
+							british_redcoat = ROOT
+					}
+					british_redcoat = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.47"
+			capital_scope = {
+					hidden_effect = {
+							british_square = ROOT
+							british_square = ROOT
+							british_square = ROOT
+							british_square = ROOT
+							british_square = ROOT
+							british_square = ROOT
+							british_square = ROOT
+							british_square = ROOT
+							british_square = ROOT
+					}
+					british_square = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.50"
+			capital_scope = {
+					hidden_effect = {
+							central_american_dragoon = ROOT
+							central_american_dragoon = ROOT
+							central_american_dragoon = ROOT
+							central_american_dragoon = ROOT
+							central_american_dragoon = ROOT
+							central_american_dragoon = ROOT
+							central_american_dragoon = ROOT
+							central_american_dragoon = ROOT
+							central_american_dragoon = ROOT
+					}
+					central_american_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.51"
+			capital_scope = {
+					hidden_effect = {
+							central_american_horsemen = ROOT
+							central_american_horsemen = ROOT
+							central_american_horsemen = ROOT
+							central_american_horsemen = ROOT
+							central_american_horsemen = ROOT
+							central_american_horsemen = ROOT
+							central_american_horsemen = ROOT
+							central_american_horsemen = ROOT
+							central_american_horsemen = ROOT
+					}
+					central_american_horsemen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.52"
+			capital_scope = {
+					hidden_effect = {
+							central_american_hussar = ROOT
+							central_american_hussar = ROOT
+							central_american_hussar = ROOT
+							central_american_hussar = ROOT
+							central_american_hussar = ROOT
+							central_american_hussar = ROOT
+							central_american_hussar = ROOT
+							central_american_hussar = ROOT
+							central_american_hussar = ROOT
+					}
+					central_american_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.53"
+			capital_scope = {
+					hidden_effect = {
+							central_american_rifle_cavalry = ROOT
+							central_american_rifle_cavalry = ROOT
+							central_american_rifle_cavalry = ROOT
+							central_american_rifle_cavalry = ROOT
+							central_american_rifle_cavalry = ROOT
+							central_american_rifle_cavalry = ROOT
+							central_american_rifle_cavalry = ROOT
+							central_american_rifle_cavalry = ROOT
+							central_american_rifle_cavalry = ROOT
+					}
+					central_american_rifle_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.54"
+			capital_scope = {
+					hidden_effect = {
+							central_american_swarm = ROOT
+							central_american_swarm = ROOT
+							central_american_swarm = ROOT
+							central_american_swarm = ROOT
+							central_american_swarm = ROOT
+							central_american_swarm = ROOT
+							central_american_swarm = ROOT
+							central_american_swarm = ROOT
+							central_american_swarm = ROOT
+					}
+					central_american_swarm = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.55"
+			capital_scope = {
+					hidden_effect = {
+							chambered_demi_cannon = ROOT
+							chambered_demi_cannon = ROOT
+							chambered_demi_cannon = ROOT
+							chambered_demi_cannon = ROOT
+							chambered_demi_cannon = ROOT
+							chambered_demi_cannon = ROOT
+							chambered_demi_cannon = ROOT
+							chambered_demi_cannon = ROOT
+							chambered_demi_cannon = ROOT
+					}
+					chambered_demi_cannon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.57"
+			capital_scope = {
+					hidden_effect = {
+							chevauchee = ROOT
+							chevauchee = ROOT
+							chevauchee = ROOT
+							chevauchee = ROOT
+							chevauchee = ROOT
+							chevauchee = ROOT
+							chevauchee = ROOT
+							chevauchee = ROOT
+							chevauchee = ROOT
+					}
+					chevauchee = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.58"
+			capital_scope = {
+					hidden_effect = {
+							chinese_dragoon = ROOT
+							chinese_dragoon = ROOT
+							chinese_dragoon = ROOT
+							chinese_dragoon = ROOT
+							chinese_dragoon = ROOT
+							chinese_dragoon = ROOT
+							chinese_dragoon = ROOT
+							chinese_dragoon = ROOT
+							chinese_dragoon = ROOT
+					}
+					chinese_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.59"
+			capital_scope = {
+					hidden_effect = {
+							chinese_footsoldier = ROOT
+							chinese_footsoldier = ROOT
+							chinese_footsoldier = ROOT
+							chinese_footsoldier = ROOT
+							chinese_footsoldier = ROOT
+							chinese_footsoldier = ROOT
+							chinese_footsoldier = ROOT
+							chinese_footsoldier = ROOT
+							chinese_footsoldier = ROOT
+					}
+					chinese_footsoldier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.60"
+			capital_scope = {
+					hidden_effect = {
+							chinese_longspear = ROOT
+							chinese_longspear = ROOT
+							chinese_longspear = ROOT
+							chinese_longspear = ROOT
+							chinese_longspear = ROOT
+							chinese_longspear = ROOT
+							chinese_longspear = ROOT
+							chinese_longspear = ROOT
+							chinese_longspear = ROOT
+					}
+					chinese_longspear = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.61"
+			capital_scope = {
+					hidden_effect = {
+							chinese_steppe = ROOT
+							chinese_steppe = ROOT
+							chinese_steppe = ROOT
+							chinese_steppe = ROOT
+							chinese_steppe = ROOT
+							chinese_steppe = ROOT
+							chinese_steppe = ROOT
+							chinese_steppe = ROOT
+							chinese_steppe = ROOT
+					}
+					chinese_steppe = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.62"
+			capital_scope = {
+					hidden_effect = {
+							coehorn_mortar = ROOT
+							coehorn_mortar = ROOT
+							coehorn_mortar = ROOT
+							coehorn_mortar = ROOT
+							coehorn_mortar = ROOT
+							coehorn_mortar = ROOT
+							coehorn_mortar = ROOT
+							coehorn_mortar = ROOT
+							coehorn_mortar = ROOT
+					}
+					coehorn_mortar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.64"
+			capital_scope = {
+					hidden_effect = {
+							commanche_swarm = ROOT
+							commanche_swarm = ROOT
+							commanche_swarm = ROOT
+							commanche_swarm = ROOT
+							commanche_swarm = ROOT
+							commanche_swarm = ROOT
+							commanche_swarm = ROOT
+							commanche_swarm = ROOT
+							commanche_swarm = ROOT
+					}
+					commanche_swarm = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.65"
+			capital_scope = {
+					hidden_effect = {
+							creek_arquebusier = ROOT
+							creek_arquebusier = ROOT
+							creek_arquebusier = ROOT
+							creek_arquebusier = ROOT
+							creek_arquebusier = ROOT
+							creek_arquebusier = ROOT
+							creek_arquebusier = ROOT
+							creek_arquebusier = ROOT
+							creek_arquebusier = ROOT
+					}
+					creek_arquebusier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.66"
+			capital_scope = {
+					hidden_effect = {
+							culverin = ROOT
+							culverin = ROOT
+							culverin = ROOT
+							culverin = ROOT
+							culverin = ROOT
+							culverin = ROOT
+							culverin = ROOT
+							culverin = ROOT
+							culverin = ROOT
+					}
+					culverin = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.67"
+			capital_scope = {
+					hidden_effect = {
+							dirlis = ROOT
+							dirlis = ROOT
+							dirlis = ROOT
+							dirlis = ROOT
+							dirlis = ROOT
+							dirlis = ROOT
+							dirlis = ROOT
+							dirlis = ROOT
+							dirlis = ROOT
+					}
+					dirlis = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.68"
+			capital_scope = {
+					hidden_effect = {
+							druzhina_cavalry = ROOT
+							druzhina_cavalry = ROOT
+							druzhina_cavalry = ROOT
+							druzhina_cavalry = ROOT
+							druzhina_cavalry = ROOT
+							druzhina_cavalry = ROOT
+							druzhina_cavalry = ROOT
+							druzhina_cavalry = ROOT
+							druzhina_cavalry = ROOT
+					}
+					druzhina_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.69"
+			capital_scope = {
+					hidden_effect = {
+							durrani_dragoon = ROOT
+							durrani_dragoon = ROOT
+							durrani_dragoon = ROOT
+							durrani_dragoon = ROOT
+							durrani_dragoon = ROOT
+							durrani_dragoon = ROOT
+							durrani_dragoon = ROOT
+							durrani_dragoon = ROOT
+							durrani_dragoon = ROOT
+					}
+					durrani_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.70"
+			capital_scope = {
+					hidden_effect = {
+							durrani_rifled_musketeer = ROOT
+							durrani_rifled_musketeer = ROOT
+							durrani_rifled_musketeer = ROOT
+							durrani_rifled_musketeer = ROOT
+							durrani_rifled_musketeer = ROOT
+							durrani_rifled_musketeer = ROOT
+							durrani_rifled_musketeer = ROOT
+							durrani_rifled_musketeer = ROOT
+							durrani_rifled_musketeer = ROOT
+					}
+					durrani_rifled_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.71"
+			capital_scope = {
+					hidden_effect = {
+							durrani_swivel = ROOT
+							durrani_swivel = ROOT
+							durrani_swivel = ROOT
+							durrani_swivel = ROOT
+							durrani_swivel = ROOT
+							durrani_swivel = ROOT
+							durrani_swivel = ROOT
+							durrani_swivel = ROOT
+							durrani_swivel = ROOT
+					}
+					durrani_swivel = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.72"
+			capital_scope = {
+					hidden_effect = {
+							dutch_maurician = ROOT
+							dutch_maurician = ROOT
+							dutch_maurician = ROOT
+							dutch_maurician = ROOT
+							dutch_maurician = ROOT
+							dutch_maurician = ROOT
+							dutch_maurician = ROOT
+							dutch_maurician = ROOT
+							dutch_maurician = ROOT
+					}
+					dutch_maurician = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.75"
+			capital_scope = {
+					hidden_effect = {
+							east_asian_spearmen = ROOT
+							east_asian_spearmen = ROOT
+							east_asian_spearmen = ROOT
+							east_asian_spearmen = ROOT
+							east_asian_spearmen = ROOT
+							east_asian_spearmen = ROOT
+							east_asian_spearmen = ROOT
+							east_asian_spearmen = ROOT
+							east_asian_spearmen = ROOT
+					}
+					east_asian_spearmen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.76"
+			capital_scope = {
+					hidden_effect = {
+							east_mongolian_steppe = ROOT
+							east_mongolian_steppe = ROOT
+							east_mongolian_steppe = ROOT
+							east_mongolian_steppe = ROOT
+							east_mongolian_steppe = ROOT
+							east_mongolian_steppe = ROOT
+							east_mongolian_steppe = ROOT
+							east_mongolian_steppe = ROOT
+							east_mongolian_steppe = ROOT
+					}
+					east_mongolian_steppe = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.77"
+			capital_scope = {
+					hidden_effect = {
+							eastern_bow = ROOT
+							eastern_bow = ROOT
+							eastern_bow = ROOT
+							eastern_bow = ROOT
+							eastern_bow = ROOT
+							eastern_bow = ROOT
+							eastern_bow = ROOT
+							eastern_bow = ROOT
+							eastern_bow = ROOT
+					}
+					eastern_bow = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.78"
+			capital_scope = {
+					hidden_effect = {
+							eastern_carabinier = ROOT
+							eastern_carabinier = ROOT
+							eastern_carabinier = ROOT
+							eastern_carabinier = ROOT
+							eastern_carabinier = ROOT
+							eastern_carabinier = ROOT
+							eastern_carabinier = ROOT
+							eastern_carabinier = ROOT
+							eastern_carabinier = ROOT
+					}
+					eastern_carabinier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.79"
+			capital_scope = {
+					hidden_effect = {
+							eastern_knights = ROOT
+							eastern_knights = ROOT
+							eastern_knights = ROOT
+							eastern_knights = ROOT
+							eastern_knights = ROOT
+							eastern_knights = ROOT
+							eastern_knights = ROOT
+							eastern_knights = ROOT
+							eastern_knights = ROOT
+					}
+					eastern_knights = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.80"
+			capital_scope = {
+					hidden_effect = {
+							eastern_medieval_infantry = ROOT
+							eastern_medieval_infantry = ROOT
+							eastern_medieval_infantry = ROOT
+							eastern_medieval_infantry = ROOT
+							eastern_medieval_infantry = ROOT
+							eastern_medieval_infantry = ROOT
+							eastern_medieval_infantry = ROOT
+							eastern_medieval_infantry = ROOT
+							eastern_medieval_infantry = ROOT
+					}
+					eastern_medieval_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.81"
+			capital_scope = {
+					hidden_effect = {
+							eastern_militia = ROOT
+							eastern_militia = ROOT
+							eastern_militia = ROOT
+							eastern_militia = ROOT
+							eastern_militia = ROOT
+							eastern_militia = ROOT
+							eastern_militia = ROOT
+							eastern_militia = ROOT
+							eastern_militia = ROOT
+					}
+					eastern_militia = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.82"
+			capital_scope = {
+					hidden_effect = {
+							eastern_skirmisher = ROOT
+							eastern_skirmisher = ROOT
+							eastern_skirmisher = ROOT
+							eastern_skirmisher = ROOT
+							eastern_skirmisher = ROOT
+							eastern_skirmisher = ROOT
+							eastern_skirmisher = ROOT
+							eastern_skirmisher = ROOT
+							eastern_skirmisher = ROOT
+					}
+					eastern_skirmisher = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.83"
+			capital_scope = {
+					hidden_effect = {
+							eastern_uhlan = ROOT
+							eastern_uhlan = ROOT
+							eastern_uhlan = ROOT
+							eastern_uhlan = ROOT
+							eastern_uhlan = ROOT
+							eastern_uhlan = ROOT
+							eastern_uhlan = ROOT
+							eastern_uhlan = ROOT
+							eastern_uhlan = ROOT
+					}
+					eastern_uhlan = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.85"
+			capital_scope = {
+					hidden_effect = {
+							ethiopian_guerilla_warfare = ROOT
+							ethiopian_guerilla_warfare = ROOT
+							ethiopian_guerilla_warfare = ROOT
+							ethiopian_guerilla_warfare = ROOT
+							ethiopian_guerilla_warfare = ROOT
+							ethiopian_guerilla_warfare = ROOT
+							ethiopian_guerilla_warfare = ROOT
+							ethiopian_guerilla_warfare = ROOT
+							ethiopian_guerilla_warfare = ROOT
+					}
+					ethiopian_guerilla_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.86"
+			capital_scope = {
+					hidden_effect = {
+							ethiopian_gunpowder_warfare = ROOT
+							ethiopian_gunpowder_warfare = ROOT
+							ethiopian_gunpowder_warfare = ROOT
+							ethiopian_gunpowder_warfare = ROOT
+							ethiopian_gunpowder_warfare = ROOT
+							ethiopian_gunpowder_warfare = ROOT
+							ethiopian_gunpowder_warfare = ROOT
+							ethiopian_gunpowder_warfare = ROOT
+							ethiopian_gunpowder_warfare = ROOT
+					}
+					ethiopian_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.87"
+			capital_scope = {
+					hidden_effect = {
+							ethiopian_mountain_warfare = ROOT
+							ethiopian_mountain_warfare = ROOT
+							ethiopian_mountain_warfare = ROOT
+							ethiopian_mountain_warfare = ROOT
+							ethiopian_mountain_warfare = ROOT
+							ethiopian_mountain_warfare = ROOT
+							ethiopian_mountain_warfare = ROOT
+							ethiopian_mountain_warfare = ROOT
+							ethiopian_mountain_warfare = ROOT
+					}
+					ethiopian_mountain_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.89"
+			capital_scope = {
+					hidden_effect = {
+							flying_battery = ROOT
+							flying_battery = ROOT
+							flying_battery = ROOT
+							flying_battery = ROOT
+							flying_battery = ROOT
+							flying_battery = ROOT
+							flying_battery = ROOT
+							flying_battery = ROOT
+							flying_battery = ROOT
+					}
+					flying_battery = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.90"
+			capital_scope = {
+					hidden_effect = {
+							french_bluecoat = ROOT
+							french_bluecoat = ROOT
+							french_bluecoat = ROOT
+							french_bluecoat = ROOT
+							french_bluecoat = ROOT
+							french_bluecoat = ROOT
+							french_bluecoat = ROOT
+							french_bluecoat = ROOT
+							french_bluecoat = ROOT
+					}
+					french_bluecoat = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.91"
+			capital_scope = {
+					hidden_effect = {
+							french_carabinier = ROOT
+							french_carabinier = ROOT
+							french_carabinier = ROOT
+							french_carabinier = ROOT
+							french_carabinier = ROOT
+							french_carabinier = ROOT
+							french_carabinier = ROOT
+							french_carabinier = ROOT
+							french_carabinier = ROOT
+					}
+					french_carabinier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.92"
+			capital_scope = {
+					hidden_effect = {
+							french_caracolle = ROOT
+							french_caracolle = ROOT
+							french_caracolle = ROOT
+							french_caracolle = ROOT
+							french_caracolle = ROOT
+							french_caracolle = ROOT
+							french_caracolle = ROOT
+							french_caracolle = ROOT
+							french_caracolle = ROOT
+					}
+					french_caracolle = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.93"
+			capital_scope = {
+					hidden_effect = {
+							french_cuirassier = ROOT
+							french_cuirassier = ROOT
+							french_cuirassier = ROOT
+							french_cuirassier = ROOT
+							french_cuirassier = ROOT
+							french_cuirassier = ROOT
+							french_cuirassier = ROOT
+							french_cuirassier = ROOT
+							french_cuirassier = ROOT
+					}
+					french_cuirassier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.94"
+			capital_scope = {
+					hidden_effect = {
+							french_dragoon = ROOT
+							french_dragoon = ROOT
+							french_dragoon = ROOT
+							french_dragoon = ROOT
+							french_dragoon = ROOT
+							french_dragoon = ROOT
+							french_dragoon = ROOT
+							french_dragoon = ROOT
+							french_dragoon = ROOT
+					}
+					french_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.95"
+			capital_scope = {
+					hidden_effect = {
+							french_impulse = ROOT
+							french_impulse = ROOT
+							french_impulse = ROOT
+							french_impulse = ROOT
+							french_impulse = ROOT
+							french_impulse = ROOT
+							french_impulse = ROOT
+							french_impulse = ROOT
+							french_impulse = ROOT
+					}
+					french_impulse = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.97"
+			capital_scope = {
+					hidden_effect = {
+							gaelic_free_shooter = ROOT
+							gaelic_free_shooter = ROOT
+							gaelic_free_shooter = ROOT
+							gaelic_free_shooter = ROOT
+							gaelic_free_shooter = ROOT
+							gaelic_free_shooter = ROOT
+							gaelic_free_shooter = ROOT
+							gaelic_free_shooter = ROOT
+							gaelic_free_shooter = ROOT
+					}
+					gaelic_free_shooter = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.98"
+			capital_scope = {
+					hidden_effect = {
+							gaelic_galloglaigh = ROOT
+							gaelic_galloglaigh = ROOT
+							gaelic_galloglaigh = ROOT
+							gaelic_galloglaigh = ROOT
+							gaelic_galloglaigh = ROOT
+							gaelic_galloglaigh = ROOT
+							gaelic_galloglaigh = ROOT
+							gaelic_galloglaigh = ROOT
+							gaelic_galloglaigh = ROOT
+					}
+					gaelic_galloglaigh = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.99"
+			capital_scope = {
+					hidden_effect = {
+							gaelic_mercenary = ROOT
+							gaelic_mercenary = ROOT
+							gaelic_mercenary = ROOT
+							gaelic_mercenary = ROOT
+							gaelic_mercenary = ROOT
+							gaelic_mercenary = ROOT
+							gaelic_mercenary = ROOT
+							gaelic_mercenary = ROOT
+							gaelic_mercenary = ROOT
+					}
+					gaelic_mercenary = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.104"
+			capital_scope = {
+					hidden_effect = {
+							germanized_pike = ROOT
+							germanized_pike = ROOT
+							germanized_pike = ROOT
+							germanized_pike = ROOT
+							germanized_pike = ROOT
+							germanized_pike = ROOT
+							germanized_pike = ROOT
+							germanized_pike = ROOT
+							germanized_pike = ROOT
+					}
+					germanized_pike = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.106"
+			capital_scope = {
+					hidden_effect = {
+							ha_foreign_influenced_infantry = ROOT
+							ha_foreign_influenced_infantry = ROOT
+							ha_foreign_influenced_infantry = ROOT
+							ha_foreign_influenced_infantry = ROOT
+							ha_foreign_influenced_infantry = ROOT
+							ha_foreign_influenced_infantry = ROOT
+							ha_foreign_influenced_infantry = ROOT
+							ha_foreign_influenced_infantry = ROOT
+							ha_foreign_influenced_infantry = ROOT
+					}
+					ha_foreign_influenced_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.107"
+			capital_scope = {
+					hidden_effect = {
+							ha_reformed_influenced_infantry = ROOT
+							ha_reformed_influenced_infantry = ROOT
+							ha_reformed_influenced_infantry = ROOT
+							ha_reformed_influenced_infantry = ROOT
+							ha_reformed_influenced_infantry = ROOT
+							ha_reformed_influenced_infantry = ROOT
+							ha_reformed_influenced_infantry = ROOT
+							ha_reformed_influenced_infantry = ROOT
+							ha_reformed_influenced_infantry = ROOT
+					}
+					ha_reformed_influenced_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.108"
+			capital_scope = {
+					hidden_effect = {
+							ha_reformed_xantican_warrior = ROOT
+							ha_reformed_xantican_warrior = ROOT
+							ha_reformed_xantican_warrior = ROOT
+							ha_reformed_xantican_warrior = ROOT
+							ha_reformed_xantican_warrior = ROOT
+							ha_reformed_xantican_warrior = ROOT
+							ha_reformed_xantican_warrior = ROOT
+							ha_reformed_xantican_warrior = ROOT
+							ha_reformed_xantican_warrior = ROOT
+					}
+					ha_reformed_xantican_warrior = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.109"
+			capital_scope = {
+					hidden_effect = {
+							ha_reformed_xoloti = ROOT
+							ha_reformed_xoloti = ROOT
+							ha_reformed_xoloti = ROOT
+							ha_reformed_xoloti = ROOT
+							ha_reformed_xoloti = ROOT
+							ha_reformed_xoloti = ROOT
+							ha_reformed_xoloti = ROOT
+							ha_reformed_xoloti = ROOT
+							ha_reformed_xoloti = ROOT
+					}
+					ha_reformed_xoloti = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.110"
+			capital_scope = {
+					hidden_effect = {
+							ha_xantican_warrior = ROOT
+							ha_xantican_warrior = ROOT
+							ha_xantican_warrior = ROOT
+							ha_xantican_warrior = ROOT
+							ha_xantican_warrior = ROOT
+							ha_xantican_warrior = ROOT
+							ha_xantican_warrior = ROOT
+							ha_xantican_warrior = ROOT
+							ha_xantican_warrior = ROOT
+					}
+					ha_xantican_warrior = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.111"
+			capital_scope = {
+					hidden_effect = {
+							ha_xiuhtecuhtli_soldier = ROOT
+							ha_xiuhtecuhtli_soldier = ROOT
+							ha_xiuhtecuhtli_soldier = ROOT
+							ha_xiuhtecuhtli_soldier = ROOT
+							ha_xiuhtecuhtli_soldier = ROOT
+							ha_xiuhtecuhtli_soldier = ROOT
+							ha_xiuhtecuhtli_soldier = ROOT
+							ha_xiuhtecuhtli_soldier = ROOT
+							ha_xiuhtecuhtli_soldier = ROOT
+					}
+					ha_xiuhtecuhtli_soldier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.112"
+			capital_scope = {
+					hidden_effect = {
+							ha_xiuhtecuhtlian_infantry = ROOT
+							ha_xiuhtecuhtlian_infantry = ROOT
+							ha_xiuhtecuhtlian_infantry = ROOT
+							ha_xiuhtecuhtlian_infantry = ROOT
+							ha_xiuhtecuhtlian_infantry = ROOT
+							ha_xiuhtecuhtlian_infantry = ROOT
+							ha_xiuhtecuhtlian_infantry = ROOT
+							ha_xiuhtecuhtlian_infantry = ROOT
+							ha_xiuhtecuhtlian_infantry = ROOT
+					}
+					ha_xiuhtecuhtlian_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.113"
+			capital_scope = {
+					hidden_effect = {
+							ha_xoloti = ROOT
+							ha_xoloti = ROOT
+							ha_xoloti = ROOT
+							ha_xoloti = ROOT
+							ha_xoloti = ROOT
+							ha_xoloti = ROOT
+							ha_xoloti = ROOT
+							ha_xoloti = ROOT
+							ha_xoloti = ROOT
+					}
+					ha_xoloti = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.114"
+			capital_scope = {
+					hidden_effect = {
+							halberd_infantry = ROOT
+							halberd_infantry = ROOT
+							halberd_infantry = ROOT
+							halberd_infantry = ROOT
+							halberd_infantry = ROOT
+							halberd_infantry = ROOT
+							halberd_infantry = ROOT
+							halberd_infantry = ROOT
+							halberd_infantry = ROOT
+					}
+					halberd_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.115"
+			capital_scope = {
+					hidden_effect = {
+							han_banner = ROOT
+							han_banner = ROOT
+							han_banner = ROOT
+							han_banner = ROOT
+							han_banner = ROOT
+							han_banner = ROOT
+							han_banner = ROOT
+							han_banner = ROOT
+							han_banner = ROOT
+					}
+					han_banner = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.117"
+			capital_scope = {
+					hidden_effect = {
+							high_american_dragoon = ROOT
+							high_american_dragoon = ROOT
+							high_american_dragoon = ROOT
+							high_american_dragoon = ROOT
+							high_american_dragoon = ROOT
+							high_american_dragoon = ROOT
+							high_american_dragoon = ROOT
+							high_american_dragoon = ROOT
+							high_american_dragoon = ROOT
+					}
+					high_american_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.118"
+			capital_scope = {
+					hidden_effect = {
+							high_american_horsemen = ROOT
+							high_american_horsemen = ROOT
+							high_american_horsemen = ROOT
+							high_american_horsemen = ROOT
+							high_american_horsemen = ROOT
+							high_american_horsemen = ROOT
+							high_american_horsemen = ROOT
+							high_american_horsemen = ROOT
+							high_american_horsemen = ROOT
+					}
+					high_american_horsemen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.119"
+			capital_scope = {
+					hidden_effect = {
+							high_american_hussar = ROOT
+							high_american_hussar = ROOT
+							high_american_hussar = ROOT
+							high_american_hussar = ROOT
+							high_american_hussar = ROOT
+							high_american_hussar = ROOT
+							high_american_hussar = ROOT
+							high_american_hussar = ROOT
+							high_american_hussar = ROOT
+					}
+					high_american_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.120"
+			capital_scope = {
+					hidden_effect = {
+							high_american_rifle_cavalry = ROOT
+							high_american_rifle_cavalry = ROOT
+							high_american_rifle_cavalry = ROOT
+							high_american_rifle_cavalry = ROOT
+							high_american_rifle_cavalry = ROOT
+							high_american_rifle_cavalry = ROOT
+							high_american_rifle_cavalry = ROOT
+							high_american_rifle_cavalry = ROOT
+							high_american_rifle_cavalry = ROOT
+					}
+					high_american_rifle_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.121"
+			capital_scope = {
+					hidden_effect = {
+							high_american_swarm = ROOT
+							high_american_swarm = ROOT
+							high_american_swarm = ROOT
+							high_american_swarm = ROOT
+							high_american_swarm = ROOT
+							high_american_swarm = ROOT
+							high_american_swarm = ROOT
+							high_american_swarm = ROOT
+							high_american_swarm = ROOT
+					}
+					high_american_swarm = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.122"
+			capital_scope = {
+					hidden_effect = {
+							houfnice = ROOT
+							houfnice = ROOT
+							houfnice = ROOT
+							houfnice = ROOT
+							houfnice = ROOT
+							houfnice = ROOT
+							houfnice = ROOT
+							houfnice = ROOT
+							houfnice = ROOT
+					}
+					houfnice = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.123"
+			capital_scope = {
+					hidden_effect = {
+							hungarian_hussar = ROOT
+							hungarian_hussar = ROOT
+							hungarian_hussar = ROOT
+							hungarian_hussar = ROOT
+							hungarian_hussar = ROOT
+							hungarian_hussar = ROOT
+							hungarian_hussar = ROOT
+							hungarian_hussar = ROOT
+							hungarian_hussar = ROOT
+					}
+					hungarian_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.124"
+			capital_scope = {
+					hidden_effect = {
+							huron_arquebusier = ROOT
+							huron_arquebusier = ROOT
+							huron_arquebusier = ROOT
+							huron_arquebusier = ROOT
+							huron_arquebusier = ROOT
+							huron_arquebusier = ROOT
+							huron_arquebusier = ROOT
+							huron_arquebusier = ROOT
+							huron_arquebusier = ROOT
+					}
+					huron_arquebusier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.125"
+			capital_scope = {
+					hidden_effect = {
+							inca_mountain_warfare = ROOT
+							inca_mountain_warfare = ROOT
+							inca_mountain_warfare = ROOT
+							inca_mountain_warfare = ROOT
+							inca_mountain_warfare = ROOT
+							inca_mountain_warfare = ROOT
+							inca_mountain_warfare = ROOT
+							inca_mountain_warfare = ROOT
+							inca_mountain_warfare = ROOT
+					}
+					inca_mountain_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.126"
+			capital_scope = {
+					hidden_effect = {
+							incan_axemen = ROOT
+							incan_axemen = ROOT
+							incan_axemen = ROOT
+							incan_axemen = ROOT
+							incan_axemen = ROOT
+							incan_axemen = ROOT
+							incan_axemen = ROOT
+							incan_axemen = ROOT
+							incan_axemen = ROOT
+					}
+					incan_axemen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.127"
+			capital_scope = {
+					hidden_effect = {
+							incan_guerilla_warfare = ROOT
+							incan_guerilla_warfare = ROOT
+							incan_guerilla_warfare = ROOT
+							incan_guerilla_warfare = ROOT
+							incan_guerilla_warfare = ROOT
+							incan_guerilla_warfare = ROOT
+							incan_guerilla_warfare = ROOT
+							incan_guerilla_warfare = ROOT
+							incan_guerilla_warfare = ROOT
+					}
+					incan_guerilla_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.128"
+			capital_scope = {
+					hidden_effect = {
+							incan_slingshots = ROOT
+							incan_slingshots = ROOT
+							incan_slingshots = ROOT
+							incan_slingshots = ROOT
+							incan_slingshots = ROOT
+							incan_slingshots = ROOT
+							incan_slingshots = ROOT
+							incan_slingshots = ROOT
+							incan_slingshots = ROOT
+					}
+					incan_slingshots = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.129"
+			capital_scope = {
+					hidden_effect = {
+							indian_archers = ROOT
+							indian_archers = ROOT
+							indian_archers = ROOT
+							indian_archers = ROOT
+							indian_archers = ROOT
+							indian_archers = ROOT
+							indian_archers = ROOT
+							indian_archers = ROOT
+							indian_archers = ROOT
+					}
+					indian_archers = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.130"
+			capital_scope = {
+					hidden_effect = {
+							indian_arquebusier = ROOT
+							indian_arquebusier = ROOT
+							indian_arquebusier = ROOT
+							indian_arquebusier = ROOT
+							indian_arquebusier = ROOT
+							indian_arquebusier = ROOT
+							indian_arquebusier = ROOT
+							indian_arquebusier = ROOT
+							indian_arquebusier = ROOT
+					}
+					indian_arquebusier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.131"
+			capital_scope = {
+					hidden_effect = {
+							indian_elephant = ROOT
+							indian_elephant = ROOT
+							indian_elephant = ROOT
+							indian_elephant = ROOT
+							indian_elephant = ROOT
+							indian_elephant = ROOT
+							indian_elephant = ROOT
+							indian_elephant = ROOT
+							indian_elephant = ROOT
+					}
+					indian_elephant = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.132"
+			capital_scope = {
+					hidden_effect = {
+							indian_footsoldier = ROOT
+							indian_footsoldier = ROOT
+							indian_footsoldier = ROOT
+							indian_footsoldier = ROOT
+							indian_footsoldier = ROOT
+							indian_footsoldier = ROOT
+							indian_footsoldier = ROOT
+							indian_footsoldier = ROOT
+							indian_footsoldier = ROOT
+					}
+					indian_footsoldier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.133"
+			capital_scope = {
+					hidden_effect = {
+							indian_rifle = ROOT
+							indian_rifle = ROOT
+							indian_rifle = ROOT
+							indian_rifle = ROOT
+							indian_rifle = ROOT
+							indian_rifle = ROOT
+							indian_rifle = ROOT
+							indian_rifle = ROOT
+							indian_rifle = ROOT
+					}
+					indian_rifle = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.134"
+			capital_scope = {
+					hidden_effect = {
+							indian_shock_cavalry = ROOT
+							indian_shock_cavalry = ROOT
+							indian_shock_cavalry = ROOT
+							indian_shock_cavalry = ROOT
+							indian_shock_cavalry = ROOT
+							indian_shock_cavalry = ROOT
+							indian_shock_cavalry = ROOT
+							indian_shock_cavalry = ROOT
+							indian_shock_cavalry = ROOT
+					}
+					indian_shock_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.135"
+			capital_scope = {
+					hidden_effect = {
+							irish_charge = ROOT
+							irish_charge = ROOT
+							irish_charge = ROOT
+							irish_charge = ROOT
+							irish_charge = ROOT
+							irish_charge = ROOT
+							irish_charge = ROOT
+							irish_charge = ROOT
+							irish_charge = ROOT
+					}
+					irish_charge = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.136"
+			capital_scope = {
+					hidden_effect = {
+							iroquis_rifle_scout = ROOT
+							iroquis_rifle_scout = ROOT
+							iroquis_rifle_scout = ROOT
+							iroquis_rifle_scout = ROOT
+							iroquis_rifle_scout = ROOT
+							iroquis_rifle_scout = ROOT
+							iroquis_rifle_scout = ROOT
+							iroquis_rifle_scout = ROOT
+							iroquis_rifle_scout = ROOT
+					}
+					iroquis_rifle_scout = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.137"
+			capital_scope = {
+					hidden_effect = {
+							iroquois_rifle_scout = ROOT
+							iroquois_rifle_scout = ROOT
+							iroquois_rifle_scout = ROOT
+							iroquois_rifle_scout = ROOT
+							iroquois_rifle_scout = ROOT
+							iroquois_rifle_scout = ROOT
+							iroquois_rifle_scout = ROOT
+							iroquois_rifle_scout = ROOT
+							iroquois_rifle_scout = ROOT
+					}
+					iroquois_rifle_scout = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.138"
+			capital_scope = {
+					hidden_effect = {
+							italian_condotta = ROOT
+							italian_condotta = ROOT
+							italian_condotta = ROOT
+							italian_condotta = ROOT
+							italian_condotta = ROOT
+							italian_condotta = ROOT
+							italian_condotta = ROOT
+							italian_condotta = ROOT
+							italian_condotta = ROOT
+					}
+					italian_condotta = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.139"
+			capital_scope = {
+					hidden_effect = {
+							japanese_archer = ROOT
+							japanese_archer = ROOT
+							japanese_archer = ROOT
+							japanese_archer = ROOT
+							japanese_archer = ROOT
+							japanese_archer = ROOT
+							japanese_archer = ROOT
+							japanese_archer = ROOT
+							japanese_archer = ROOT
+					}
+					japanese_archer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.140"
+			capital_scope = {
+					hidden_effect = {
+							japanese_footsoldier = ROOT
+							japanese_footsoldier = ROOT
+							japanese_footsoldier = ROOT
+							japanese_footsoldier = ROOT
+							japanese_footsoldier = ROOT
+							japanese_footsoldier = ROOT
+							japanese_footsoldier = ROOT
+							japanese_footsoldier = ROOT
+							japanese_footsoldier = ROOT
+					}
+					japanese_footsoldier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.141"
+			capital_scope = {
+					hidden_effect = {
+							japanese_samurai = ROOT
+							japanese_samurai = ROOT
+							japanese_samurai = ROOT
+							japanese_samurai = ROOT
+							japanese_samurai = ROOT
+							japanese_samurai = ROOT
+							japanese_samurai = ROOT
+							japanese_samurai = ROOT
+							japanese_samurai = ROOT
+					}
+					japanese_samurai = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.142"
+			capital_scope = {
+					hidden_effect = {
+							large_cast_bronze_mortar = ROOT
+							large_cast_bronze_mortar = ROOT
+							large_cast_bronze_mortar = ROOT
+							large_cast_bronze_mortar = ROOT
+							large_cast_bronze_mortar = ROOT
+							large_cast_bronze_mortar = ROOT
+							large_cast_bronze_mortar = ROOT
+							large_cast_bronze_mortar = ROOT
+							large_cast_bronze_mortar = ROOT
+					}
+					large_cast_bronze_mortar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.143"
+			capital_scope = {
+					hidden_effect = {
+							large_cast_iron_bombard = ROOT
+							large_cast_iron_bombard = ROOT
+							large_cast_iron_bombard = ROOT
+							large_cast_iron_bombard = ROOT
+							large_cast_iron_bombard = ROOT
+							large_cast_iron_bombard = ROOT
+							large_cast_iron_bombard = ROOT
+							large_cast_iron_bombard = ROOT
+							large_cast_iron_bombard = ROOT
+					}
+					large_cast_iron_bombard = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.144"
+			capital_scope = {
+					hidden_effect = {
+							leather_cannon = ROOT
+							leather_cannon = ROOT
+							leather_cannon = ROOT
+							leather_cannon = ROOT
+							leather_cannon = ROOT
+							leather_cannon = ROOT
+							leather_cannon = ROOT
+							leather_cannon = ROOT
+							leather_cannon = ROOT
+					}
+					leather_cannon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.145"
+			capital_scope = {
+					hidden_effect = {
+							maharathan_cavalry = ROOT
+							maharathan_cavalry = ROOT
+							maharathan_cavalry = ROOT
+							maharathan_cavalry = ROOT
+							maharathan_cavalry = ROOT
+							maharathan_cavalry = ROOT
+							maharathan_cavalry = ROOT
+							maharathan_cavalry = ROOT
+							maharathan_cavalry = ROOT
+					}
+					maharathan_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.146"
+			capital_scope = {
+					hidden_effect = {
+							maharathan_guerilla_warfare = ROOT
+							maharathan_guerilla_warfare = ROOT
+							maharathan_guerilla_warfare = ROOT
+							maharathan_guerilla_warfare = ROOT
+							maharathan_guerilla_warfare = ROOT
+							maharathan_guerilla_warfare = ROOT
+							maharathan_guerilla_warfare = ROOT
+							maharathan_guerilla_warfare = ROOT
+							maharathan_guerilla_warfare = ROOT
+					}
+					maharathan_guerilla_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.147"
+			capital_scope = {
+					hidden_effect = {
+							mali_tribal_warfare = ROOT
+							mali_tribal_warfare = ROOT
+							mali_tribal_warfare = ROOT
+							mali_tribal_warfare = ROOT
+							mali_tribal_warfare = ROOT
+							mali_tribal_warfare = ROOT
+							mali_tribal_warfare = ROOT
+							mali_tribal_warfare = ROOT
+							mali_tribal_warfare = ROOT
+					}
+					mali_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.148"
+			capital_scope = {
+					hidden_effect = {
+							mamluk_archer = ROOT
+							mamluk_archer = ROOT
+							mamluk_archer = ROOT
+							mamluk_archer = ROOT
+							mamluk_archer = ROOT
+							mamluk_archer = ROOT
+							mamluk_archer = ROOT
+							mamluk_archer = ROOT
+							mamluk_archer = ROOT
+					}
+					mamluk_archer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.149"
+			capital_scope = {
+					hidden_effect = {
+							mamluk_cavalry_charge = ROOT
+							mamluk_cavalry_charge = ROOT
+							mamluk_cavalry_charge = ROOT
+							mamluk_cavalry_charge = ROOT
+							mamluk_cavalry_charge = ROOT
+							mamluk_cavalry_charge = ROOT
+							mamluk_cavalry_charge = ROOT
+							mamluk_cavalry_charge = ROOT
+							mamluk_cavalry_charge = ROOT
+					}
+					mamluk_cavalry_charge = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.150"
+			capital_scope = {
+					hidden_effect = {
+							mamluk_duel = ROOT
+							mamluk_duel = ROOT
+							mamluk_duel = ROOT
+							mamluk_duel = ROOT
+							mamluk_duel = ROOT
+							mamluk_duel = ROOT
+							mamluk_duel = ROOT
+							mamluk_duel = ROOT
+							mamluk_duel = ROOT
+					}
+					mamluk_duel = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.151"
+			capital_scope = {
+					hidden_effect = {
+							mamluk_musket_charge = ROOT
+							mamluk_musket_charge = ROOT
+							mamluk_musket_charge = ROOT
+							mamluk_musket_charge = ROOT
+							mamluk_musket_charge = ROOT
+							mamluk_musket_charge = ROOT
+							mamluk_musket_charge = ROOT
+							mamluk_musket_charge = ROOT
+							mamluk_musket_charge = ROOT
+					}
+					mamluk_musket_charge = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.152"
+			capital_scope = {
+					hidden_effect = {
+							manchu_banner = ROOT
+							manchu_banner = ROOT
+							manchu_banner = ROOT
+							manchu_banner = ROOT
+							manchu_banner = ROOT
+							manchu_banner = ROOT
+							manchu_banner = ROOT
+							manchu_banner = ROOT
+							manchu_banner = ROOT
+					}
+					manchu_banner = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.153"
+			capital_scope = {
+					hidden_effect = {
+							maya_forest_warfare = ROOT
+							maya_forest_warfare = ROOT
+							maya_forest_warfare = ROOT
+							maya_forest_warfare = ROOT
+							maya_forest_warfare = ROOT
+							maya_forest_warfare = ROOT
+							maya_forest_warfare = ROOT
+							maya_forest_warfare = ROOT
+							maya_forest_warfare = ROOT
+					}
+					maya_forest_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.154"
+			capital_scope = {
+					hidden_effect = {
+							maya_guerilla_warfare = ROOT
+							maya_guerilla_warfare = ROOT
+							maya_guerilla_warfare = ROOT
+							maya_guerilla_warfare = ROOT
+							maya_guerilla_warfare = ROOT
+							maya_guerilla_warfare = ROOT
+							maya_guerilla_warfare = ROOT
+							maya_guerilla_warfare = ROOT
+							maya_guerilla_warfare = ROOT
+					}
+					maya_guerilla_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.155"
+			capital_scope = {
+					hidden_effect = {
+							maya_gunpowder_warfare = ROOT
+							maya_gunpowder_warfare = ROOT
+							maya_gunpowder_warfare = ROOT
+							maya_gunpowder_warfare = ROOT
+							maya_gunpowder_warfare = ROOT
+							maya_gunpowder_warfare = ROOT
+							maya_gunpowder_warfare = ROOT
+							maya_gunpowder_warfare = ROOT
+							maya_gunpowder_warfare = ROOT
+					}
+					maya_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.156"
+			capital_scope = {
+					hidden_effect = {
+							maya_tribal_warfare = ROOT
+							maya_tribal_warfare = ROOT
+							maya_tribal_warfare = ROOT
+							maya_tribal_warfare = ROOT
+							maya_tribal_warfare = ROOT
+							maya_tribal_warfare = ROOT
+							maya_tribal_warfare = ROOT
+							maya_tribal_warfare = ROOT
+							maya_tribal_warfare = ROOT
+					}
+					maya_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.158"
+			capital_scope = {
+					hidden_effect = {
+							mesoamerican_spearmen = ROOT
+							mesoamerican_spearmen = ROOT
+							mesoamerican_spearmen = ROOT
+							mesoamerican_spearmen = ROOT
+							mesoamerican_spearmen = ROOT
+							mesoamerican_spearmen = ROOT
+							mesoamerican_spearmen = ROOT
+							mesoamerican_spearmen = ROOT
+							mesoamerican_spearmen = ROOT
+					}
+					mesoamerican_spearmen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.159"
+			capital_scope = {
+					hidden_effect = {
+							mexican_guerilla_warfare = ROOT
+							mexican_guerilla_warfare = ROOT
+							mexican_guerilla_warfare = ROOT
+							mexican_guerilla_warfare = ROOT
+							mexican_guerilla_warfare = ROOT
+							mexican_guerilla_warfare = ROOT
+							mexican_guerilla_warfare = ROOT
+							mexican_guerilla_warfare = ROOT
+							mexican_guerilla_warfare = ROOT
+					}
+					mexican_guerilla_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.160"
+			capital_scope = {
+					hidden_effect = {
+							mixed_order_infantry = ROOT
+							mixed_order_infantry = ROOT
+							mixed_order_infantry = ROOT
+							mixed_order_infantry = ROOT
+							mixed_order_infantry = ROOT
+							mixed_order_infantry = ROOT
+							mixed_order_infantry = ROOT
+							mixed_order_infantry = ROOT
+							mixed_order_infantry = ROOT
+					}
+					mixed_order_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.161"
+			capital_scope = {
+					hidden_effect = {
+							mongol_bow = ROOT
+							mongol_bow = ROOT
+							mongol_bow = ROOT
+							mongol_bow = ROOT
+							mongol_bow = ROOT
+							mongol_bow = ROOT
+							mongol_bow = ROOT
+							mongol_bow = ROOT
+							mongol_bow = ROOT
+					}
+					mongol_bow = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.162"
+			capital_scope = {
+					hidden_effect = {
+							mongol_steppe = ROOT
+							mongol_steppe = ROOT
+							mongol_steppe = ROOT
+							mongol_steppe = ROOT
+							mongol_steppe = ROOT
+							mongol_steppe = ROOT
+							mongol_steppe = ROOT
+							mongol_steppe = ROOT
+							mongol_steppe = ROOT
+					}
+					mongol_steppe = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.163"
+			capital_scope = {
+					hidden_effect = {
+							mongol_swarm = ROOT
+							mongol_swarm = ROOT
+							mongol_swarm = ROOT
+							mongol_swarm = ROOT
+							mongol_swarm = ROOT
+							mongol_swarm = ROOT
+							mongol_swarm = ROOT
+							mongol_swarm = ROOT
+							mongol_swarm = ROOT
+					}
+					mongol_swarm = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.164"
+			capital_scope = {
+					hidden_effect = {
+							mongolian_bow = ROOT
+							mongolian_bow = ROOT
+							mongolian_bow = ROOT
+							mongolian_bow = ROOT
+							mongolian_bow = ROOT
+							mongolian_bow = ROOT
+							mongolian_bow = ROOT
+							mongolian_bow = ROOT
+							mongolian_bow = ROOT
+					}
+					mongolian_bow = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.165"
+			capital_scope = {
+					hidden_effect = {
+							mughal_mansabdar = ROOT
+							mughal_mansabdar = ROOT
+							mughal_mansabdar = ROOT
+							mughal_mansabdar = ROOT
+							mughal_mansabdar = ROOT
+							mughal_mansabdar = ROOT
+							mughal_mansabdar = ROOT
+							mughal_mansabdar = ROOT
+							mughal_mansabdar = ROOT
+					}
+					mughal_mansabdar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.166"
+			capital_scope = {
+					hidden_effect = {
+							mughal_musketeer = ROOT
+							mughal_musketeer = ROOT
+							mughal_musketeer = ROOT
+							mughal_musketeer = ROOT
+							mughal_musketeer = ROOT
+							mughal_musketeer = ROOT
+							mughal_musketeer = ROOT
+							mughal_musketeer = ROOT
+							mughal_musketeer = ROOT
+					}
+					mughal_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.167"
+			capital_scope = {
+					hidden_effect = {
+							muscovite_caracolle = ROOT
+							muscovite_caracolle = ROOT
+							muscovite_caracolle = ROOT
+							muscovite_caracolle = ROOT
+							muscovite_caracolle = ROOT
+							muscovite_caracolle = ROOT
+							muscovite_caracolle = ROOT
+							muscovite_caracolle = ROOT
+							muscovite_caracolle = ROOT
+					}
+					muscovite_caracolle = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.168"
+			capital_scope = {
+					hidden_effect = {
+							muscovite_cossack = ROOT
+							muscovite_cossack = ROOT
+							muscovite_cossack = ROOT
+							muscovite_cossack = ROOT
+							muscovite_cossack = ROOT
+							muscovite_cossack = ROOT
+							muscovite_cossack = ROOT
+							muscovite_cossack = ROOT
+							muscovite_cossack = ROOT
+					}
+					muscovite_cossack = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.169"
+			capital_scope = {
+					hidden_effect = {
+							muscovite_musketeer = ROOT
+							muscovite_musketeer = ROOT
+							muscovite_musketeer = ROOT
+							muscovite_musketeer = ROOT
+							muscovite_musketeer = ROOT
+							muscovite_musketeer = ROOT
+							muscovite_musketeer = ROOT
+							muscovite_musketeer = ROOT
+							muscovite_musketeer = ROOT
+					}
+					muscovite_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.170"
+			capital_scope = {
+					hidden_effect = {
+							muscovite_soldaty = ROOT
+							muscovite_soldaty = ROOT
+							muscovite_soldaty = ROOT
+							muscovite_soldaty = ROOT
+							muscovite_soldaty = ROOT
+							muscovite_soldaty = ROOT
+							muscovite_soldaty = ROOT
+							muscovite_soldaty = ROOT
+							muscovite_soldaty = ROOT
+					}
+					muscovite_soldaty = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.171"
+			capital_scope = {
+					hidden_effect = {
+							muslim_cavalry_archers = ROOT
+							muslim_cavalry_archers = ROOT
+							muslim_cavalry_archers = ROOT
+							muslim_cavalry_archers = ROOT
+							muslim_cavalry_archers = ROOT
+							muslim_cavalry_archers = ROOT
+							muslim_cavalry_archers = ROOT
+							muslim_cavalry_archers = ROOT
+							muslim_cavalry_archers = ROOT
+					}
+					muslim_cavalry_archers = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.172"
+			capital_scope = {
+					hidden_effect = {
+							muslim_dragoon = ROOT
+							muslim_dragoon = ROOT
+							muslim_dragoon = ROOT
+							muslim_dragoon = ROOT
+							muslim_dragoon = ROOT
+							muslim_dragoon = ROOT
+							muslim_dragoon = ROOT
+							muslim_dragoon = ROOT
+							muslim_dragoon = ROOT
+					}
+					muslim_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.173"
+			capital_scope = {
+					hidden_effect = {
+							muslim_mass_infantry = ROOT
+							muslim_mass_infantry = ROOT
+							muslim_mass_infantry = ROOT
+							muslim_mass_infantry = ROOT
+							muslim_mass_infantry = ROOT
+							muslim_mass_infantry = ROOT
+							muslim_mass_infantry = ROOT
+							muslim_mass_infantry = ROOT
+							muslim_mass_infantry = ROOT
+					}
+					muslim_mass_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.174"
+			capital_scope = {
+					hidden_effect = {
+							napoleonic_lancers = ROOT
+							napoleonic_lancers = ROOT
+							napoleonic_lancers = ROOT
+							napoleonic_lancers = ROOT
+							napoleonic_lancers = ROOT
+							napoleonic_lancers = ROOT
+							napoleonic_lancers = ROOT
+							napoleonic_lancers = ROOT
+							napoleonic_lancers = ROOT
+					}
+					napoleonic_lancers = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.175"
+			capital_scope = {
+					hidden_effect = {
+							napoleonic_square = ROOT
+							napoleonic_square = ROOT
+							napoleonic_square = ROOT
+							napoleonic_square = ROOT
+							napoleonic_square = ROOT
+							napoleonic_square = ROOT
+							napoleonic_square = ROOT
+							napoleonic_square = ROOT
+							napoleonic_square = ROOT
+					}
+					napoleonic_square = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.176"
+			capital_scope = {
+					hidden_effect = {
+							native_clubmen = ROOT
+							native_clubmen = ROOT
+							native_clubmen = ROOT
+							native_clubmen = ROOT
+							native_clubmen = ROOT
+							native_clubmen = ROOT
+							native_clubmen = ROOT
+							native_clubmen = ROOT
+							native_clubmen = ROOT
+					}
+					native_clubmen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.177"
+			capital_scope = {
+					hidden_effect = {
+							native_indian_archer = ROOT
+							native_indian_archer = ROOT
+							native_indian_archer = ROOT
+							native_indian_archer = ROOT
+							native_indian_archer = ROOT
+							native_indian_archer = ROOT
+							native_indian_archer = ROOT
+							native_indian_archer = ROOT
+							native_indian_archer = ROOT
+					}
+					native_indian_archer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.178"
+			capital_scope = {
+					hidden_effect = {
+							native_indian_horsemen = ROOT
+							native_indian_horsemen = ROOT
+							native_indian_horsemen = ROOT
+							native_indian_horsemen = ROOT
+							native_indian_horsemen = ROOT
+							native_indian_horsemen = ROOT
+							native_indian_horsemen = ROOT
+							native_indian_horsemen = ROOT
+							native_indian_horsemen = ROOT
+					}
+					native_indian_horsemen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.179"
+			capital_scope = {
+					hidden_effect = {
+							native_indian_mountain_warfare = ROOT
+							native_indian_mountain_warfare = ROOT
+							native_indian_mountain_warfare = ROOT
+							native_indian_mountain_warfare = ROOT
+							native_indian_mountain_warfare = ROOT
+							native_indian_mountain_warfare = ROOT
+							native_indian_mountain_warfare = ROOT
+							native_indian_mountain_warfare = ROOT
+							native_indian_mountain_warfare = ROOT
+					}
+					native_indian_mountain_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.180"
+			capital_scope = {
+					hidden_effect = {
+							native_indian_tribal_warfare = ROOT
+							native_indian_tribal_warfare = ROOT
+							native_indian_tribal_warfare = ROOT
+							native_indian_tribal_warfare = ROOT
+							native_indian_tribal_warfare = ROOT
+							native_indian_tribal_warfare = ROOT
+							native_indian_tribal_warfare = ROOT
+							native_indian_tribal_warfare = ROOT
+							native_indian_tribal_warfare = ROOT
+					}
+					native_indian_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.181"
+			capital_scope = {
+					hidden_effect = {
+							niger_kongolese_forest_warfare = ROOT
+							niger_kongolese_forest_warfare = ROOT
+							niger_kongolese_forest_warfare = ROOT
+							niger_kongolese_forest_warfare = ROOT
+							niger_kongolese_forest_warfare = ROOT
+							niger_kongolese_forest_warfare = ROOT
+							niger_kongolese_forest_warfare = ROOT
+							niger_kongolese_forest_warfare = ROOT
+							niger_kongolese_forest_warfare = ROOT
+					}
+					niger_kongolese_forest_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.182"
+			capital_scope = {
+					hidden_effect = {
+							niger_kongolese_guerilla_warfare = ROOT
+							niger_kongolese_guerilla_warfare = ROOT
+							niger_kongolese_guerilla_warfare = ROOT
+							niger_kongolese_guerilla_warfare = ROOT
+							niger_kongolese_guerilla_warfare = ROOT
+							niger_kongolese_guerilla_warfare = ROOT
+							niger_kongolese_guerilla_warfare = ROOT
+							niger_kongolese_guerilla_warfare = ROOT
+							niger_kongolese_guerilla_warfare = ROOT
+					}
+					niger_kongolese_guerilla_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.183"
+			capital_scope = {
+					hidden_effect = {
+							niger_kongolese_gunpowder_warfare = ROOT
+							niger_kongolese_gunpowder_warfare = ROOT
+							niger_kongolese_gunpowder_warfare = ROOT
+							niger_kongolese_gunpowder_warfare = ROOT
+							niger_kongolese_gunpowder_warfare = ROOT
+							niger_kongolese_gunpowder_warfare = ROOT
+							niger_kongolese_gunpowder_warfare = ROOT
+							niger_kongolese_gunpowder_warfare = ROOT
+							niger_kongolese_gunpowder_warfare = ROOT
+					}
+					niger_kongolese_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.184"
+			capital_scope = {
+					hidden_effect = {
+							niger_kongolese_tribal_warfare = ROOT
+							niger_kongolese_tribal_warfare = ROOT
+							niger_kongolese_tribal_warfare = ROOT
+							niger_kongolese_tribal_warfare = ROOT
+							niger_kongolese_tribal_warfare = ROOT
+							niger_kongolese_tribal_warfare = ROOT
+							niger_kongolese_tribal_warfare = ROOT
+							niger_kongolese_tribal_warfare = ROOT
+							niger_kongolese_tribal_warfare = ROOT
+					}
+					niger_kongolese_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.185"
+			capital_scope = {
+					hidden_effect = {
+							north_american_dragoon = ROOT
+							north_american_dragoon = ROOT
+							north_american_dragoon = ROOT
+							north_american_dragoon = ROOT
+							north_american_dragoon = ROOT
+							north_american_dragoon = ROOT
+							north_american_dragoon = ROOT
+							north_american_dragoon = ROOT
+							north_american_dragoon = ROOT
+					}
+					north_american_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.186"
+			capital_scope = {
+					hidden_effect = {
+							north_american_horsemen = ROOT
+							north_american_horsemen = ROOT
+							north_american_horsemen = ROOT
+							north_american_horsemen = ROOT
+							north_american_horsemen = ROOT
+							north_american_horsemen = ROOT
+							north_american_horsemen = ROOT
+							north_american_horsemen = ROOT
+							north_american_horsemen = ROOT
+					}
+					north_american_horsemen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.187"
+			capital_scope = {
+					hidden_effect = {
+							north_american_hussar = ROOT
+							north_american_hussar = ROOT
+							north_american_hussar = ROOT
+							north_american_hussar = ROOT
+							north_american_hussar = ROOT
+							north_american_hussar = ROOT
+							north_american_hussar = ROOT
+							north_american_hussar = ROOT
+							north_american_hussar = ROOT
+					}
+					north_american_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.188"
+			capital_scope = {
+					hidden_effect = {
+							north_american_rifle_cavalry = ROOT
+							north_american_rifle_cavalry = ROOT
+							north_american_rifle_cavalry = ROOT
+							north_american_rifle_cavalry = ROOT
+							north_american_rifle_cavalry = ROOT
+							north_american_rifle_cavalry = ROOT
+							north_american_rifle_cavalry = ROOT
+							north_american_rifle_cavalry = ROOT
+							north_american_rifle_cavalry = ROOT
+					}
+					north_american_rifle_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.189"
+			capital_scope = {
+					hidden_effect = {
+							north_american_swarm = ROOT
+							north_american_swarm = ROOT
+							north_american_swarm = ROOT
+							north_american_swarm = ROOT
+							north_american_swarm = ROOT
+							north_american_swarm = ROOT
+							north_american_swarm = ROOT
+							north_american_swarm = ROOT
+							north_american_swarm = ROOT
+					}
+					north_american_swarm = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.190"
+			capital_scope = {
+					hidden_effect = {
+							open_order_cavalry = ROOT
+							open_order_cavalry = ROOT
+							open_order_cavalry = ROOT
+							open_order_cavalry = ROOT
+							open_order_cavalry = ROOT
+							open_order_cavalry = ROOT
+							open_order_cavalry = ROOT
+							open_order_cavalry = ROOT
+							open_order_cavalry = ROOT
+					}
+					open_order_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.191"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_azab = ROOT
+							ottoman_azab = ROOT
+							ottoman_azab = ROOT
+							ottoman_azab = ROOT
+							ottoman_azab = ROOT
+							ottoman_azab = ROOT
+							ottoman_azab = ROOT
+							ottoman_azab = ROOT
+							ottoman_azab = ROOT
+					}
+					ottoman_azab = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.192"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_janissary = ROOT
+							ottoman_janissary = ROOT
+							ottoman_janissary = ROOT
+							ottoman_janissary = ROOT
+							ottoman_janissary = ROOT
+							ottoman_janissary = ROOT
+							ottoman_janissary = ROOT
+							ottoman_janissary = ROOT
+							ottoman_janissary = ROOT
+					}
+					ottoman_janissary = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.193"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_lancer = ROOT
+							ottoman_lancer = ROOT
+							ottoman_lancer = ROOT
+							ottoman_lancer = ROOT
+							ottoman_lancer = ROOT
+							ottoman_lancer = ROOT
+							ottoman_lancer = ROOT
+							ottoman_lancer = ROOT
+							ottoman_lancer = ROOT
+					}
+					ottoman_lancer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.194"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_musellem = ROOT
+							ottoman_musellem = ROOT
+							ottoman_musellem = ROOT
+							ottoman_musellem = ROOT
+							ottoman_musellem = ROOT
+							ottoman_musellem = ROOT
+							ottoman_musellem = ROOT
+							ottoman_musellem = ROOT
+							ottoman_musellem = ROOT
+					}
+					ottoman_musellem = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.195"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_new_model = ROOT
+							ottoman_new_model = ROOT
+							ottoman_new_model = ROOT
+							ottoman_new_model = ROOT
+							ottoman_new_model = ROOT
+							ottoman_new_model = ROOT
+							ottoman_new_model = ROOT
+							ottoman_new_model = ROOT
+							ottoman_new_model = ROOT
+					}
+					ottoman_new_model = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.196"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_nizami_cedid = ROOT
+							ottoman_nizami_cedid = ROOT
+							ottoman_nizami_cedid = ROOT
+							ottoman_nizami_cedid = ROOT
+							ottoman_nizami_cedid = ROOT
+							ottoman_nizami_cedid = ROOT
+							ottoman_nizami_cedid = ROOT
+							ottoman_nizami_cedid = ROOT
+							ottoman_nizami_cedid = ROOT
+					}
+					ottoman_nizami_cedid = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.197"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_reformed_janissary = ROOT
+							ottoman_reformed_janissary = ROOT
+							ottoman_reformed_janissary = ROOT
+							ottoman_reformed_janissary = ROOT
+							ottoman_reformed_janissary = ROOT
+							ottoman_reformed_janissary = ROOT
+							ottoman_reformed_janissary = ROOT
+							ottoman_reformed_janissary = ROOT
+							ottoman_reformed_janissary = ROOT
+					}
+					ottoman_reformed_janissary = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.198"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_reformed_spahi = ROOT
+							ottoman_reformed_spahi = ROOT
+							ottoman_reformed_spahi = ROOT
+							ottoman_reformed_spahi = ROOT
+							ottoman_reformed_spahi = ROOT
+							ottoman_reformed_spahi = ROOT
+							ottoman_reformed_spahi = ROOT
+							ottoman_reformed_spahi = ROOT
+							ottoman_reformed_spahi = ROOT
+					}
+					ottoman_reformed_spahi = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.199"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_sekban = ROOT
+							ottoman_sekban = ROOT
+							ottoman_sekban = ROOT
+							ottoman_sekban = ROOT
+							ottoman_sekban = ROOT
+							ottoman_sekban = ROOT
+							ottoman_sekban = ROOT
+							ottoman_sekban = ROOT
+							ottoman_sekban = ROOT
+					}
+					ottoman_sekban = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.200"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_spahi = ROOT
+							ottoman_spahi = ROOT
+							ottoman_spahi = ROOT
+							ottoman_spahi = ROOT
+							ottoman_spahi = ROOT
+							ottoman_spahi = ROOT
+							ottoman_spahi = ROOT
+							ottoman_spahi = ROOT
+							ottoman_spahi = ROOT
+					}
+					ottoman_spahi = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.201"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_timariot = ROOT
+							ottoman_timariot = ROOT
+							ottoman_timariot = ROOT
+							ottoman_timariot = ROOT
+							ottoman_timariot = ROOT
+							ottoman_timariot = ROOT
+							ottoman_timariot = ROOT
+							ottoman_timariot = ROOT
+							ottoman_timariot = ROOT
+					}
+					ottoman_timariot = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.202"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_toprakli_dragoon = ROOT
+							ottoman_toprakli_dragoon = ROOT
+							ottoman_toprakli_dragoon = ROOT
+							ottoman_toprakli_dragoon = ROOT
+							ottoman_toprakli_dragoon = ROOT
+							ottoman_toprakli_dragoon = ROOT
+							ottoman_toprakli_dragoon = ROOT
+							ottoman_toprakli_dragoon = ROOT
+							ottoman_toprakli_dragoon = ROOT
+					}
+					ottoman_toprakli_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.203"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_toprakli_hit_and_run = ROOT
+							ottoman_toprakli_hit_and_run = ROOT
+							ottoman_toprakli_hit_and_run = ROOT
+							ottoman_toprakli_hit_and_run = ROOT
+							ottoman_toprakli_hit_and_run = ROOT
+							ottoman_toprakli_hit_and_run = ROOT
+							ottoman_toprakli_hit_and_run = ROOT
+							ottoman_toprakli_hit_and_run = ROOT
+							ottoman_toprakli_hit_and_run = ROOT
+					}
+					ottoman_toprakli_hit_and_run = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.204"
+			capital_scope = {
+					hidden_effect = {
+							ottoman_yaya = ROOT
+							ottoman_yaya = ROOT
+							ottoman_yaya = ROOT
+							ottoman_yaya = ROOT
+							ottoman_yaya = ROOT
+							ottoman_yaya = ROOT
+							ottoman_yaya = ROOT
+							ottoman_yaya = ROOT
+							ottoman_yaya = ROOT
+					}
+					ottoman_yaya = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.205"
+			capital_scope = {
+					hidden_effect = {
+							pedrero = ROOT
+							pedrero = ROOT
+							pedrero = ROOT
+							pedrero = ROOT
+							pedrero = ROOT
+							pedrero = ROOT
+							pedrero = ROOT
+							pedrero = ROOT
+							pedrero = ROOT
+					}
+					pedrero = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.206"
+			capital_scope = {
+					hidden_effect = {
+							persian_cavalry_charge = ROOT
+							persian_cavalry_charge = ROOT
+							persian_cavalry_charge = ROOT
+							persian_cavalry_charge = ROOT
+							persian_cavalry_charge = ROOT
+							persian_cavalry_charge = ROOT
+							persian_cavalry_charge = ROOT
+							persian_cavalry_charge = ROOT
+							persian_cavalry_charge = ROOT
+					}
+					persian_cavalry_charge = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.207"
+			capital_scope = {
+					hidden_effect = {
+							persian_footsoldier = ROOT
+							persian_footsoldier = ROOT
+							persian_footsoldier = ROOT
+							persian_footsoldier = ROOT
+							persian_footsoldier = ROOT
+							persian_footsoldier = ROOT
+							persian_footsoldier = ROOT
+							persian_footsoldier = ROOT
+							persian_footsoldier = ROOT
+					}
+					persian_footsoldier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.208"
+			capital_scope = {
+					hidden_effect = {
+							persian_rifle = ROOT
+							persian_rifle = ROOT
+							persian_rifle = ROOT
+							persian_rifle = ROOT
+							persian_rifle = ROOT
+							persian_rifle = ROOT
+							persian_rifle = ROOT
+							persian_rifle = ROOT
+							persian_rifle = ROOT
+					}
+					persian_rifle = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.209"
+			capital_scope = {
+					hidden_effect = {
+							persian_shamshir = ROOT
+							persian_shamshir = ROOT
+							persian_shamshir = ROOT
+							persian_shamshir = ROOT
+							persian_shamshir = ROOT
+							persian_shamshir = ROOT
+							persian_shamshir = ROOT
+							persian_shamshir = ROOT
+							persian_shamshir = ROOT
+					}
+					persian_shamshir = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.210"
+			capital_scope = {
+					hidden_effect = {
+							peruvian_guerilla_warfare = ROOT
+							peruvian_guerilla_warfare = ROOT
+							peruvian_guerilla_warfare = ROOT
+							peruvian_guerilla_warfare = ROOT
+							peruvian_guerilla_warfare = ROOT
+							peruvian_guerilla_warfare = ROOT
+							peruvian_guerilla_warfare = ROOT
+							peruvian_guerilla_warfare = ROOT
+							peruvian_guerilla_warfare = ROOT
+					}
+					peruvian_guerilla_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.211"
+			capital_scope = {
+					hidden_effect = {
+							polish_hussar = ROOT
+							polish_hussar = ROOT
+							polish_hussar = ROOT
+							polish_hussar = ROOT
+							polish_hussar = ROOT
+							polish_hussar = ROOT
+							polish_hussar = ROOT
+							polish_hussar = ROOT
+							polish_hussar = ROOT
+					}
+					polish_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.212"
+			capital_scope = {
+					hidden_effect = {
+							polish_musketeer = ROOT
+							polish_musketeer = ROOT
+							polish_musketeer = ROOT
+							polish_musketeer = ROOT
+							polish_musketeer = ROOT
+							polish_musketeer = ROOT
+							polish_musketeer = ROOT
+							polish_musketeer = ROOT
+							polish_musketeer = ROOT
+					}
+					polish_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.213"
+			capital_scope = {
+					hidden_effect = {
+							polish_tercio = ROOT
+							polish_tercio = ROOT
+							polish_tercio = ROOT
+							polish_tercio = ROOT
+							polish_tercio = ROOT
+							polish_tercio = ROOT
+							polish_tercio = ROOT
+							polish_tercio = ROOT
+							polish_tercio = ROOT
+					}
+					polish_tercio = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.214"
+			capital_scope = {
+					hidden_effect = {
+							polish_winged_hussar = ROOT
+							polish_winged_hussar = ROOT
+							polish_winged_hussar = ROOT
+							polish_winged_hussar = ROOT
+							polish_winged_hussar = ROOT
+							polish_winged_hussar = ROOT
+							polish_winged_hussar = ROOT
+							polish_winged_hussar = ROOT
+							polish_winged_hussar = ROOT
+					}
+					polish_winged_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.215"
+			capital_scope = {
+					hidden_effect = {
+							prussian_drill = ROOT
+							prussian_drill = ROOT
+							prussian_drill = ROOT
+							prussian_drill = ROOT
+							prussian_drill = ROOT
+							prussian_drill = ROOT
+							prussian_drill = ROOT
+							prussian_drill = ROOT
+							prussian_drill = ROOT
+					}
+					prussian_drill = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.216"
+			capital_scope = {
+					hidden_effect = {
+							prussian_frederickian = ROOT
+							prussian_frederickian = ROOT
+							prussian_frederickian = ROOT
+							prussian_frederickian = ROOT
+							prussian_frederickian = ROOT
+							prussian_frederickian = ROOT
+							prussian_frederickian = ROOT
+							prussian_frederickian = ROOT
+							prussian_frederickian = ROOT
+					}
+					prussian_frederickian = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.217"
+			capital_scope = {
+					hidden_effect = {
+							prussian_uhlan = ROOT
+							prussian_uhlan = ROOT
+							prussian_uhlan = ROOT
+							prussian_uhlan = ROOT
+							prussian_uhlan = ROOT
+							prussian_uhlan = ROOT
+							prussian_uhlan = ROOT
+							prussian_uhlan = ROOT
+							prussian_uhlan = ROOT
+					}
+					prussian_uhlan = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.218"
+			capital_scope = {
+					hidden_effect = {
+							pueblo_ambush = ROOT
+							pueblo_ambush = ROOT
+							pueblo_ambush = ROOT
+							pueblo_ambush = ROOT
+							pueblo_ambush = ROOT
+							pueblo_ambush = ROOT
+							pueblo_ambush = ROOT
+							pueblo_ambush = ROOT
+							pueblo_ambush = ROOT
+					}
+					pueblo_ambush = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.219"
+			capital_scope = {
+					hidden_effect = {
+							qizilbash_cavalry = ROOT
+							qizilbash_cavalry = ROOT
+							qizilbash_cavalry = ROOT
+							qizilbash_cavalry = ROOT
+							qizilbash_cavalry = ROOT
+							qizilbash_cavalry = ROOT
+							qizilbash_cavalry = ROOT
+							qizilbash_cavalry = ROOT
+							qizilbash_cavalry = ROOT
+					}
+					qizilbash_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.220"
+			capital_scope = {
+					hidden_effect = {
+							rajput_hill_fighters = ROOT
+							rajput_hill_fighters = ROOT
+							rajput_hill_fighters = ROOT
+							rajput_hill_fighters = ROOT
+							rajput_hill_fighters = ROOT
+							rajput_hill_fighters = ROOT
+							rajput_hill_fighters = ROOT
+							rajput_hill_fighters = ROOT
+							rajput_hill_fighters = ROOT
+					}
+					rajput_hill_fighters = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.221"
+			capital_scope = {
+					hidden_effect = {
+							rajput_musketeer = ROOT
+							rajput_musketeer = ROOT
+							rajput_musketeer = ROOT
+							rajput_musketeer = ROOT
+							rajput_musketeer = ROOT
+							rajput_musketeer = ROOT
+							rajput_musketeer = ROOT
+							rajput_musketeer = ROOT
+							rajput_musketeer = ROOT
+					}
+					rajput_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.222"
+			capital_scope = {
+					hidden_effect = {
+							reformed_asian_cavalry = ROOT
+							reformed_asian_cavalry = ROOT
+							reformed_asian_cavalry = ROOT
+							reformed_asian_cavalry = ROOT
+							reformed_asian_cavalry = ROOT
+							reformed_asian_cavalry = ROOT
+							reformed_asian_cavalry = ROOT
+							reformed_asian_cavalry = ROOT
+							reformed_asian_cavalry = ROOT
+					}
+					reformed_asian_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.223"
+			capital_scope = {
+					hidden_effect = {
+							reformed_asian_musketeer = ROOT
+							reformed_asian_musketeer = ROOT
+							reformed_asian_musketeer = ROOT
+							reformed_asian_musketeer = ROOT
+							reformed_asian_musketeer = ROOT
+							reformed_asian_musketeer = ROOT
+							reformed_asian_musketeer = ROOT
+							reformed_asian_musketeer = ROOT
+							reformed_asian_musketeer = ROOT
+					}
+					reformed_asian_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.224"
+			capital_scope = {
+					hidden_effect = {
+							reformed_manchu_rifle = ROOT
+							reformed_manchu_rifle = ROOT
+							reformed_manchu_rifle = ROOT
+							reformed_manchu_rifle = ROOT
+							reformed_manchu_rifle = ROOT
+							reformed_manchu_rifle = ROOT
+							reformed_manchu_rifle = ROOT
+							reformed_manchu_rifle = ROOT
+							reformed_manchu_rifle = ROOT
+					}
+					reformed_manchu_rifle = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.225"
+			capital_scope = {
+					hidden_effect = {
+							reformed_mughal_mansabdar = ROOT
+							reformed_mughal_mansabdar = ROOT
+							reformed_mughal_mansabdar = ROOT
+							reformed_mughal_mansabdar = ROOT
+							reformed_mughal_mansabdar = ROOT
+							reformed_mughal_mansabdar = ROOT
+							reformed_mughal_mansabdar = ROOT
+							reformed_mughal_mansabdar = ROOT
+							reformed_mughal_mansabdar = ROOT
+					}
+					reformed_mughal_mansabdar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.226"
+			capital_scope = {
+					hidden_effect = {
+							reformed_mughal_musketeer = ROOT
+							reformed_mughal_musketeer = ROOT
+							reformed_mughal_musketeer = ROOT
+							reformed_mughal_musketeer = ROOT
+							reformed_mughal_musketeer = ROOT
+							reformed_mughal_musketeer = ROOT
+							reformed_mughal_musketeer = ROOT
+							reformed_mughal_musketeer = ROOT
+							reformed_mughal_musketeer = ROOT
+					}
+					reformed_mughal_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.227"
+			capital_scope = {
+					hidden_effect = {
+							reformed_steppe_rifles = ROOT
+							reformed_steppe_rifles = ROOT
+							reformed_steppe_rifles = ROOT
+							reformed_steppe_rifles = ROOT
+							reformed_steppe_rifles = ROOT
+							reformed_steppe_rifles = ROOT
+							reformed_steppe_rifles = ROOT
+							reformed_steppe_rifles = ROOT
+							reformed_steppe_rifles = ROOT
+					}
+					reformed_steppe_rifles = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.228"
+			capital_scope = {
+					hidden_effect = {
+							reformed_westernized_incan = ROOT
+							reformed_westernized_incan = ROOT
+							reformed_westernized_incan = ROOT
+							reformed_westernized_incan = ROOT
+							reformed_westernized_incan = ROOT
+							reformed_westernized_incan = ROOT
+							reformed_westernized_incan = ROOT
+							reformed_westernized_incan = ROOT
+							reformed_westernized_incan = ROOT
+					}
+					reformed_westernized_incan = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.229"
+			capital_scope = {
+					hidden_effect = {
+							royal_mortar = ROOT
+							royal_mortar = ROOT
+							royal_mortar = ROOT
+							royal_mortar = ROOT
+							royal_mortar = ROOT
+							royal_mortar = ROOT
+							royal_mortar = ROOT
+							royal_mortar = ROOT
+							royal_mortar = ROOT
+					}
+					royal_mortar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.230"
+			capital_scope = {
+					hidden_effect = {
+							russian_cossack = ROOT
+							russian_cossack = ROOT
+							russian_cossack = ROOT
+							russian_cossack = ROOT
+							russian_cossack = ROOT
+							russian_cossack = ROOT
+							russian_cossack = ROOT
+							russian_cossack = ROOT
+							russian_cossack = ROOT
+					}
+					russian_cossack = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.231"
+			capital_scope = {
+					hidden_effect = {
+							russian_cuirassier = ROOT
+							russian_cuirassier = ROOT
+							russian_cuirassier = ROOT
+							russian_cuirassier = ROOT
+							russian_cuirassier = ROOT
+							russian_cuirassier = ROOT
+							russian_cuirassier = ROOT
+							russian_cuirassier = ROOT
+							russian_cuirassier = ROOT
+					}
+					russian_cuirassier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.232"
+			capital_scope = {
+					hidden_effect = {
+							russian_green_coat = ROOT
+							russian_green_coat = ROOT
+							russian_green_coat = ROOT
+							russian_green_coat = ROOT
+							russian_green_coat = ROOT
+							russian_green_coat = ROOT
+							russian_green_coat = ROOT
+							russian_green_coat = ROOT
+							russian_green_coat = ROOT
+					}
+					russian_green_coat = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.233"
+			capital_scope = {
+					hidden_effect = {
+							russian_lancer = ROOT
+							russian_lancer = ROOT
+							russian_lancer = ROOT
+							russian_lancer = ROOT
+							russian_lancer = ROOT
+							russian_lancer = ROOT
+							russian_lancer = ROOT
+							russian_lancer = ROOT
+							russian_lancer = ROOT
+					}
+					russian_lancer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.234"
+			capital_scope = {
+					hidden_effect = {
+							russian_mass = ROOT
+							russian_mass = ROOT
+							russian_mass = ROOT
+							russian_mass = ROOT
+							russian_mass = ROOT
+							russian_mass = ROOT
+							russian_mass = ROOT
+							russian_mass = ROOT
+							russian_mass = ROOT
+					}
+					russian_mass = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.235"
+			capital_scope = {
+					hidden_effect = {
+							russian_petrine = ROOT
+							russian_petrine = ROOT
+							russian_petrine = ROOT
+							russian_petrine = ROOT
+							russian_petrine = ROOT
+							russian_petrine = ROOT
+							russian_petrine = ROOT
+							russian_petrine = ROOT
+							russian_petrine = ROOT
+					}
+					russian_petrine = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.236"
+			capital_scope = {
+					hidden_effect = {
+							saxon_infantry = ROOT
+							saxon_infantry = ROOT
+							saxon_infantry = ROOT
+							saxon_infantry = ROOT
+							saxon_infantry = ROOT
+							saxon_infantry = ROOT
+							saxon_infantry = ROOT
+							saxon_infantry = ROOT
+							saxon_infantry = ROOT
+					}
+					saxon_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.237"
+			capital_scope = {
+					hidden_effect = {
+							schwarze_reiter = ROOT
+							schwarze_reiter = ROOT
+							schwarze_reiter = ROOT
+							schwarze_reiter = ROOT
+							schwarze_reiter = ROOT
+							schwarze_reiter = ROOT
+							schwarze_reiter = ROOT
+							schwarze_reiter = ROOT
+							schwarze_reiter = ROOT
+					}
+					schwarze_reiter = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.238"
+			capital_scope = {
+					hidden_effect = {
+							scottish_highlander = ROOT
+							scottish_highlander = ROOT
+							scottish_highlander = ROOT
+							scottish_highlander = ROOT
+							scottish_highlander = ROOT
+							scottish_highlander = ROOT
+							scottish_highlander = ROOT
+							scottish_highlander = ROOT
+							scottish_highlander = ROOT
+					}
+					scottish_highlander = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.239"
+			capital_scope = {
+					hidden_effect = {
+							shaybani = ROOT
+							shaybani = ROOT
+							shaybani = ROOT
+							shaybani = ROOT
+							shaybani = ROOT
+							shaybani = ROOT
+							shaybani = ROOT
+							shaybani = ROOT
+							shaybani = ROOT
+					}
+					shaybani = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.240"
+			capital_scope = {
+					hidden_effect = {
+							sikh_hit_and_run = ROOT
+							sikh_hit_and_run = ROOT
+							sikh_hit_and_run = ROOT
+							sikh_hit_and_run = ROOT
+							sikh_hit_and_run = ROOT
+							sikh_hit_and_run = ROOT
+							sikh_hit_and_run = ROOT
+							sikh_hit_and_run = ROOT
+							sikh_hit_and_run = ROOT
+					}
+					sikh_hit_and_run = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.241"
+			capital_scope = {
+					hidden_effect = {
+							sikh_rifle = ROOT
+							sikh_rifle = ROOT
+							sikh_rifle = ROOT
+							sikh_rifle = ROOT
+							sikh_rifle = ROOT
+							sikh_rifle = ROOT
+							sikh_rifle = ROOT
+							sikh_rifle = ROOT
+							sikh_rifle = ROOT
+					}
+					sikh_rifle = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.242"
+			capital_scope = {
+					hidden_effect = {
+							sioux_dragoon = ROOT
+							sioux_dragoon = ROOT
+							sioux_dragoon = ROOT
+							sioux_dragoon = ROOT
+							sioux_dragoon = ROOT
+							sioux_dragoon = ROOT
+							sioux_dragoon = ROOT
+							sioux_dragoon = ROOT
+							sioux_dragoon = ROOT
+					}
+					sioux_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.243"
+			capital_scope = {
+					hidden_effect = {
+							slavic_stradioti = ROOT
+							slavic_stradioti = ROOT
+							slavic_stradioti = ROOT
+							slavic_stradioti = ROOT
+							slavic_stradioti = ROOT
+							slavic_stradioti = ROOT
+							slavic_stradioti = ROOT
+							slavic_stradioti = ROOT
+							slavic_stradioti = ROOT
+					}
+					slavic_stradioti = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.244"
+			capital_scope = {
+					hidden_effect = {
+							small_cast_iron_bombard = ROOT
+							small_cast_iron_bombard = ROOT
+							small_cast_iron_bombard = ROOT
+							small_cast_iron_bombard = ROOT
+							small_cast_iron_bombard = ROOT
+							small_cast_iron_bombard = ROOT
+							small_cast_iron_bombard = ROOT
+							small_cast_iron_bombard = ROOT
+							small_cast_iron_bombard = ROOT
+					}
+					small_cast_iron_bombard = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.245"
+			capital_scope = {
+					hidden_effect = {
+							songhai_tribal_warfare = ROOT
+							songhai_tribal_warfare = ROOT
+							songhai_tribal_warfare = ROOT
+							songhai_tribal_warfare = ROOT
+							songhai_tribal_warfare = ROOT
+							songhai_tribal_warfare = ROOT
+							songhai_tribal_warfare = ROOT
+							songhai_tribal_warfare = ROOT
+							songhai_tribal_warfare = ROOT
+					}
+					songhai_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.246"
+			capital_scope = {
+					hidden_effect = {
+							south_american_arquebusier = ROOT
+							south_american_arquebusier = ROOT
+							south_american_arquebusier = ROOT
+							south_american_arquebusier = ROOT
+							south_american_arquebusier = ROOT
+							south_american_arquebusier = ROOT
+							south_american_arquebusier = ROOT
+							south_american_arquebusier = ROOT
+							south_american_arquebusier = ROOT
+					}
+					south_american_arquebusier = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.247"
+			capital_scope = {
+					hidden_effect = {
+							south_american_dragoon = ROOT
+							south_american_dragoon = ROOT
+							south_american_dragoon = ROOT
+							south_american_dragoon = ROOT
+							south_american_dragoon = ROOT
+							south_american_dragoon = ROOT
+							south_american_dragoon = ROOT
+							south_american_dragoon = ROOT
+							south_american_dragoon = ROOT
+					}
+					south_american_dragoon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.248"
+			capital_scope = {
+					hidden_effect = {
+							south_american_forest_warfare = ROOT
+							south_american_forest_warfare = ROOT
+							south_american_forest_warfare = ROOT
+							south_american_forest_warfare = ROOT
+							south_american_forest_warfare = ROOT
+							south_american_forest_warfare = ROOT
+							south_american_forest_warfare = ROOT
+							south_american_forest_warfare = ROOT
+							south_american_forest_warfare = ROOT
+					}
+					south_american_forest_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.249"
+			capital_scope = {
+					hidden_effect = {
+							south_american_gunpowder_warfare = ROOT
+							south_american_gunpowder_warfare = ROOT
+							south_american_gunpowder_warfare = ROOT
+							south_american_gunpowder_warfare = ROOT
+							south_american_gunpowder_warfare = ROOT
+							south_american_gunpowder_warfare = ROOT
+							south_american_gunpowder_warfare = ROOT
+							south_american_gunpowder_warfare = ROOT
+							south_american_gunpowder_warfare = ROOT
+					}
+					south_american_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.250"
+			capital_scope = {
+					hidden_effect = {
+							south_american_horsemen = ROOT
+							south_american_horsemen = ROOT
+							south_american_horsemen = ROOT
+							south_american_horsemen = ROOT
+							south_american_horsemen = ROOT
+							south_american_horsemen = ROOT
+							south_american_horsemen = ROOT
+							south_american_horsemen = ROOT
+							south_american_horsemen = ROOT
+					}
+					south_american_horsemen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.251"
+			capital_scope = {
+					hidden_effect = {
+							south_american_hussar = ROOT
+							south_american_hussar = ROOT
+							south_american_hussar = ROOT
+							south_american_hussar = ROOT
+							south_american_hussar = ROOT
+							south_american_hussar = ROOT
+							south_american_hussar = ROOT
+							south_american_hussar = ROOT
+							south_american_hussar = ROOT
+					}
+					south_american_hussar = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.252"
+			capital_scope = {
+					hidden_effect = {
+							south_american_reformed_gunpowder_warfare = ROOT
+							south_american_reformed_gunpowder_warfare = ROOT
+							south_american_reformed_gunpowder_warfare = ROOT
+							south_american_reformed_gunpowder_warfare = ROOT
+							south_american_reformed_gunpowder_warfare = ROOT
+							south_american_reformed_gunpowder_warfare = ROOT
+							south_american_reformed_gunpowder_warfare = ROOT
+							south_american_reformed_gunpowder_warfare = ROOT
+							south_american_reformed_gunpowder_warfare = ROOT
+					}
+					south_american_reformed_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.253"
+			capital_scope = {
+					hidden_effect = {
+							south_american_rifle_cavalry = ROOT
+							south_american_rifle_cavalry = ROOT
+							south_american_rifle_cavalry = ROOT
+							south_american_rifle_cavalry = ROOT
+							south_american_rifle_cavalry = ROOT
+							south_american_rifle_cavalry = ROOT
+							south_american_rifle_cavalry = ROOT
+							south_american_rifle_cavalry = ROOT
+							south_american_rifle_cavalry = ROOT
+					}
+					south_american_rifle_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.254"
+			capital_scope = {
+					hidden_effect = {
+							south_american_spearmen = ROOT
+							south_american_spearmen = ROOT
+							south_american_spearmen = ROOT
+							south_american_spearmen = ROOT
+							south_american_spearmen = ROOT
+							south_american_spearmen = ROOT
+							south_american_spearmen = ROOT
+							south_american_spearmen = ROOT
+							south_american_spearmen = ROOT
+					}
+					south_american_spearmen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.255"
+			capital_scope = {
+					hidden_effect = {
+							south_american_swarm = ROOT
+							south_american_swarm = ROOT
+							south_american_swarm = ROOT
+							south_american_swarm = ROOT
+							south_american_swarm = ROOT
+							south_american_swarm = ROOT
+							south_american_swarm = ROOT
+							south_american_swarm = ROOT
+							south_american_swarm = ROOT
+					}
+					south_american_swarm = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.256"
+			capital_scope = {
+					hidden_effect = {
+							south_american_warfare = ROOT
+							south_american_warfare = ROOT
+							south_american_warfare = ROOT
+							south_american_warfare = ROOT
+							south_american_warfare = ROOT
+							south_american_warfare = ROOT
+							south_american_warfare = ROOT
+							south_american_warfare = ROOT
+							south_american_warfare = ROOT
+					}
+					south_american_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.257"
+			capital_scope = {
+					hidden_effect = {
+							south_indian_musketeer = ROOT
+							south_indian_musketeer = ROOT
+							south_indian_musketeer = ROOT
+							south_indian_musketeer = ROOT
+							south_indian_musketeer = ROOT
+							south_indian_musketeer = ROOT
+							south_indian_musketeer = ROOT
+							south_indian_musketeer = ROOT
+							south_indian_musketeer = ROOT
+					}
+					south_indian_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.258"
+			capital_scope = {
+					hidden_effect = {
+							spanish_tercio = ROOT
+							spanish_tercio = ROOT
+							spanish_tercio = ROOT
+							spanish_tercio = ROOT
+							spanish_tercio = ROOT
+							spanish_tercio = ROOT
+							spanish_tercio = ROOT
+							spanish_tercio = ROOT
+							spanish_tercio = ROOT
+					}
+					spanish_tercio = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.259"
+			capital_scope = {
+					hidden_effect = {
+							steppe_cavalry = ROOT
+							steppe_cavalry = ROOT
+							steppe_cavalry = ROOT
+							steppe_cavalry = ROOT
+							steppe_cavalry = ROOT
+							steppe_cavalry = ROOT
+							steppe_cavalry = ROOT
+							steppe_cavalry = ROOT
+							steppe_cavalry = ROOT
+					}
+					steppe_cavalry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.260"
+			capital_scope = {
+					hidden_effect = {
+							steppe_footmen = ROOT
+							steppe_footmen = ROOT
+							steppe_footmen = ROOT
+							steppe_footmen = ROOT
+							steppe_footmen = ROOT
+							steppe_footmen = ROOT
+							steppe_footmen = ROOT
+							steppe_footmen = ROOT
+							steppe_footmen = ROOT
+					}
+					steppe_footmen = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.261"
+			capital_scope = {
+					hidden_effect = {
+							steppe_infantry = ROOT
+							steppe_infantry = ROOT
+							steppe_infantry = ROOT
+							steppe_infantry = ROOT
+							steppe_infantry = ROOT
+							steppe_infantry = ROOT
+							steppe_infantry = ROOT
+							steppe_infantry = ROOT
+							steppe_infantry = ROOT
+					}
+					steppe_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.262"
+			capital_scope = {
+					hidden_effect = {
+							steppe_lancers = ROOT
+							steppe_lancers = ROOT
+							steppe_lancers = ROOT
+							steppe_lancers = ROOT
+							steppe_lancers = ROOT
+							steppe_lancers = ROOT
+							steppe_lancers = ROOT
+							steppe_lancers = ROOT
+							steppe_lancers = ROOT
+					}
+					steppe_lancers = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.263"
+			capital_scope = {
+					hidden_effect = {
+							steppe_mounted_raiders = ROOT
+							steppe_mounted_raiders = ROOT
+							steppe_mounted_raiders = ROOT
+							steppe_mounted_raiders = ROOT
+							steppe_mounted_raiders = ROOT
+							steppe_mounted_raiders = ROOT
+							steppe_mounted_raiders = ROOT
+							steppe_mounted_raiders = ROOT
+							steppe_mounted_raiders = ROOT
+					}
+					steppe_mounted_raiders = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.264"
+			capital_scope = {
+					hidden_effect = {
+							steppe_musketeers = ROOT
+							steppe_musketeers = ROOT
+							steppe_musketeers = ROOT
+							steppe_musketeers = ROOT
+							steppe_musketeers = ROOT
+							steppe_musketeers = ROOT
+							steppe_musketeers = ROOT
+							steppe_musketeers = ROOT
+							steppe_musketeers = ROOT
+					}
+					steppe_musketeers = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.265"
+			capital_scope = {
+					hidden_effect = {
+							steppe_raiders = ROOT
+							steppe_raiders = ROOT
+							steppe_raiders = ROOT
+							steppe_raiders = ROOT
+							steppe_raiders = ROOT
+							steppe_raiders = ROOT
+							steppe_raiders = ROOT
+							steppe_raiders = ROOT
+							steppe_raiders = ROOT
+					}
+					steppe_raiders = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.266"
+			capital_scope = {
+					hidden_effect = {
+							steppe_riders = ROOT
+							steppe_riders = ROOT
+							steppe_riders = ROOT
+							steppe_riders = ROOT
+							steppe_riders = ROOT
+							steppe_riders = ROOT
+							steppe_riders = ROOT
+							steppe_riders = ROOT
+							steppe_riders = ROOT
+					}
+					steppe_riders = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.267"
+			capital_scope = {
+					hidden_effect = {
+							steppe_rifles = ROOT
+							steppe_rifles = ROOT
+							steppe_rifles = ROOT
+							steppe_rifles = ROOT
+							steppe_rifles = ROOT
+							steppe_rifles = ROOT
+							steppe_rifles = ROOT
+							steppe_rifles = ROOT
+							steppe_rifles = ROOT
+					}
+					steppe_rifles = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.268"
+			capital_scope = {
+					hidden_effect = {
+							steppe_uhlans = ROOT
+							steppe_uhlans = ROOT
+							steppe_uhlans = ROOT
+							steppe_uhlans = ROOT
+							steppe_uhlans = ROOT
+							steppe_uhlans = ROOT
+							steppe_uhlans = ROOT
+							steppe_uhlans = ROOT
+							steppe_uhlans = ROOT
+					}
+					steppe_uhlans = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.269"
+			capital_scope = {
+					hidden_effect = {
+							swedish_arme_blanche = ROOT
+							swedish_arme_blanche = ROOT
+							swedish_arme_blanche = ROOT
+							swedish_arme_blanche = ROOT
+							swedish_arme_blanche = ROOT
+							swedish_arme_blanche = ROOT
+							swedish_arme_blanche = ROOT
+							swedish_arme_blanche = ROOT
+							swedish_arme_blanche = ROOT
+					}
+					swedish_arme_blanche = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.270"
+			capital_scope = {
+					hidden_effect = {
+							swedish_caroline = ROOT
+							swedish_caroline = ROOT
+							swedish_caroline = ROOT
+							swedish_caroline = ROOT
+							swedish_caroline = ROOT
+							swedish_caroline = ROOT
+							swedish_caroline = ROOT
+							swedish_caroline = ROOT
+							swedish_caroline = ROOT
+					}
+					swedish_caroline = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.271"
+			capital_scope = {
+					hidden_effect = {
+							swedish_gallop = ROOT
+							swedish_gallop = ROOT
+							swedish_gallop = ROOT
+							swedish_gallop = ROOT
+							swedish_gallop = ROOT
+							swedish_gallop = ROOT
+							swedish_gallop = ROOT
+							swedish_gallop = ROOT
+							swedish_gallop = ROOT
+					}
+					swedish_gallop = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.272"
+			capital_scope = {
+					hidden_effect = {
+							swedish_gustavian = ROOT
+							swedish_gustavian = ROOT
+							swedish_gustavian = ROOT
+							swedish_gustavian = ROOT
+							swedish_gustavian = ROOT
+							swedish_gustavian = ROOT
+							swedish_gustavian = ROOT
+							swedish_gustavian = ROOT
+							swedish_gustavian = ROOT
+					}
+					swedish_gustavian = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.273"
+			capital_scope = {
+					hidden_effect = {
+							swiss_landsknechten = ROOT
+							swiss_landsknechten = ROOT
+							swiss_landsknechten = ROOT
+							swiss_landsknechten = ROOT
+							swiss_landsknechten = ROOT
+							swiss_landsknechten = ROOT
+							swiss_landsknechten = ROOT
+							swiss_landsknechten = ROOT
+							swiss_landsknechten = ROOT
+					}
+					swiss_landsknechten = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.274"
+			capital_scope = {
+					hidden_effect = {
+							swivel_cannon = ROOT
+							swivel_cannon = ROOT
+							swivel_cannon = ROOT
+							swivel_cannon = ROOT
+							swivel_cannon = ROOT
+							swivel_cannon = ROOT
+							swivel_cannon = ROOT
+							swivel_cannon = ROOT
+							swivel_cannon = ROOT
+					}
+					swivel_cannon = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.275"
+			capital_scope = {
+					hidden_effect = {
+							tartar_cossack = ROOT
+							tartar_cossack = ROOT
+							tartar_cossack = ROOT
+							tartar_cossack = ROOT
+							tartar_cossack = ROOT
+							tartar_cossack = ROOT
+							tartar_cossack = ROOT
+							tartar_cossack = ROOT
+							tartar_cossack = ROOT
+					}
+					tartar_cossack = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.277"
+			capital_scope = {
+					hidden_effect = {
+							tipu_sultan_rocket = ROOT
+							tipu_sultan_rocket = ROOT
+							tipu_sultan_rocket = ROOT
+							tipu_sultan_rocket = ROOT
+							tipu_sultan_rocket = ROOT
+							tipu_sultan_rocket = ROOT
+							tipu_sultan_rocket = ROOT
+							tipu_sultan_rocket = ROOT
+							tipu_sultan_rocket = ROOT
+					}
+					tipu_sultan_rocket = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.278"
+			capital_scope = {
+					hidden_effect = {
+							tofongchis_musketeer = ROOT
+							tofongchis_musketeer = ROOT
+							tofongchis_musketeer = ROOT
+							tofongchis_musketeer = ROOT
+							tofongchis_musketeer = ROOT
+							tofongchis_musketeer = ROOT
+							tofongchis_musketeer = ROOT
+							tofongchis_musketeer = ROOT
+							tofongchis_musketeer = ROOT
+					}
+					tofongchis_musketeer = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.279"
+			capital_scope = {
+					hidden_effect = {
+							topchis_artillery = ROOT
+							topchis_artillery = ROOT
+							topchis_artillery = ROOT
+							topchis_artillery = ROOT
+							topchis_artillery = ROOT
+							topchis_artillery = ROOT
+							topchis_artillery = ROOT
+							topchis_artillery = ROOT
+							topchis_artillery = ROOT
+					}
+					topchis_artillery = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.284"
+			capital_scope = {
+					hidden_effect = {
+							western_longbow = ROOT
+							western_longbow = ROOT
+							western_longbow = ROOT
+							western_longbow = ROOT
+							western_longbow = ROOT
+							western_longbow = ROOT
+							western_longbow = ROOT
+							western_longbow = ROOT
+							western_longbow = ROOT
+					}
+					western_longbow = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.285"
+			capital_scope = {
+					hidden_effect = {
+							western_medieval_infantry = ROOT
+							western_medieval_infantry = ROOT
+							western_medieval_infantry = ROOT
+							western_medieval_infantry = ROOT
+							western_medieval_infantry = ROOT
+							western_medieval_infantry = ROOT
+							western_medieval_infantry = ROOT
+							western_medieval_infantry = ROOT
+							western_medieval_infantry = ROOT
+					}
+					western_medieval_infantry = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.286"
+			capital_scope = {
+					hidden_effect = {
+							western_medieval_knights = ROOT
+							western_medieval_knights = ROOT
+							western_medieval_knights = ROOT
+							western_medieval_knights = ROOT
+							western_medieval_knights = ROOT
+							western_medieval_knights = ROOT
+							western_medieval_knights = ROOT
+							western_medieval_knights = ROOT
+							western_medieval_knights = ROOT
+					}
+					western_medieval_knights = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.287"
+			capital_scope = {
+					hidden_effect = {
+							western_men_at_arms = ROOT
+							western_men_at_arms = ROOT
+							western_men_at_arms = ROOT
+							western_men_at_arms = ROOT
+							western_men_at_arms = ROOT
+							western_men_at_arms = ROOT
+							western_men_at_arms = ROOT
+							western_men_at_arms = ROOT
+							western_men_at_arms = ROOT
+					}
+					western_men_at_arms = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.288"
+			capital_scope = {
+					hidden_effect = {
+							westernized_adal = ROOT
+							westernized_adal = ROOT
+							westernized_adal = ROOT
+							westernized_adal = ROOT
+							westernized_adal = ROOT
+							westernized_adal = ROOT
+							westernized_adal = ROOT
+							westernized_adal = ROOT
+							westernized_adal = ROOT
+					}
+					westernized_adal = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.289"
+			capital_scope = {
+					hidden_effect = {
+							westernized_aztec = ROOT
+							westernized_aztec = ROOT
+							westernized_aztec = ROOT
+							westernized_aztec = ROOT
+							westernized_aztec = ROOT
+							westernized_aztec = ROOT
+							westernized_aztec = ROOT
+							westernized_aztec = ROOT
+							westernized_aztec = ROOT
+					}
+					westernized_aztec = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.290"
+			capital_scope = {
+					hidden_effect = {
+							westernized_bantu = ROOT
+							westernized_bantu = ROOT
+							westernized_bantu = ROOT
+							westernized_bantu = ROOT
+							westernized_bantu = ROOT
+							westernized_bantu = ROOT
+							westernized_bantu = ROOT
+							westernized_bantu = ROOT
+							westernized_bantu = ROOT
+					}
+					westernized_bantu = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.291"
+			capital_scope = {
+					hidden_effect = {
+							westernized_ethiopian = ROOT
+							westernized_ethiopian = ROOT
+							westernized_ethiopian = ROOT
+							westernized_ethiopian = ROOT
+							westernized_ethiopian = ROOT
+							westernized_ethiopian = ROOT
+							westernized_ethiopian = ROOT
+							westernized_ethiopian = ROOT
+							westernized_ethiopian = ROOT
+					}
+					westernized_ethiopian = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.292"
+			capital_scope = {
+					hidden_effect = {
+							westernized_incan = ROOT
+							westernized_incan = ROOT
+							westernized_incan = ROOT
+							westernized_incan = ROOT
+							westernized_incan = ROOT
+							westernized_incan = ROOT
+							westernized_incan = ROOT
+							westernized_incan = ROOT
+							westernized_incan = ROOT
+					}
+					westernized_incan = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.293"
+			capital_scope = {
+					hidden_effect = {
+							westernized_mayan = ROOT
+							westernized_mayan = ROOT
+							westernized_mayan = ROOT
+							westernized_mayan = ROOT
+							westernized_mayan = ROOT
+							westernized_mayan = ROOT
+							westernized_mayan = ROOT
+							westernized_mayan = ROOT
+							westernized_mayan = ROOT
+					}
+					westernized_mayan = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.294"
+			capital_scope = {
+					hidden_effect = {
+							westernized_niger_kongolese = ROOT
+							westernized_niger_kongolese = ROOT
+							westernized_niger_kongolese = ROOT
+							westernized_niger_kongolese = ROOT
+							westernized_niger_kongolese = ROOT
+							westernized_niger_kongolese = ROOT
+							westernized_niger_kongolese = ROOT
+							westernized_niger_kongolese = ROOT
+							westernized_niger_kongolese = ROOT
+					}
+					westernized_niger_kongolese = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.295"
+			capital_scope = {
+					hidden_effect = {
+							westernized_south_american = ROOT
+							westernized_south_american = ROOT
+							westernized_south_american = ROOT
+							westernized_south_american = ROOT
+							westernized_south_american = ROOT
+							westernized_south_american = ROOT
+							westernized_south_american = ROOT
+							westernized_south_american = ROOT
+							westernized_south_american = ROOT
+					}
+					westernized_south_american = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.296"
+			capital_scope = {
+					hidden_effect = {
+							westernized_zapotec = ROOT
+							westernized_zapotec = ROOT
+							westernized_zapotec = ROOT
+							westernized_zapotec = ROOT
+							westernized_zapotec = ROOT
+							westernized_zapotec = ROOT
+							westernized_zapotec = ROOT
+							westernized_zapotec = ROOT
+							westernized_zapotec = ROOT
+					}
+					westernized_zapotec = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.297"
+			capital_scope = {
+					hidden_effect = {
+							zaporoghian_cossack = ROOT
+							zaporoghian_cossack = ROOT
+							zaporoghian_cossack = ROOT
+							zaporoghian_cossack = ROOT
+							zaporoghian_cossack = ROOT
+							zaporoghian_cossack = ROOT
+							zaporoghian_cossack = ROOT
+							zaporoghian_cossack = ROOT
+							zaporoghian_cossack = ROOT
+					}
+					zaporoghian_cossack = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.298"
+			capital_scope = {
+					hidden_effect = {
+							zapotec_gunpowder_warfare = ROOT
+							zapotec_gunpowder_warfare = ROOT
+							zapotec_gunpowder_warfare = ROOT
+							zapotec_gunpowder_warfare = ROOT
+							zapotec_gunpowder_warfare = ROOT
+							zapotec_gunpowder_warfare = ROOT
+							zapotec_gunpowder_warfare = ROOT
+							zapotec_gunpowder_warfare = ROOT
+							zapotec_gunpowder_warfare = ROOT
+					}
+					zapotec_gunpowder_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.299"
+			capital_scope = {
+					hidden_effect = {
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+					}
+					zapotec_plains_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.300"
+			capital_scope = {
+					hidden_effect = {
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+					}
+					zapotec_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.301"
+			capital_scope = {
+					hidden_effect = {
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+					}
+					zulu_chest_and_horns = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.302"
+			capital_scope = {
+					hidden_effect = {
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+							zapotec_plains_warfare = ROOT
+					}
+					zapotec_plains_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.303"
+			capital_scope = {
+					hidden_effect = {
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+							zapotec_tribal_warfare = ROOT
+					}
+					zapotec_tribal_warfare = ROOT
+			}
+	}
+	option = {
+			name = "catus_events_units.304"
+			capital_scope = {
+					hidden_effect = {
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+							zulu_chest_and_horns = ROOT
+					}
+					zulu_chest_and_horns = ROOT
+			}
+	}
+
+}

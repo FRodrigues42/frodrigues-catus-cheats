@@ -1,0 +1,1031 @@
+namespace = catus_events_control
+
+country_event = {
+	id = catus_events_control.1
+	title = "catus_events_control.title"
+	desc = "catus_events_control.desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			save_global_event_target_as = capital_target
+		}
+	}
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "catus_events_control.1"
+		trigger = {
+			any_province = {
+				and = {
+					religion = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						religion = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.2"
+		trigger = {
+			any_province = {
+				and = {
+					religion = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						religion = ROOT
+						is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.3"
+		trigger = {
+			any_province = {
+				and = {
+					culture_group = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture_group = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.4"
+		trigger = {
+			any_province = {
+				and = {
+					culture_group = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture_group = ROOT
+						is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.5"
+		trigger = {
+			any_province = {
+				and = {
+					culture = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.6"
+		trigger = {
+			any_province = {
+				and = {
+					culture = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture = ROOT
+						is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.7"
+		trigger = {
+			any_province = {
+				and = {
+					is_claim = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						is_claim = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.8"
+		trigger = {
+			any_province = {
+				and = {
+					is_claim = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						is_claim = ROOT
+						is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.10"
+		trigger = {
+			any_province = {
+				and = {
+					is_core = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						is_core = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.11"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { region = event_target:capital_target }
+				}
+				every_owned_province = {
+					limit = {
+						not = {
+							owned_by = ROOT
+						}
+					}
+					cede_province = ROOT
+					if = {
+						limit = {
+							not = {
+								is_core = ROOT
+							}
+						}
+						add_core = ROOT
+					}
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.12"
+		trigger = {
+			any_province = {
+				and = {
+					culture = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.13"
+		trigger = {
+			any_province = {
+				and = {
+					culture_group = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture_group = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.91
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.9"
+		country_event = {
+			id = catus_events_regions.1
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_control.91
+	title = "catus_events_control.title"
+	desc = "catus_events_control.desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			save_global_event_target_as = capital_target
+		}
+	}
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "catus_events_control.1"
+		trigger = {
+			any_province = {
+				and = {
+					religion = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						religion = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.2"
+		trigger = {
+			any_province = {
+				and = {
+					religion = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						religion = ROOT
+						is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.3"
+		trigger = {
+			any_province = {
+				and = {
+					culture_group = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture_group = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.4"
+		trigger = {
+			any_province = {
+				and = {
+					culture_group = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture_group = ROOT
+						is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.5"
+		trigger = {
+			any_province = {
+				and = {
+					culture = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.6"
+		trigger = {
+			any_province = {
+				and = {
+					culture = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture = ROOT
+						is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.7"
+		trigger = {
+			any_province = {
+				and = {
+					is_claim = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						is_claim = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_control.8"
+		trigger = {
+			any_province = {
+				and = {
+					is_claim = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						is_claim = ROOT
+						is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.10"
+		trigger = {
+			any_province = {
+				and = {
+					is_core = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						is_core = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				cede_province = ROOT
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.11"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { region = event_target:capital_target }
+				}
+				every_owned_province = {
+					limit = {
+						not = {
+							owned_by = ROOT
+						}
+					}
+					cede_province = ROOT
+					if = {
+						limit = {
+							not = {
+								is_core = ROOT
+							}
+						}
+						add_core = ROOT
+					}
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.12"
+		trigger = {
+			any_province = {
+				and = {
+					culture = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.13"
+		trigger = {
+			any_province = {
+				and = {
+					culture_group = ROOT
+					owner = {
+						and = {
+							not = {
+								owned_by = ROOT
+							}
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						culture_group = ROOT
+						owner = {
+							and = {
+								not = {
+									owned_by = ROOT
+								}
+								ai = yes
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_control.1
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_control.9"
+		country_event = {
+			id = catus_events_regions.1
+		}
+	}
+}

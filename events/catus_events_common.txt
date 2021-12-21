@@ -1,0 +1,485 @@
+namespace = catus_events_common
+
+country_event = {
+	id = catus_events_common.1
+	title = "catus_events_common.title"
+	desc = "catus_events_common.desc"
+	picture = WAR_OF_THE_ROSES_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "catus_events_common.2"
+		add_army_tradition = 200
+		add_church_power = 100
+		add_corruption = -5
+		add_devotion = 100
+		add_horde_unity = 100
+		add_inflation = -5
+		add_karma = 100
+		add_legitimacy = 100
+		add_mandate = 100
+		add_meritocracy = 100
+		add_navy_tradition = 200
+		add_papal_influence = 100
+		add_patriarch_authority = 100
+		add_piety = 100
+		add_prestige = 200
+		add_republican_tradition = 100
+		add_stability = 6
+		add_war_exhaustion = -100
+		add_army_professionalism = 1
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+
+	option = {
+		name = "catus_events_common.3"
+		trigger = {
+			any_owned_province = {
+				not = {
+					is_core = ROOT
+				}
+			}
+		}
+		every_owned_province = {
+			limit = {
+				not = {
+					is_core = ROOT
+				}
+			}
+			add_core = ROOT
+		}
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+
+	option = {
+		name = "catus_events_common.4"
+		trigger = {
+			any_owned_province = {
+				not = { culture_group = ROOT }
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				not = { culture_group = ROOT }
+			}
+			change_culture = ROOT
+		}
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+
+	option = {
+		name = "catus_events_common.5"
+		trigger = {
+			any_owned_province = {
+				not = { religion = ROOT }
+			}
+		}
+		every_owned_province = {
+			limit = {
+				not = { religion = ROOT }
+			}
+			change_religion = ROOT
+		}
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+
+	option = {
+		name = "catus_events_common.6"
+		hidden_effect = {
+			every_owned_province = {
+				set_local_autonomy = 0
+			}
+		}
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+
+	option = {
+		name = "catus_events_common.7"
+		hidden_effect = {
+			every_owned_province = {
+				add_nationalism = -50
+			}
+		}
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.16"
+		trigger = {
+			any_owned_province = {
+				devastation = 1
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				devastation = 1
+			}
+			add_devastation = -100
+		}
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.8"
+		trigger = {
+			not = {
+				has_country_flag = mod_unrest
+			}
+		}
+		add_country_modifier = {
+			name = catus_unrest
+			duration = -1
+		}
+		set_country_flag = mod_unrest
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+
+	option = {
+		name = "catus_events_common.9"
+		trigger = {
+			has_country_flag = mod_unrest
+		}
+		remove_country_modifier = catus_unrest
+		clr_country_flag = mod_unrest
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.11"
+		trigger = {
+			not = {
+				has_country_flag = mod_powerreduction
+			}
+		}
+		add_country_modifier = {
+			name = catus_powerreduction
+			duration = -1
+		}
+		set_country_flag = mod_powerreduction
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.12"
+		trigger = {
+			has_country_flag = mod_powerreduction
+		}
+		remove_country_modifier = catus_powerreduction
+		clr_country_flag = mod_powerreduction
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.10"
+		add_adm_power = 1000
+		add_dip_power = 1000
+		add_mil_power = 1000
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.17"
+		trigger = {
+			not = {
+				has_country_flag = mod_mercoldipmis
+			}
+		}
+		add_country_modifier = {
+			name = catus_mercoldipmis
+			duration = -1
+		}
+		set_country_flag = mod_mercoldipmis
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.17a"
+		trigger = {
+			has_country_flag = mod_mercoldipmis
+		}
+		remove_country_modifier = catus_mercoldipmis
+		clr_country_flag = mod_mercoldipmis
+		country_event = {
+			id = catus_events_common.91
+		}
+	}
+
+	# option = {
+	# 	name = "catus_events_common.15"
+	# 	country_event = { id = catus_events_changelog.1 }
+	# }
+
+}
+
+country_event = {
+	id = catus_events_common.91
+	title = "catus_events_common.title"
+	desc = "catus_events_common.desc"
+	picture = WAR_OF_THE_ROSES_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "catus_events_common.2"
+		add_army_tradition = 200
+		add_church_power = 100
+		add_corruption = -5
+		add_devotion = 100
+		add_horde_unity = 100
+		add_inflation = -5
+		add_karma = 100
+		add_legitimacy = 100
+		add_mandate = 100
+		add_meritocracy = 100
+		add_navy_tradition = 200
+		add_papal_influence = 100
+		add_patriarch_authority = 100
+		add_piety = 100
+		add_prestige = 200
+		add_republican_tradition = 100
+		add_stability = 6
+		add_war_exhaustion = -100
+		add_army_professionalism = 1
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+
+	option = {
+		name = "catus_events_common.3"
+		trigger = {
+			any_owned_province = {
+				not = {
+					is_core = ROOT
+				}
+			}
+		}
+		every_owned_province = {
+			limit = {
+				not = {
+					is_core = ROOT
+				}
+			}
+			add_core = ROOT
+		}
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+
+	option = {
+		name = "catus_events_common.4"
+		trigger = {
+			any_owned_province = {
+				not = { culture_group = ROOT }
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				not = { culture_group = ROOT }
+			}
+			change_culture = ROOT
+		}
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+
+	option = {
+		name = "catus_events_common.5"
+		trigger = {
+			any_owned_province = {
+				not = { religion = ROOT }
+			}
+		}
+		every_owned_province = {
+			limit = {
+				not = { religion = ROOT }
+			}
+			change_religion = ROOT
+		}
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+
+	option = {
+		name = "catus_events_common.6"
+		hidden_effect = {
+			every_owned_province = {
+				set_local_autonomy = 0
+			}
+		}
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+
+	option = {
+		name = "catus_events_common.7"
+		hidden_effect = {
+			every_owned_province = {
+				add_nationalism = -50
+			}
+		}
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.16"
+		trigger = {
+			any_owned_province = {
+				devastation = 1
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				devastation = 1
+			}
+			add_devastation = -100
+		}
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.8"
+		trigger = {
+			not = {
+				has_country_flag = mod_unrest
+			}
+		}
+		add_country_modifier = {
+			name = catus_unrest
+			duration = -1
+		}
+		set_country_flag = mod_unrest
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+
+	option = {
+		name = "catus_events_common.9"
+		trigger = {
+			has_country_flag = mod_unrest
+		}
+		remove_country_modifier = catus_unrest
+		clr_country_flag = mod_unrest
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.11"
+		trigger = {
+			not = {
+				has_country_flag = mod_powerreduction
+			}
+		}
+		add_country_modifier = {
+			name = catus_powerreduction
+			duration = -1
+		}
+		set_country_flag = mod_powerreduction
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.12"
+		trigger = {
+			has_country_flag = mod_powerreduction
+		}
+		remove_country_modifier = catus_powerreduction
+		clr_country_flag = mod_powerreduction
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.10"
+		add_adm_power = 1000
+		add_dip_power = 1000
+		add_mil_power = 1000
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.17"
+		trigger = {
+			not = {
+				has_country_flag = mod_mercoldipmis
+			}
+		}
+		add_country_modifier = {
+			name = catus_mercoldipmis
+			duration = -1
+		}
+		set_country_flag = mod_mercoldipmis
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_common.17a"
+		trigger = {
+			has_country_flag = mod_mercoldipmis
+		}
+		remove_country_modifier = catus_mercoldipmis
+		clr_country_flag = mod_mercoldipmis
+		country_event = {
+			id = catus_events_common.1
+		}
+	}
+
+	# option = {
+	# 	name = "catus_events_common.15"
+	# 	country_event = { id = catus_events_changelog.1 }
+	# }
+
+}

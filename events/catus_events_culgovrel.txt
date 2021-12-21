@@ -1,0 +1,2200 @@
+namespace = catus_events_culgovrel
+
+country_event = {
+	id = catus_events_culgovrel.1
+	title = "catus_events_culgovrel.title"
+	desc = "catus_events_culgovrel.desc"
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_culgovrel.1"
+		trigger = {
+			capital_scope = {
+				not = {
+					culture = ROOT
+				}
+			}
+		}
+		change_primary_culture = capital
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.2"
+		trigger = {
+			capital_scope = {
+				not = {
+					religion = ROOT
+				}
+			}
+		}
+		change_religion = capital
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.3"
+		country_event = {
+			id = catus_events_culgovrel.101
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.4"
+		country_event = {
+			id = catus_events_culgovrel.102
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.5"
+		country_event = {
+			id = catus_events_culgovrel.103
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.6"
+		trigger = {
+			not = {
+				government_rank = 3
+			}
+		}
+		set_government_rank = 3
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.7"
+		trigger = {
+			or = {
+				government_rank = 2
+				government_rank = 3
+			}
+		}
+		set_government_rank = 1
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.8"
+		trigger = {
+			not = {
+				reform_desire = 1
+			}
+		}
+		add_reform_desire = 1
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.9"
+		trigger = {
+			all_province = {
+				not = {
+					has_province_flag = start_of_protestant_reformation
+				}
+			}
+		}
+		hidden_effect = {
+			enable_religion = protestant
+			capital_scope = {
+				set_province_flag = start_of_protestant_reformation
+				change_religion = protestant
+				add_reform_center = protestant
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			set_country_flag = "protestant_reformation"
+		}
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.12"
+		country_event = {
+			id = catus_events_culgovrel.107
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.11"
+		trigger = {
+			not = {
+				and = {
+					adm = 6
+					mil = 6
+					dip = 6
+				}
+			}
+		}
+		change_adm = 6
+		change_dip = 6
+		change_mil = 6
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.12"
+		trigger = {
+			has_heir = yes
+			not = {
+				and = {
+					heir_adm = 6
+					heir_mil = 6
+					heir_dip = 6
+				}
+			}
+		}
+		change_heir_adm = 6
+		change_heir_dip = 6
+		change_heir_mil = 6
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.13"
+		trigger = {
+			has_consort = yes
+			not = {
+				and = {
+					consort_adm = 6
+					consort_mil = 6
+					consort_dip = 6
+				}
+			}
+		}
+		change_consort_adm = 6
+		change_consort_dip = 6
+		change_consort_mil = 6
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.25"
+		define_heir = {
+			dynasty = ROOT
+			adm = 9
+			dip = 9
+			mil = 9
+			claim = 100
+			age = 15
+		}
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.13"
+		define_consort = {
+			country_of_origin = ROOT
+			religion = ROOT
+			culture = ROOT
+			age = 15
+			adm = 9
+			dip = 9
+			mil = 9
+		}
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.14"
+		add_ruler_personality = immortal_personality
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.15"
+		trigger = {
+			not = {
+				ruler_culture = ROOT
+			}
+		}
+		set_ruler_culture = ROOT
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.16"
+		trigger = {
+			and = {
+				has_heir = yes
+				not = {
+					heir_culture = ROOT
+				}
+			}
+		}
+		set_heir_culture = ROOT
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.17"
+		trigger = {
+			and = {
+				has_consort = yes
+				not = {
+					consort_culture = ROOT
+				}
+			}
+		}
+		set_consort_culture = ROOT
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+
+	option = {
+		name = "catus_events_military.18"
+		trigger = {
+			not = {
+				ruler_religion = ROOT
+			}
+		}
+		set_ruler_religion = ROOT
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.19"
+		trigger = {
+			and = {
+				has_heir = yes
+				not = {
+					heir_religion = ROOT
+				}
+			}
+		}
+		set_heir_religion = ROOT
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.20"
+		trigger = {
+			and = {
+				has_consort = yes
+				not = {
+					consort_religion = ROOT
+				}
+			}
+		}
+		set_consort_religion = ROOT
+		country_event = {
+			id = catus_events_culgovrel.91
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_culgovrel.91
+	title = "catus_events_culgovrel.title"
+	desc = "catus_events_culgovrel.desc"
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "catus_events_culgovrel.1"
+		trigger = {
+			capital_scope = {
+				not = {
+					culture = ROOT
+				}
+			}
+		}
+		change_primary_culture = capital
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.2"
+		trigger = {
+			capital_scope = {
+				not = {
+					religion = ROOT
+				}
+			}
+		}
+		change_religion = capital
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.3"
+		country_event = {
+			id = catus_events_culgovrel.101
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.4"
+		country_event = {
+			id = catus_events_culgovrel.102
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.5"
+		country_event = {
+			id = catus_events_culgovrel.103
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.6"
+		trigger = {
+			not = {
+				government_rank = 3
+			}
+		}
+		set_government_rank = 3
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.7"
+		trigger = {
+			or = {
+				government_rank = 2
+				government_rank = 3
+			}
+		}
+		set_government_rank = 1
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.8"
+		trigger = {
+			not = {
+				reform_desire = 1
+			}
+		}
+		add_reform_desire = 1
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.9"
+		trigger = {
+			all_province = {
+				not = {
+					has_province_flag = start_of_protestant_reformation
+				}
+			}
+		}
+		hidden_effect = {
+			enable_religion = protestant
+			capital_scope = {
+				set_province_flag = start_of_protestant_reformation
+				change_religion = protestant
+				add_reform_center = protestant
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			set_country_flag = "protestant_reformation"
+		}
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events_culgovrel.12"
+		country_event = {
+			id = catus_events_culgovrel.107
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.11"
+		trigger = {
+			not = {
+				adm = 6
+				mil = 6
+				dip = 6
+			}
+		}
+		change_adm = 6
+		change_dip = 6
+		change_mil = 6
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.12"
+		trigger = {
+			has_heir = yes
+			not = {
+				heir_adm = 6
+				heir_mil = 6
+				heir_dip = 6
+			}
+		}
+		change_heir_adm = 6
+		change_heir_dip = 6
+		change_heir_mil = 6
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.13"
+		trigger = {
+			has_consort = yes
+			not = {
+				consort_adm = 6
+				consort_mil = 6
+				consort_dip = 6
+			}
+		}
+		change_consort_adm = 6
+		change_consort_dip = 6
+		change_consort_mil = 6
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.25"
+		define_heir = {
+			dynasty = ROOT
+			adm = 9
+			dip = 9
+			mil = 9
+			claim = 100
+			age = 15
+		}
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.13"
+		define_consort = {
+			country_of_origin = ROOT
+			religion = ROOT
+			culture = ROOT
+			age = 15
+			adm = 9
+			dip = 9
+			mil = 9
+		}
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.14"
+		add_ruler_personality = immortal_personality
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.15"
+		trigger = {
+			not = {
+				ruler_culture = ROOT
+			}
+		}
+		set_ruler_culture = ROOT
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.16"
+		trigger = {
+			and = {
+				has_heir = yes
+				not = {
+					heir_culture = ROOT
+				}
+			}
+		}
+		set_heir_culture = ROOT
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.17"
+		trigger = {
+			and = {
+				has_consort = yes
+				not = {
+					consort_culture = ROOT
+				}
+			}
+		}
+		set_consort_culture = ROOT
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events_military.18"
+		trigger = {
+			not = {
+				ruler_religion = ROOT
+			}
+		}
+		set_ruler_religion = ROOT
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.19"
+		trigger = {
+			and = {
+				has_heir = yes
+				not = {
+					heir_religion = ROOT
+				}
+			}
+		}
+		set_heir_religion = ROOT
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_military.20"
+		trigger = {
+			and = {
+				has_consort = yes
+				not = {
+					consort_religion = ROOT
+				}
+			}
+		}
+		set_consort_religion = ROOT
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+}
+################################################################################
+################################################################################
+country_event = {
+	id = catus_events_culgovrel.101
+	title = "catus_events_culgovrel.101.title"
+	desc = "catus_events_culgovrel.101.desc"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.1"
+		trigger = {
+			not = {
+				government = despotic_monarchy
+			}
+		}
+		set_legacy_government = despotic_monarchy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.2"
+		trigger = {
+			not = {
+				government = feudal_monarchy
+			}
+		}
+		set_legacy_government = feudal_monarchy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.3"
+		trigger = {
+			not = {
+				government = administrative_monarchy
+			}
+		}
+		set_legacy_government = administrative_monarchy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.4"
+		trigger = {
+			not = {
+				government = constitutional_monarchy
+			}
+		}
+		set_legacy_government = constitutional_monarchy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.5"
+		trigger = {
+			not = {
+				government = enlightened_despotism
+			}
+		}
+		set_legacy_government = enlightened_despotism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.6"
+		trigger = {
+			not = {
+				government = revolutionary_empire
+			}
+		}
+		set_legacy_government = revolutionary_empire
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.7"
+		trigger = {
+			not = {
+				government = merchant_republic
+			}
+		}
+		set_legacy_government = merchant_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.8"
+		trigger = {
+			not = {
+				government = oligarchic_republic
+			}
+		}
+		set_legacy_government = oligarchic_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.9"
+		trigger = {
+			not = {
+				government = noble_republic
+			}
+		}
+		set_legacy_government = noble_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.10"
+		trigger = {
+			not = {
+				government = administrative_republic
+			}
+		}
+		set_legacy_government = administrative_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.11"
+		trigger = {
+			not = {
+				government = republican_dictatorship
+			}
+		}
+		set_legacy_government = republican_dictatorship
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.12"
+		trigger = {
+			not = {
+				government = constitutional_republic
+			}
+		}
+		set_legacy_government = constitutional_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.13"
+		trigger = {
+			not = {
+				government = bureaucratic_despotism
+			}
+		}
+		set_legacy_government = bureaucratic_despotism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.14"
+		trigger = {
+			not = {
+				government = revolutionary_republic
+			}
+		}
+		set_legacy_government = revolutionary_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.15"
+		trigger = {
+			not = {
+				government = theocratic_government
+			}
+		}
+		set_legacy_government = theocratic_government
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.16"
+		trigger = {
+			not = {
+				government = monastic_order_government
+			}
+		}
+		set_legacy_government = monastic_order_government
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.17"
+		trigger = {
+			not = {
+				government = papal_government
+			}
+		}
+		set_legacy_government = papal_government
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.18"
+		trigger = {
+			not = {
+				government = steppe_horde
+			}
+		}
+		set_legacy_government = steppe_horde
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.19"
+		trigger = {
+			not = {
+				government = tribal_despotism
+			}
+		}
+		set_legacy_government = tribal_despotism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.20"
+		trigger = {
+			not = {
+				government = tribal_kingdom
+			}
+		}
+		set_legacy_government = tribal_kingdom
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.21"
+		trigger = {
+			not = {
+				government = tribal_federation
+			}
+		}
+		set_legacy_government = tribal_federation
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.22"
+		trigger = {
+			not = {
+				government = tribal_democracy_legacy
+			}
+		}
+		set_legacy_government = tribal_democracy_legacy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.23"
+		trigger = {
+			not = {
+				government = siberian_native_council
+			}
+		}
+		set_legacy_government = siberian_native_council
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.24"
+		trigger = {
+			not = {
+				government = siberian_native_council
+			}
+		}
+		set_legacy_government = siberian_native_council
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.25"
+		trigger = {
+			not = {
+				government = english_monarchy
+			}
+		}
+		set_legacy_government = english_monarchy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.26"
+		trigger = {
+			not = {
+				government = elective_monarchy
+			}
+		}
+		set_legacy_government = elective_monarchy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.27"
+		trigger = {
+			not = {
+				government = imperial_city
+			}
+		}
+		set_legacy_government = imperial_city
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.28"
+		trigger = {
+			not = {
+				government = trading_city
+			}
+		}
+		set_legacy_government = trading_city
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.29"
+		trigger = {
+			not = {
+				government = ambrosian_republic
+			}
+		}
+		set_legacy_government = ambrosian_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.30"
+		trigger = {
+			not = {
+				government = dutch_republic
+			}
+		}
+		set_legacy_government = dutch_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.31"
+		trigger = {
+			not = {
+				government = celestial_empire
+			}
+		}
+		set_legacy_government = celestial_empire
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.32"
+		trigger = {
+			not = {
+				government = ottoman_government
+			}
+		}
+		set_legacy_government = ottoman_government
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.33"
+		trigger = {
+			not = {
+				government = prussian_monarchy
+			}
+		}
+		set_legacy_government = prussian_monarchy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.34"
+		trigger = {
+			not = {
+				government = iqta
+			}
+		}
+		set_legacy_government = iqta
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.35"
+		trigger = {
+			not = {
+				government = daimyo
+			}
+		}
+		set_legacy_government = daimyo
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.36"
+		trigger = {
+			not = {
+				government = shogunate
+			}
+		}
+		set_legacy_government = shogunate
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.37"
+		trigger = {
+			not = {
+				government = indep_daimyo
+			}
+		}
+		set_legacy_government = indep_daimyo
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.38"
+		trigger = {
+			not = {
+				government = colonial_government
+			}
+		}
+		set_legacy_government = colonial_government
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.39"
+		trigger = {
+			not = {
+				government = peasants_republic
+			}
+		}
+		set_legacy_government = peasants_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.40"
+		trigger = {
+			not = {
+				government = veche_republic
+			}
+		}
+		set_legacy_government = veche_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.41"
+		trigger = {
+			not = {
+				government = principality
+			}
+		}
+		set_legacy_government = principality
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.42"
+		trigger = {
+			not = {
+				government = tsardom
+			}
+		}
+		set_legacy_government = tsardom
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.49"
+		trigger = {
+			not = {
+				government = mamluk_government
+			}
+		}
+		set_legacy_government = mamluk_government
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.50"
+		trigger = {
+			not = {
+				government = feudal_theocracy
+			}
+		}
+		set_legacy_government = feudal_theocracy
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.51"
+		trigger = {
+			not = {
+				government = american_republic
+			}
+		}
+		set_legacy_government = american_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.governments.52"
+		trigger = {
+			not = {
+				government = federal_republic
+			}
+		}
+		set_legacy_government = federal_republic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+}
+
+################################################################################
+################################################################################
+country_event = {
+	id = catus_events_culgovrel.102
+	title = "catus_events_culgovrel.102.title"
+	desc = "catus_events_culgovrel.102.desc"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.27"
+		trigger = {
+			not = {
+				religion = anglican
+			}
+		}
+		change_religion = anglican
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.2"
+		trigger = {
+			not = {
+				religion = catholic
+			}
+		}
+		change_religion = catholic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.3"
+		trigger = {
+			not = {
+				religion = protestant
+			}
+		}
+		change_religion = protestant
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.4"
+		trigger = {
+			not = {
+				religion = reformed
+			}
+		}
+		change_religion = reformed
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.5"
+		trigger = {
+			not = {
+				religion = orthodox
+			}
+		}
+		change_religion = orthodox
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.religions.6"
+		trigger = {
+			not = {
+				religion = coptic
+			}
+		}
+		change_religion = coptic
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.7"
+		trigger = {
+			not = {
+				religion = sunni
+			}
+		}
+		change_religion = sunni
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.8"
+		trigger = {
+			not = {
+				religion = shiite
+			}
+		}
+		change_religion = shiite
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.9"
+		trigger = {
+			not = {
+				religion = ibadi
+			}
+		}
+		change_religion = ibadi
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.10"
+		trigger = {
+			not = {
+				religion = buddhism
+			}
+		}
+		change_religion = buddhism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.religions.11"
+		trigger = {
+			not = {
+				religion = vajrayana
+			}
+		}
+		change_religion = vajrayana
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.religions.12"
+		trigger = {
+			not = {
+				religion = mahayana
+			}
+		}
+		change_religion = mahayana
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.13"
+		trigger = {
+			not = {
+				religion = confucianism
+			}
+		}
+		change_religion = confucianism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.14"
+		trigger = {
+			not = {
+				religion = shinto
+			}
+		}
+		change_religion = shinto
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.15"
+		trigger = {
+			not = {
+				religion = hinduism
+			}
+		}
+		change_religion = hinduism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.religions.16"
+		trigger = {
+			not = {
+				religion = sikhism
+			}
+		}
+		change_religion = sikhism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.17"
+		trigger = {
+			not = {
+				religion = animism
+			}
+		}
+		change_religion = animism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.18"
+		trigger = {
+			not = {
+				religion = shamanism
+			}
+		}
+		change_religion = shamanism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.19"
+		trigger = {
+			not = {
+				religion = totemism
+			}
+		}
+		change_religion = totemism
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.20"
+		trigger = {
+			not = {
+				religion = inti
+			}
+		}
+		change_religion = inti
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.religions.21"
+		trigger = {
+			not = {
+				religion = nahuatl
+			}
+		}
+		change_religion = nahuatl
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.religions.22"
+		trigger = {
+			not = {
+				religion = mesoamerican_religion
+			}
+		}
+		change_religion = mesoamerican_religion
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.23"
+		trigger = {
+			not = {
+				religion = norse_pagan_reformed
+			}
+		}
+		change_religion = norse_pagan_reformed
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.24"
+		trigger = {
+			not = {
+				religion = tengri_pagan_reformed
+			}
+		}
+		change_religion = tengri_pagan_reformed
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events.religions.25"
+		trigger = {
+			not = {
+				religion = jewish
+			}
+		}
+		change_religion = jewish
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events.religions.26"
+		trigger = {
+			not = {
+				religion = zoroastrian
+			}
+		}
+		change_religion = zoroastrian
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+}
+
+################################################################################
+################################################################################
+country_event = {
+	id = catus_events_culgovrel.103
+	title = "catus_events_culgovrel.103.title"
+	desc = "catus_events_culgovrel.103.desc"
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_province = {
+			limit = { 
+				not = { culture = ROOT }
+			}
+			save_global_event_target_as = culturechange_target1
+		}
+		random_owned_province = {
+			limit = { 
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+				}
+			}
+			save_global_event_target_as = culturechange_target2
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+				}
+			}
+			save_global_event_target_as = culturechange_target3
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+				}
+			}
+			save_global_event_target_as = culturechange_target4
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+					not = { culture = culturechange_target4 }
+				}
+			}
+			save_global_event_target_as = culturechange_target5
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+					not = { culture = culturechange_target4 }
+					not = { culture = culturechange_target5 }
+				}
+			}
+			save_global_event_target_as = culturechange_target6
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+					not = { culture = culturechange_target4 }
+					not = { culture = culturechange_target5 }
+					not = { culture = culturechange_target6 }
+				}
+			}
+			save_global_event_target_as = culturechange_target7
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+					not = { culture = culturechange_target4 }
+					not = { culture = culturechange_target5 }
+					not = { culture = culturechange_target6 }
+					not = { culture = culturechange_target7 }
+				}
+			}
+			save_global_event_target_as = culturechange_target8
+		}
+	}
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.2"
+		change_primary_culture = event_target:culturechange_target1
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.3"
+		change_primary_culture = event_target:culturechange_target2
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.4"
+		change_primary_culture = event_target:culturechange_target3
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.5"
+		change_primary_culture = event_target:culturechange_target4
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	option = {
+		name = "catus_events_culgovrel.103.6"
+		change_primary_culture = event_target:culturechange_target5
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.7"
+		change_primary_culture = event_target:culturechange_target6
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.8"
+		change_primary_culture = event_target:culturechange_target7
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.9"
+		change_primary_culture = event_target:culturechange_target8
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.1"
+		hidden_effect = {
+			country_event = {
+				id = catus_events_culgovrel.104
+			}
+		}
+	}
+
+}
+
+################################################################################
+################################################################################
+country_event = {
+	id = catus_events_culgovrel.104
+	title = "catus_events_culgovrel.103.title"
+	desc = "catus_events_culgovrel.103.desc"
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_province = {
+			limit = { 
+				not = { culture = ROOT }
+			}
+			save_global_event_target_as = culturechange_target1
+		}
+		random_owned_province = {
+			limit = { 
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+				}
+			}
+			save_global_event_target_as = culturechange_target2
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+				}
+			}
+			save_global_event_target_as = culturechange_target3
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+				}
+			}
+			save_global_event_target_as = culturechange_target4
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+					not = { culture = culturechange_target4 }
+				}
+			}
+			save_global_event_target_as = culturechange_target5
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+					not = { culture = culturechange_target4 }
+					not = { culture = culturechange_target5 }
+				}
+			}
+			save_global_event_target_as = culturechange_target6
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+					not = { culture = culturechange_target4 }
+					not = { culture = culturechange_target5 }
+					not = { culture = culturechange_target6 }
+				}
+			}
+			save_global_event_target_as = culturechange_target7
+		}
+		random_owned_province = {
+			limit = {  
+				and = {
+					not = { culture = ROOT }
+					not = { culture = culturechange_target1 }
+					not = { culture = culturechange_target2 }
+					not = { culture = culturechange_target3 }
+					not = { culture = culturechange_target4 }
+					not = { culture = culturechange_target5 }
+					not = { culture = culturechange_target6 }
+					not = { culture = culturechange_target7 }
+				}
+			}
+			save_global_event_target_as = culturechange_target8
+		}
+	}
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.2"
+		change_primary_culture = event_target:culturechange_target1
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.3"
+		change_primary_culture = event_target:culturechange_target2
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.4"
+		change_primary_culture = event_target:culturechange_target3
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.5"
+		change_primary_culture = event_target:culturechange_target4
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	option = {
+		name = "catus_events_culgovrel.103.6"
+		change_primary_culture = event_target:culturechange_target5
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.7"
+		change_primary_culture = event_target:culturechange_target6
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.8"
+		change_primary_culture = event_target:culturechange_target7
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.9"
+		change_primary_culture = event_target:culturechange_target8
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_culgovrel.103.1"
+		hidden_effect = {
+			country_event = {
+				id = catus_events_culgovrel.103
+			}
+		}
+	}
+
+}
+
+################################################################################
+################################################################################
+country_event = {
+	id = catus_events_culgovrel.107
+	title = "catus_events_culgovrel.107.title"
+	desc = "catus_events_culgovrel.107.desc"
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.1"
+		trigger = {
+			not = {
+				unit_type = western
+			}
+		}
+		change_unit_type = western
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.2"
+		trigger = {
+			not = {
+				unit_type = eastern
+			}
+		}
+		change_unit_type = eastern
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.3"
+		trigger = {
+			not = {
+				unit_type = ottoman
+			}
+		}
+		change_unit_type = ottoman
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.4"
+		trigger = {
+			not = {
+				unit_type = muslim
+			}
+		}
+		change_unit_type = muslim
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.5"
+		trigger = {
+			not = {
+				unit_type = indian
+			}
+		}
+		change_unit_type = indian
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+	option = {
+		name = "catus_events_techgroup.6"
+		trigger = {
+			not = {
+				unit_type = east_african
+			}
+		}
+		change_unit_type = east_african
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.7"
+		trigger = {
+			not = {
+				unit_type = central_african
+			}
+		}
+		change_unit_type = central_african
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.8"
+		trigger = {
+			not = {
+				unit_type = chinese
+			}
+		}
+		change_unit_type = chinese
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.9"
+		trigger = {
+			not = {
+				unit_type = nomad_group
+			}
+		}
+		change_unit_type = nomad_group
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.10"
+		trigger = {
+			not = {
+				unit_type = sub_saharan
+			}
+		}
+		change_unit_type = sub_saharan
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	option = {
+		name = "catus_events_techgroup.11"
+		trigger = {
+			not = {
+				unit_type = north_american
+			}
+		}
+		change_unit_type = north_american
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.12"
+		trigger = {
+			not = {
+				unit_type = mesoamerican
+			}
+		}
+		change_unit_type = mesoamerican
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.13"
+		trigger = {
+			not = {
+				unit_type = south_american
+			}
+		}
+		change_unit_type = south_american
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.14"
+		trigger = {
+			not = {
+				unit_type = andean
+			}
+		}
+		change_unit_type = andean
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_techgroup.15"
+		trigger = {
+			not = {
+				unit_type = high_american
+			}
+		}
+		change_unit_type = high_american
+		country_event = {
+			id = catus_events_culgovrel.1
+		}
+	}
+
+}

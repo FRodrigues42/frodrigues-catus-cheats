@@ -1,0 +1,845 @@
+namespace = catus_events_institutions
+
+country_event = {
+	id = catus_events_institutions.1
+	title = "catus_events_institutions.title"
+	desc = "catus_events_institutions.desc"
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_provinces.1
+		}
+	}
+
+	option = {
+		name = "catus_events_institutions.1"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "feudalism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.2"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "renaissance"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.3"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "new_world_i"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.4"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.5"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "global_trade"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.6"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "manufactories"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.7"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "enlightenment"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+
+	option = {
+		name = "catus_events_institutions.8"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "writing"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.9"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "legalism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.10"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "ancient_imperialism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.11"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "caste_system"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.12"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "organized_religion"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.13"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "serfdom"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.14"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "manorialism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.15"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "early_feudalism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.16"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "crop_rotation"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.17"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "civil_service"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.18"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "manuscripts"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.19"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "scholasticism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.20"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "guilds"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.21"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "medicine"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.22"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "imperialism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.23"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "industrialization"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.24"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "nationalism_institution"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.25"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "electrification"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.26"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "globalization"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.27"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "internet"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.91
+		}
+	}
+
+}
+
+country_event = {
+	id = catus_events_institutions.91
+	title = "catus_events_institutions.title"
+	desc = "catus_events_institutions.desc"
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_provinces.1
+		}
+	}
+
+	option = {
+		name = "catus_events_institutions.1"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "feudalism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.2"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "renaissance"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.3"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "new_world_i"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.4"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.5"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "global_trade"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.6"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "manufactories"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.7"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "enlightenment"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+
+	option = {
+		name = "catus_events_institutions.8"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "writing"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.9"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "legalism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.10"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "ancient_imperialism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.11"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "caste_system"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.12"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "organized_religion"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.13"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "serfdom"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.14"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "manorialism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.15"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "early_feudalism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.16"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "crop_rotation"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.17"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "civil_service"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.18"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "manuscripts"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.19"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "scholasticism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.20"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "guilds"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.21"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "medicine"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.22"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "imperialism"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.23"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "industrialization"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.24"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "nationalism_institution"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.25"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "electrification"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.26"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "globalization"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_institutions.27"
+		hidden_effect = {
+			every_owned_province = {
+				add_institution_embracement = {
+					which = "internet"
+					value = 100
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_institutions.1
+		}
+	}
+
+}

@@ -1,0 +1,616 @@
+namespace = catus_events_sub_formation
+
+country_event = {
+	id = catus_events_sub_formation.1
+	title = "catus_events_sub_formation.title"
+	desc = "catus_events_sub_formation.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.1"
+		change_tag = AUS
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			colonial_australia = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AUS
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+			country_event = {
+				id = catus_events_diplomatic.1
+			}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.2"
+		236 = {
+			move_capital_effect = yes
+		}
+		hidden_effect = {
+			complete_mission = eng_rb_war_of_roses
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = SCO
+				}
+				complete_mission = eng_mighty_army
+				complete_mission = conquer_scotland
+			}	
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = IRE
+				}
+				complete_mission = eng_mighty_army
+				complete_mission = conquer_scotland
+				complete_mission = conquer_ireland
+			}	
+		}
+		change_tag = GBR
+		swap_non_generic_missions = yes
+		remove_non_electors_emperors_from_empire_effect = yes
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+			set_government_rank = 2
+		}
+		british_isles_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = GBR
+		}
+		add_prestige = 25
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		set_country_flag = formed_great_britain_flag
+		if = {
+			limit = {
+				mission_completed = conquer_scotland
+				has_dlc = "Rule Britannia"
+			}
+			369 = {
+				add_permanent_claim = GBR
+			}
+			1978 = {
+				add_permanent_claim = GBR
+			}
+			1979 = {
+			add_permanent_claim = GBR
+			}
+			iceland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = GBR
+			}
+		}
+		if = {
+			limit = {
+				mission_completed = eng_rb_spice_islands
+				has_dlc = "Rule Britannia"
+			}
+			west_bengal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GBR
+			}
+		}
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.3"
+		change_tag = IRE
+			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes
+			# should grant cores on all ireland
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 10
+			set_country_flag = formed_ireland_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			country_event = {
+				id = catus_events_diplomatic.1
+			}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.4"
+		change_tag = GER
+			emperor = {
+				add_opinion = {
+					who = root
+					modifier = opinion_left_empire
+				}
+			}
+			set_in_empire = no
+			emperor = {
+				country_event = { id = hre_event.5 }
+			}
+			set_government_rank = 3
+			north_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GER
+			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GER
+			}			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = formed_germany_flag
+			country_event = {
+				id = catus_events_diplomatic.1
+			}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.5"
+		if = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+				is_emperor = no
+			}
+			emperor = {
+				add_opinion = {
+					who = root
+					modifier = opinion_left_empire
+				}
+			}
+			set_in_empire = no
+			emperor = {
+				country_event = { id = hre_event.5 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+			set_government_rank = 2
+		}
+		change_tag = ITA
+		italy_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ITA
+		}
+		add_prestige = 25
+		ITA = {
+			set_capital = 118
+		}
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		set_country_flag = formed_italy_flag
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.6"
+		if = {
+			limit = {
+				any_owned_province = {
+					is_part_of_hre = yes
+				}
+				is_elector = no
+				is_emperor = no
+			}
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		  if = {
+			  limit = {
+				  tag = BUR
+			  }
+			  change_primary_culture = dutch
+			97 = {
+				move_capital_effect = yes
+			}
+		}
+		if = {
+			limit = {
+				tag = BUR
+				exists = FRA
+			}
+			  france_region = {
+				limit = {
+					owned_by = BUR
+				}
+				  remove_core = BUR
+				  add_core = FRA
+				  cede_province = FRA
+			  }
+		  }
+		if = {
+			limit = {
+				government = theocracy
+				religion = catholic
+			}
+			change_government = monarchy
+			set_legacy_government = administrative_monarchy
+			PAP = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_displeased
+				}
+			}
+		}
+		if = {
+			limit = {
+				government = theocracy
+				NOT = { religion = catholic }
+			}
+			change_government = monarchy
+			set_legacy_government = administrative_monarchy
+		}
+		if = {
+			limit = {
+				tag = BUR
+				exists = FRA
+				BUR = {
+					any_subject_country = {
+						france_region = {
+							owned_by = PREV
+						}
+					}
+				}
+			}
+			every_subject_country = {
+				limit = {
+					france_region = {
+						owned_by = PREV
+					}
+				}
+				france_region = {
+					limit = {
+						owned_by = PREV
+					}
+					remove_core = BUR
+					remove_core = PREV
+					add_core = FRA
+					cede_province = FRA
+				}
+			}
+		  }
+		change_tag = NED
+		swap_non_generic_missions = yes
+		low_countries_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { province_id = 87 }
+				NOT = { province_id = 181 }
+			}
+			add_permanent_claim = NED
+		}
+		wallonia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		picardy_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {
+					province_id = 89
+				}
+			}
+			add_permanent_claim = NED
+		}
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 2
+				}
+			}
+			set_government_rank = 2
+		}
+		set_country_flag = formed_netherlands_flag
+		add_prestige = 25
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = NED_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.7"
+		change_tag = SCA
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			scandinavia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SCA
+			}	
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 10
+			set_country_flag = formed_scandinavia_flag
+			country_event = {
+				id = catus_events_diplomatic.1
+			}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.8"
+		change_tag = PLC
+			inherit = LIT
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { accepted_culture = lithuanian } }
+				add_accepted_culture = lithuanian
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					poland_region = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = PLC }
+					}
+				}
+				poland_region = {
+					add_permanent_claim = PLC
+				}
+			}
+			if = {
+				limit = {
+					white_ruthenia_area = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = PLC }
+					}
+				}
+				white_ruthenia_area = {
+					add_permanent_claim = PLC
+				}
+			}
+			if = {
+				limit = {
+					lithuania_area = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = PLC }
+					}
+				}
+				lithuania_area = {
+					add_permanent_claim = PLC
+				}
+			}
+			if = {
+				limit = {
+					pripyat_area = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = PLC }
+					}
+				}
+				pripyat_area = {
+					add_permanent_claim = PLC
+				}
+			}
+			random_owned_province = {
+				limit = { culture = polish }
+				add_base_tax = 1
+			}
+			set_country_flag = formed_plc_flag
+			add_prestige = 25
+			country_event = {
+				id = catus_events_diplomatic.1
+			}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.9"
+		1816 = {
+			move_capital_effect = yes
+			change_culture = ROOT
+			add_core = QNG
+		}
+		change_tag = QNG
+		swap_non_generic_missions = yes
+		set_government_rank = 3
+		south_china_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = QNG
+		}
+		xinan_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = QNG
+		}
+		north_china_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = QNG
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 3650
+		}
+		if = {
+			limit = {
+				has_reform = steppe_horde
+			}
+			change_government = monarchy
+			set_legacy_government = despotic_monarchy
+		}
+		if = {
+			limit = {
+				technology_group = nomad_group
+			}
+			change_technology_group = chinese
+			change_unit_type = chinese
+		}
+		if = {
+			limit = {
+				NOT = { religion = confucianism }
+			}
+			change_religion = confucianism
+			add_harmonized_religion = tengri_pagan_reformed
+		}
+		add_prestige = 10
+		set_country_flag = manchu_dynasty_formed
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_formation.10"
+		change_tag = GRE
+		remove_non_electors_emperors_from_empire_effect = yes
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+			set_government_rank = 2
+		}
+		random_owned_province = {
+			limit = { culture = greek }
+			add_base_tax = 1
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		aegean_archipelago_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { province_id = 143 }
+			}
+			add_permanent_claim = GRE
+		}
+		northern_greece_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { province_id = 143 }
+			}
+			add_permanent_claim = GRE
+		}
+		morea_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { province_id = 143 }
+			}
+			add_permanent_claim = GRE
+		}
+		macedonia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { province_id = 143 }
+			}
+			add_permanent_claim = GRE
+		}
+		add_prestige = 10
+		if = {
+			limit = {
+				NOT = {
+					capital_scope = { area = morea_area }
+					capital_scope = { area = northern_greece_area }
+					capital_scope = { area = macedonia_area }
+				}
+			}
+			set_capital = 146
+		}
+		set_country_flag = formed_greece_flag
+		if = {
+			limit = {
+				NOT = { has_idea_group = greek_ideas } 
+				is_playing_custom_nation = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		country_event = {
+			id = catus_events_diplomatic.1
+		}
+	}
+}

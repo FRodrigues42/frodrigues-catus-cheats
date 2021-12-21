@@ -1,0 +1,1155 @@
+namespace = catus_events_sub_buildings
+
+country_event = {
+	id = catus_events_sub_buildings.1
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_provinces.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.1"
+		every_owned_province = {
+			remove_building = marketplace
+			remove_building = workshop
+			remove_building = temple
+			remove_building = barracks
+			remove_building = shipyard
+			remove_building = fort_15th
+			remove_building = courthouse
+			remove_building = dock
+			remove_building = regimental_camp
+			remove_building = fort_16th
+			remove_building = cathedral
+			remove_building = university
+			remove_building = trade_depot
+			remove_building = grand_shipyard
+			remove_building = training_fields
+			remove_building = fort_17th
+			remove_building = stock_exchange
+			remove_building = counting_house
+			remove_building = town_hall
+			remove_building = drydock
+			remove_building = conscription_center
+			remove_building = fort_18th
+			remove_building = manufactory
+			remove_building = wharf
+			remove_building = weapons
+			remove_building = plantations
+			remove_building = tradecompany
+			remove_building = farm_estate
+			remove_building = mills
+			remove_building = furnace
+		}
+		country_event = {
+			id = catus_events_sub_buildings.91
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.9"
+		every_owned_province = {
+			add_building = cathedral
+			add_building = university
+			add_building = grand_shipyard
+			add_building = stock_exchange
+			add_building = town_hall
+			add_building = counting_house
+			add_building = conscription_center
+			add_building = drydock
+			add_building = training_fields
+		}
+		country_event = {
+			id = catus_events_sub_buildings.91
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2"
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3"
+		country_event = {
+			id = catus_events_sub_buildings.3
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4"
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5"
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6"
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.2
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = marketplace
+			add_building = workshop
+			add_building = temple
+			add_building = barracks
+			add_building = shipyard
+		}
+		country_event = {
+			id = catus_events_sub_buildings.92
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.1"
+		every_owned_province = {
+			add_building = fort_15th
+		}
+		country_event = {
+			id = catus_events_sub_buildings.92
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.2"
+		every_owned_province = {
+			add_building = marketplace
+		}
+		country_event = {
+			id = catus_events_sub_buildings.92
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.3"
+		every_owned_province = {
+			add_building = workshop
+		}
+		country_event = {
+			id = catus_events_sub_buildings.92
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.4"
+		every_owned_province = {
+			add_building = temple
+		}
+		country_event = {
+			id = catus_events_sub_buildings.92
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.5"
+		every_owned_province = {
+			add_building = barracks
+		}
+		country_event = {
+			id = catus_events_sub_buildings.92
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.6"
+		every_owned_province = {
+			add_building = shipyard
+		}
+		country_event = {
+			id = catus_events_sub_buildings.92
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.3
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = courthouse
+			add_building = dock
+			add_building = regimental_camp
+		}
+		country_event = {
+			id = catus_events_sub_buildings.93
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3.1"
+		every_owned_province = {
+			add_building = fort_16th
+		}
+		country_event = {
+			id = catus_events_sub_buildings.93
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3.2"
+		every_owned_province = {
+			add_building = courthouse
+		}
+		country_event = {
+			id = catus_events_sub_buildings.93
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3.3"
+		every_owned_province = {
+			add_building = dock
+		}
+		country_event = {
+			id = catus_events_sub_buildings.93
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3.4"
+		every_owned_province = {
+			add_building = regimental_camp
+		}
+		country_event = {
+			id = catus_events_sub_buildings.93
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.4
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = cathedral
+			add_building = university
+			add_building = trade_depot
+			add_building = grand_shipyard
+			add_building = training_fields
+		}
+		country_event = {
+			id = catus_events_sub_buildings.94
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.1"
+		every_owned_province = {
+			add_building = fort_17th
+		}
+		country_event = {
+			id = catus_events_sub_buildings.94
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.2"
+		every_owned_province = {
+			add_building = cathedral
+		}
+		country_event = {
+			id = catus_events_sub_buildings.94
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.3"
+		every_owned_province = {
+			add_building = university
+		}
+		country_event = {
+			id = catus_events_sub_buildings.94
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.4"
+		every_owned_province = {
+			add_building = trade_depot
+		}
+		country_event = {
+			id = catus_events_sub_buildings.94
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.5"
+		every_owned_province = {
+			add_building = grand_shipyard
+		}
+		country_event = {
+			id = catus_events_sub_buildings.94
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.6"
+		every_owned_province = {
+			add_building = training_fields
+		}
+		country_event = {
+			id = catus_events_sub_buildings.94
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.5
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = stock_exchange
+			add_building = counting_house
+			add_building = town_hall
+			add_building = drydock
+			add_building = conscription_center
+		}
+		country_event = {
+			id = catus_events_sub_buildings.95
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.1"
+		every_owned_province = {
+			add_building = fort_18th
+		}
+		country_event = {
+			id = catus_events_sub_buildings.95
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.2"
+		every_owned_province = {
+			add_building = stock_exchange
+		}
+		country_event = {
+			id = catus_events_sub_buildings.95
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.3"
+		every_owned_province = {
+			add_building = counting_house
+		}
+		country_event = {
+			id = catus_events_sub_buildings.95
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.4"
+		every_owned_province = {
+			add_building = town_hall
+		}
+		country_event = {
+			id = catus_events_sub_buildings.95
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.5"
+		every_owned_province = {
+			add_building = drydock
+		}
+		country_event = {
+			id = catus_events_sub_buildings.95
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.6"
+		every_owned_province = {
+			add_building = conscription_center
+		}
+		country_event = {
+			id = catus_events_sub_buildings.95
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.6
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = manufactory
+			add_building = wharf
+			add_building = weapons
+			add_building = plantations
+			add_building = tradecompany
+			add_building = farm_estate
+			add_building = mills
+			add_building = furnace
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.1"
+		every_owned_province = {
+			add_building = manufactory
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.2"
+		every_owned_province = {
+			add_building = wharf
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.3"
+		every_owned_province = {
+			add_building = weapons
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.4"
+		every_owned_province = {
+			add_building = plantations
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.5"
+		every_owned_province = {
+			add_building = tradecompany
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.6"
+		every_owned_province = {
+			add_building = farm_estate
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.7"
+		every_owned_province = {
+			add_building = mills
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.8"
+		every_owned_province = {
+			add_building = furnace
+		}
+		country_event = {
+			id = catus_events_sub_buildings.96
+		}
+	}
+}
+
+#################################################################
+#################################################################
+country_event = {
+	id = catus_events_sub_buildings.91
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_provinces.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.1"
+		every_owned_province = {
+			remove_building = marketplace
+			remove_building = workshop
+			remove_building = temple
+			remove_building = barracks
+			remove_building = shipyard
+			remove_building = fort_15th
+			remove_building = courthouse
+			remove_building = dock
+			remove_building = regimental_camp
+			remove_building = fort_16th
+			remove_building = cathedral
+			remove_building = university
+			remove_building = trade_depot
+			remove_building = grand_shipyard
+			remove_building = training_fields
+			remove_building = fort_17th
+			remove_building = stock_exchange
+			remove_building = counting_house
+			remove_building = town_hall
+			remove_building = drydock
+			remove_building = conscription_center
+			remove_building = fort_18th
+			remove_building = manufactory
+			remove_building = wharf
+			remove_building = weapons
+			remove_building = plantations
+			remove_building = tradecompany
+			remove_building = farm_estate
+			remove_building = mills
+			remove_building = furnace
+		}
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.9"
+		every_owned_province = {
+			add_building = cathedral
+			add_building = university
+			add_building = grand_shipyard
+			add_building = stock_exchange
+			add_building = town_hall
+			add_building = counting_house
+			add_building = conscription_center
+			add_building = drydock
+			add_building = training_fields
+		}
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2"
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3"
+		country_event = {
+			id = catus_events_sub_buildings.3
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4"
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5"
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6"
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.92
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = marketplace
+			add_building = workshop
+			add_building = temple
+			add_building = barracks
+			add_building = shipyard
+		}
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.1"
+		every_owned_province = {
+			add_building = fort_15th
+		}
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.2"
+		every_owned_province = {
+			add_building = marketplace
+		}
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.3"
+		every_owned_province = {
+			add_building = workshop
+		}
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.4"
+		every_owned_province = {
+			add_building = temple
+		}
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.5"
+		every_owned_province = {
+			add_building = barracks
+		}
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.2.6"
+		every_owned_province = {
+			add_building = shipyard
+		}
+		country_event = {
+			id = catus_events_sub_buildings.2
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.93
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = courthouse
+			add_building = dock
+			add_building = regimental_camp
+		}
+		country_event = {
+			id = catus_events_sub_buildings.3
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3.1"
+		every_owned_province = {
+			add_building = fort_16th
+		}
+		country_event = {
+			id = catus_events_sub_buildings.3
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3.2"
+		every_owned_province = {
+			add_building = courthouse
+		}
+		country_event = {
+			id = catus_events_sub_buildings.3
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3.3"
+		every_owned_province = {
+			add_building = dock
+		}
+		country_event = {
+			id = catus_events_sub_buildings.3
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.3.4"
+		every_owned_province = {
+			add_building = regimental_camp
+		}
+		country_event = {
+			id = catus_events_sub_buildings.3
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.94
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = cathedral
+			add_building = university
+			add_building = trade_depot
+			add_building = grand_shipyard
+			add_building = training_fields
+		}
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.1"
+		every_owned_province = {
+			add_building = fort_17th
+		}
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.2"
+		every_owned_province = {
+			add_building = cathedral
+		}
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.3"
+		every_owned_province = {
+			add_building = university
+		}
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.4"
+		every_owned_province = {
+			add_building = trade_depot
+		}
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.5"
+		every_owned_province = {
+			add_building = grand_shipyard
+		}
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.4.6"
+		every_owned_province = {
+			add_building = training_fields
+		}
+		country_event = {
+			id = catus_events_sub_buildings.4
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.95
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = stock_exchange
+			add_building = counting_house
+			add_building = town_hall
+			add_building = drydock
+			add_building = conscription_center
+		}
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.1"
+		every_owned_province = {
+			add_building = fort_18th
+		}
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.2"
+		every_owned_province = {
+			add_building = stock_exchange
+		}
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.3"
+		every_owned_province = {
+			add_building = counting_house
+		}
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.4"
+		every_owned_province = {
+			add_building = town_hall
+		}
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.5"
+		every_owned_province = {
+			add_building = drydock
+		}
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.5.6"
+		every_owned_province = {
+			add_building = conscription_center
+		}
+		country_event = {
+			id = catus_events_sub_buildings.5
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_sub_buildings.96
+	title = "catus_events_sub_buildings.title"
+	desc = "catus_events_sub_buildings.desc"
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_sub_buildings.1
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.7"
+		every_owned_province = {
+			add_building = manufactory
+			add_building = wharf
+			add_building = weapons
+			add_building = plantations
+			add_building = tradecompany
+			add_building = farm_estate
+			add_building = mills
+			add_building = furnace
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.1"
+		every_owned_province = {
+			add_building = manufactory
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.2"
+		every_owned_province = {
+			add_building = wharf
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.3"
+		every_owned_province = {
+			add_building = weapons
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.4"
+		every_owned_province = {
+			add_building = plantations
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.5"
+		every_owned_province = {
+			add_building = tradecompany
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.6"
+		every_owned_province = {
+			add_building = farm_estate
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.7"
+		every_owned_province = {
+			add_building = mills
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+
+	option = {
+		name = "catus_events_sub_buildings.6.8"
+		every_owned_province = {
+			add_building = furnace
+		}
+		country_event = {
+			id = catus_events_sub_buildings.6
+		}
+	}
+}
+# marketplace
+# workshop
+# temple
+# barracks
+# shipyard
+# fort_15th
+
+# courthouse
+# dock
+# regimental_camp
+# fort_16th
+
+# cathedral
+# university
+# trade_depot
+# grand_shipyard
+# training_fields
+# fort_17th
+
+# stock_exchange
+# counting_house
+# town_hall
+# drydock
+# conscription_center
+# fort_18th
+
+# manufactory
+# wharf
+# weapons
+# plantations
+# tradecompany
+# farm_estate
+# mills
+# furnace

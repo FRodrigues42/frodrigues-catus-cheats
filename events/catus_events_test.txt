@@ -1,0 +1,31 @@
+namespace = catus_events_test
+
+country_event = {
+	id = catus_events_test.1
+	title = "catus_events_test.title"
+	desc = "catus_events_test.desc"
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = ""
+		change_estate_land_share = {
+			estate = all
+			share = -100
+		}
+	}
+	
+	option = {
+		name = ""
+		add_estate_influence_modifier = {
+			estate = all
+			influence = -100
+			duration = -1
+		}
+	}
+
+}

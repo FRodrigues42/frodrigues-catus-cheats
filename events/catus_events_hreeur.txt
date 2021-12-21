@@ -1,0 +1,751 @@
+namespace = catus_events_hreeur
+
+country_event = {
+	id = catus_events_hreeur.1
+	title = "catus_events_hreeur.title"
+	desc = "catus_events_hreeur.desc"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "catus_events_hreeur.22"
+		trigger = {
+			not = {
+				has_country_flag = mod_hreopinion
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+			}
+			add_country_modifier = {
+				name = catus_diprep
+				duration = -1
+			}
+			set_country_flag = mod_hreopinion
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.23"
+		trigger = {
+			has_country_flag = mod_hreopinion
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+			}
+			remove_country_modifier = catus_diprep
+			clr_country_flag = mod_hreopinion
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.24"
+		emperor = {
+			kill_ruler = yes
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.21"
+		trigger = {
+			hre_size = 1
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.19"
+		trigger = {
+			and = {
+				is_part_of_hre = no
+				hre_size = 1
+			}
+		}
+		hidden_effect = {
+			set_in_empire = yes
+			every_owned_province = { set_in_empire = yes }
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.20"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = emperor
+				}
+				ROOT = {
+					discover_province = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+
+	option = {
+		name = "catus_events_hreeur.11"
+		trigger = {
+			hre_size = 1
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { continent = europe }
+				}
+				hidden_effect = {
+					set_in_empire = yes
+					every_owned_province = { set_in_empire = yes }
+				}
+			}
+			every_province = {
+				limit = {
+					owned_by = emperor
+				}
+				ROOT = {
+					discover_province = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.12"
+		trigger = {
+			hre_size = 1
+		}
+		hidden_effect = {
+			every_country = {
+				hidden_effect = {
+					set_in_empire = yes
+					every_owned_province = { set_in_empire = yes }
+				}
+			}
+			every_province = {
+				limit = {
+					owned_by = emperor
+				}
+				ROOT = {
+					discover_province = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.13"
+		trigger = {
+			hre_size = 1
+		}
+		hidden_effect = {
+			elector = yes
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.14"
+		trigger = {
+			hre_size = 1
+		}
+		hidden_effect = {
+			every_elector = {
+				elector = no
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.15"
+		trigger = {
+			hre_size = 1
+		}
+		set_hre_religion = protestant
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+
+	option = {
+		name = "catus_events_hreeur.16"
+		trigger = {
+			hre_size = 1
+		}
+		set_hre_religion_treaty = yes
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.17"
+		trigger = {
+			hre_size = 1
+		}
+		country_event = {
+			id = 9075
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.18"
+		trigger = {
+			hre_size = 1
+		}
+		dismantle_hre = yes
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_hreeur.91
+	title = "catus_events_hreeur.title"
+	desc = "catus_events_hreeur.desc"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "catus_events_hreeur.22"
+		trigger = {
+			not = {
+				has_country_flag = mod_hreopinion
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+			}
+			add_country_modifier = {
+				name = catus_diprep
+				duration = -1
+			}
+			set_country_flag = mod_hreopinion
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.23"
+		trigger = {
+			has_country_flag = mod_hreopinion
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = cheat_add_opinion_max
+				}
+			}
+			remove_country_modifier = catus_diprep
+			clr_country_flag = mod_hreopinion
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.24"
+		emperor = {
+			kill_ruler = yes
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.21"
+		trigger = {
+			hre_size = 1
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.19"
+		trigger = {
+			and = {
+				is_part_of_hre = no
+				hre_size = 1
+			}
+		}
+		hidden_effect = {
+			set_in_empire = yes
+			every_owned_province = { set_in_empire = yes }
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.20"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = emperor
+				}
+				ROOT = {
+					discover_province = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+
+	option = {
+		name = "catus_events_hreeur.11"
+		trigger = {
+			hre_size = 1
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { continent = europe }
+				}
+				hidden_effect = {
+					set_in_empire = yes
+					every_owned_province = { set_in_empire = yes }
+				}
+			}
+			every_province = {
+				limit = {
+					owned_by = emperor
+				}
+				ROOT = {
+					discover_province = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.12"
+		trigger = {
+			hre_size = 1
+		}
+		hidden_effect = {
+			every_country = {
+				hidden_effect = {
+					set_in_empire = yes
+					every_owned_province = { set_in_empire = yes }
+				}
+			}
+			every_province = {
+				limit = {
+					owned_by = emperor
+				}
+				ROOT = {
+					discover_province = PREV
+				}
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.13"
+		trigger = {
+			hre_size = 1
+		}
+		hidden_effect = {
+			elector = yes
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.14"
+		trigger = {
+			hre_size = 1
+		}
+		hidden_effect = {
+			every_elector = {
+				elector = no
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.15"
+		trigger = {
+			hre_size = 1
+		}
+		set_hre_religion = protestant
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+
+	option = {
+		name = "catus_events_hreeur.16"
+		trigger = {
+			hre_size = 1
+		}
+		set_hre_religion_treaty = yes
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.17"
+		trigger = {
+			hre_size = 1
+		}
+		country_event = {
+			id = 9075
+		}
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_hreeur.18"
+		trigger = {
+			hre_size = 1
+		}
+		dismantle_hre = yes
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+}
+################################################################################
+country_event = {
+	id = catus_events_hreeur.21
+	title = "catus_events_hreeur.101.title"
+	desc = "catus_events_hreeur.101.desc"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.1"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 100
+		}
+		country_event = {
+			id = catus_events_hreeur.921
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.8"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = -100
+		}
+		country_event = {
+			id = catus_events_hreeur.921
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.2"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 50
+		}
+		country_event = {
+			id = catus_events_hreeur.921
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.3"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 20
+		}
+		country_event = {
+			id = catus_events_hreeur.921
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.4"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 10
+		}
+		country_event = {
+			id = catus_events_hreeur.921
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.5"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 5
+		}
+		country_event = {
+			id = catus_events_hreeur.921
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.6"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 2
+		}
+		country_event = {
+			id = catus_events_hreeur.921
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.7"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 1
+		}
+		country_event = {
+			id = catus_events_hreeur.921
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_hreeur.921
+	title = "catus_events_hreeur.101.title"
+	desc = "catus_events_hreeur.101.desc"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_exit"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.1"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 100
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.8"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = -100
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.2"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 50
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.3"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 20
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.4"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 10
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.5"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 5
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.6"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 2
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+	
+	option = {
+		name = "catus_events_impauth.7"
+		trigger = {
+			hre_size = 1
+		}
+		emperor = {
+			add_imperial_influence = 1
+		}
+		country_event = {
+			id = catus_events_hreeur.21
+		}
+	}
+}

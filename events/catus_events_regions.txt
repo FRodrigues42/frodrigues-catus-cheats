@@ -1,0 +1,2182 @@
+namespace = catus_events_regions
+
+country_event = {
+	id = catus_events_regions.1
+	title = "catus_events_regions.title"
+	desc = "catus_events_regions.desc"
+	picture = NATIVES_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_control.1
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.1.1"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					or = {
+						colonial_region = colonial_canada
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_california
+						colonial_region = colonial_mexico
+						colonial_region = colonial_the_carribean
+						colonial_region = colonial_colombia
+						colonial_region = colonial_peru
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_brazil
+						colonial_region = colonial_australia
+						colonial_region = colonial_oceania
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_zambezi
+						colonial_region = colonial_congo
+						colonial_region = colonial_east_africa
+						colonial_region = colonial_ethiopia
+						colonial_region = colonial_sudan
+						colonial_region = colonial_central_africa
+						colonial_region = colonial_niger
+						colonial_region = colonial_ivory_coast
+						colonial_region = colonial_mali
+						colonial_region = colonial_west_africa
+						colonial_region = colonial_alaska
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.1.2"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					or = {
+						colonial_region = colonial_canada
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_california
+						colonial_region = colonial_mexico
+						colonial_region = colonial_the_carribean
+						colonial_region = colonial_colombia
+						colonial_region = colonial_peru
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_brazil
+						colonial_region = colonial_australia
+						colonial_region = colonial_oceania
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_zambezi
+						colonial_region = colonial_congo
+						colonial_region = colonial_east_africa
+						colonial_region = colonial_ethiopia
+						colonial_region = colonial_sudan
+						colonial_region = colonial_central_africa
+						colonial_region = colonial_niger
+						colonial_region = colonial_ivory_coast
+						colonial_region = colonial_mali
+						colonial_region = colonial_west_africa
+						colonial_region = colonial_alaska
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						not = {
+							religion = ROOT
+						}
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						not = {
+							culture_group = ROOT
+						}
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_regions.1.3"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						or = {
+							colonial_region = colonial_canada
+							colonial_region = colonial_eastern_america
+							colonial_region = colonial_louisiana
+							colonial_region = colonial_california
+							colonial_region = colonial_mexico
+							colonial_region = colonial_the_carribean
+							colonial_region = colonial_colombia
+							colonial_region = colonial_peru
+							colonial_region = colonial_la_plata
+							colonial_region = colonial_brazil
+							colonial_region = colonial_australia
+							colonial_region = colonial_oceania
+							colonial_region = colonial_south_africa
+							colonial_region = colonial_zambezi
+							colonial_region = colonial_congo
+							colonial_region = colonial_east_africa
+							colonial_region = colonial_ethiopia
+							colonial_region = colonial_sudan
+							colonial_region = colonial_central_africa
+							colonial_region = colonial_niger
+							colonial_region = colonial_ivory_coast
+							colonial_region = colonial_mali
+							colonial_region = colonial_west_africa
+							colonial_region = colonial_alaska
+						}
+					is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.2"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = india_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.3"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = east_indies_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.4"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = china_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.5"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = africa_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.6"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = south_america_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.7"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = north_america_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.8"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = central_america_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.9"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = near_east_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.10"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = persia_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.28"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = oceania_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.29"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = europe_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.30"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = eastern_europe_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.31"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = tartary_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.32"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = far_east_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.33"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = southern_africa_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.34"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = andes_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.11"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = new_world_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.12"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					continent = europe
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.14"
+		hidden_effect = {
+			roman_empire_group = {
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			every_province = {
+				limit = {
+					or = {
+						region = italy_region
+						region = france_region
+						region = iberia_region
+						region = balkan_region
+						region = anatolia_region
+						region = mashriq_region
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_regions.27"
+		hidden_effect = {
+			trade_colonial_group = {
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						not = {
+							religion = ROOT
+						}
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						not = {
+							culture_group = ROOT
+						}
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.15"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_alaska
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.16"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_canada
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.17"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_eastern_america
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.18"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_louisiana
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.19"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_california
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.20"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_mexico
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.21"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_the_carribean
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.22"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_colombia
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.23"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_peru
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.24"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_la_plata
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.25"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_brazil
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.26"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_australia
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.91
+			}
+		}
+	}
+}
+
+country_event = {
+	id = catus_events_regions.91
+	title = "catus_events_regions.title"
+	desc = "catus_events_regions.desc"
+	picture = NATIVES_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "catus_events_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = catus_events_control.1
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.1.1"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					or = {
+						colonial_region = colonial_canada
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_california
+						colonial_region = colonial_mexico
+						colonial_region = colonial_the_carribean
+						colonial_region = colonial_colombia
+						colonial_region = colonial_peru
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_brazil
+						colonial_region = colonial_australia
+						colonial_region = colonial_oceania
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_zambezi
+						colonial_region = colonial_congo
+						colonial_region = colonial_east_africa
+						colonial_region = colonial_ethiopia
+						colonial_region = colonial_sudan
+						colonial_region = colonial_central_africa
+						colonial_region = colonial_niger
+						colonial_region = colonial_ivory_coast
+						colonial_region = colonial_mali
+						colonial_region = colonial_west_africa
+						colonial_region = colonial_alaska
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.1.2"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					or = {
+						colonial_region = colonial_canada
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_california
+						colonial_region = colonial_mexico
+						colonial_region = colonial_the_carribean
+						colonial_region = colonial_colombia
+						colonial_region = colonial_peru
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_brazil
+						colonial_region = colonial_australia
+						colonial_region = colonial_oceania
+						colonial_region = colonial_south_africa
+						colonial_region = colonial_zambezi
+						colonial_region = colonial_congo
+						colonial_region = colonial_east_africa
+						colonial_region = colonial_ethiopia
+						colonial_region = colonial_sudan
+						colonial_region = colonial_central_africa
+						colonial_region = colonial_niger
+						colonial_region = colonial_ivory_coast
+						colonial_region = colonial_mali
+						colonial_region = colonial_west_africa
+						colonial_region = colonial_alaska
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						not = {
+							religion = ROOT
+						}
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						not = {
+							culture_group = ROOT
+						}
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_regions.1.3"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					and = {
+						or = {
+							colonial_region = colonial_canada
+							colonial_region = colonial_eastern_america
+							colonial_region = colonial_louisiana
+							colonial_region = colonial_california
+							colonial_region = colonial_mexico
+							colonial_region = colonial_the_carribean
+							colonial_region = colonial_colombia
+							colonial_region = colonial_peru
+							colonial_region = colonial_la_plata
+							colonial_region = colonial_brazil
+							colonial_region = colonial_australia
+							colonial_region = colonial_oceania
+							colonial_region = colonial_south_africa
+							colonial_region = colonial_zambezi
+							colonial_region = colonial_congo
+							colonial_region = colonial_east_africa
+							colonial_region = colonial_ethiopia
+							colonial_region = colonial_sudan
+							colonial_region = colonial_central_africa
+							colonial_region = colonial_niger
+							colonial_region = colonial_ivory_coast
+							colonial_region = colonial_mali
+							colonial_region = colonial_west_africa
+							colonial_region = colonial_alaska
+						}
+					is_empty = yes
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.2"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = india_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.3"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = east_indies_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.4"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = china_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.5"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = africa_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.6"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = south_america_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.7"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = north_america_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.8"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = central_america_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.9"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = near_east_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.10"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = persia_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.28"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = oceania_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.29"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = europe_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.30"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = eastern_europe_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.31"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = tartary_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.32"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = far_east_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.33"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = southern_africa_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.34"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = andes_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.11"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					superregion = new_world_superregion
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.12"
+		hidden_effect = {
+			every_province = {
+				limit = {
+					continent = europe
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.14"
+		hidden_effect = {
+			roman_empire_group = {
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			every_province = {
+				limit = {
+					or = {
+						region = italy_region
+						region = france_region
+						region = iberia_region
+						region = balkan_region
+						region = anatolia_region
+						region = mashriq_region
+					}
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+	
+	option = {
+		name = "catus_events_regions.27"
+		hidden_effect = {
+			trade_colonial_group = {
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						not = {
+							religion = ROOT
+						}
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						not = {
+							culture_group = ROOT
+						}
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.15"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_alaska
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.16"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_canada
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.17"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_eastern_america
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.18"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_louisiana
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.19"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_california
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.20"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_mexico
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.21"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_the_carribean
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.22"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_colombia
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.23"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_peru
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.24"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_la_plata
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.25"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_brazil
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+	option = {
+		name = "catus_events_regions.26"
+		hidden_effect = {
+			every_province = {
+				limit = {
+						colonial_region = colonial_australia
+				}
+				cede_province = ROOT
+				if = {
+					limit = {
+						not = {
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_religion = no
+					}
+					change_religion = ROOT
+				}
+				if = {
+					limit = {
+						has_owner_culture = no
+					}
+					change_culture = ROOT
+				}
+			}
+			country_event = {
+				id = catus_events_regions.1
+			}
+		}
+	}
+
+}
