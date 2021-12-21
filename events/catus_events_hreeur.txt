@@ -253,6 +253,36 @@ country_event = {
 			id = catus_events_hreeur.91
 		}
 	}
+
+	option = {
+		name = "catus_events_hreeur.25"
+		trigger = {
+			hre_size = 1
+			NOT = { has_global_flag = evangelical_union_happened }
+			hre_leagues_enabled = no
+			hre_religion_locked = no
+			hre_religion_treaty = no
+			any_known_country = {
+				is_elector = yes
+				OR = {
+					religion = protestant
+					religion = reformed
+					religion = anglican
+					religion = hussite
+				}
+				is_free_or_tributary_trigger = yes
+			}
+			NOT = { hre_reform_passed = erbkaisertum }
+		}
+		emperor = {
+			country_event = {
+				id = religious_leagues.5
+			}
+		}
+		country_event = {
+			id = catus_events_hreeur.91
+		}
+	}
 }
 
 country_event = {
@@ -504,6 +534,36 @@ country_event = {
 			hre_size = 1
 		}
 		dismantle_hre = yes
+		country_event = {
+			id = catus_events_hreeur.1
+		}
+	}
+
+	option = {
+		name = "catus_events_hreeur.25"
+		trigger = {
+			hre_size = 1
+			NOT = { has_global_flag = evangelical_union_happened }
+			hre_leagues_enabled = no
+			hre_religion_locked = no
+			hre_religion_treaty = no
+			any_known_country = {
+				is_elector = yes
+				OR = {
+					religion = protestant
+					religion = reformed
+					religion = anglican
+					religion = hussite
+				}
+				is_free_or_tributary_trigger = yes
+			}
+			NOT = { hre_reform_passed = erbkaisertum }
+		}
+		emperor = {
+			country_event = {
+				id = religious_leagues.5
+			}
+		}
 		country_event = {
 			id = catus_events_hreeur.1
 		}

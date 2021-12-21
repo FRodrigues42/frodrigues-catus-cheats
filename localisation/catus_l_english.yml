@@ -198,6 +198,7 @@
  catus_events_hreeur.16: "Enable religious peace"
  catus_events_hreeur.17: "Renovatio Imperii (Form HRE)"
  catus_events_hreeur.18: "Dismantle HRE/EU"
+ catus_events_hreeur.25: "Start the Religious leagues"
 
 #(Cheats) 08. Diplomatic and Subjects
 #34
@@ -328,6 +329,7 @@
  catus_events_option.009: "Estates have no influence"
  catus_events_option.010: "Toggle - Governing Capacity x10"
  catus_events_option.010a: "Toggle Off - Governing Capacity x10"
+ catus_events_option.011: "Add 100 mercantilsm"
 
 
 #(Cheats) 13. Reform Religion/Government

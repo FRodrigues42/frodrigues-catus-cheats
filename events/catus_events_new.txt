@@ -1804,6 +1804,16 @@ country_event = {
 			id = catus_events_new.91
 		}
 	}
+
+	option = {
+		name = "catus_events_option.0011"
+
+		add_mercantilism = 100
+
+		country_event = {
+			id = catus_events_new.91
+		}
+	}
 }
 
 country_event = {
@@ -3607,6 +3617,16 @@ country_event = {
 			influence = -100
 			duration = -1
 		}
+		country_event = {
+			id = catus_events_new.1
+		}
+	}
+
+	option = {
+		name = "catus_events_option.0011"
+
+		add_mercantilism = 100
+		
 		country_event = {
 			id = catus_events_new.1
 		}

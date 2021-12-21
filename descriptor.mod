@@ -5,6 +5,5 @@ tags={
 	"Missions And Decisions"
 	"Utilities"
 }
-name="Catus Cheats"
+name="FRodrigues' Catus Cheats"
 supported_version="1.32.*.*"
-remote_file_id="1193125267"
