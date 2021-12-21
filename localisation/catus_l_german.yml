@@ -911,6 +911,9 @@
  catus_events_ideas.19: "Administrative - Humanist"
  catus_events_ideas.20: "Diplomatic - Influence"
  catus_events_ideas.21: "Military - Naval"
+ catus_events_ideas.22: "Military - Horde"
+ catus_events_ideas.23: "Military - Divine"
+ catus_events_ideas.24: "Military - Indigenous"
 
 #Add/remove Imperial Authority...
 #(Cheats) 07. Holy Roman Empire
