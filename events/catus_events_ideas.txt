@@ -433,6 +433,72 @@ country_event = {
 		}
 	}
 
+	option = {
+		name = "catus_events_ideas.22"
+		trigger = {
+			not = {
+				full_idea_group = horde_gov_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = horde_gov_ideas
+			add_idea = horse_lords
+			add_idea = beyond_the_sun
+			add_idea = mandate_of_the_khan
+			add_idea = there_shall_be_no_grass
+			add_idea = horde_loyalty
+			add_idea = watchers_of_the_silk_road
+			add_idea = a_magnanimous_empire
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+
+	option = {
+		name = "catus_events_ideas.23"
+		trigger = {
+			not = {
+				full_idea_group = theocracy_gov_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = theocracy_gov_ideas
+			add_idea = servants_of_god
+			add_idea = by_the_grace_of_god
+			add_idea = friends_in_high_places
+			add_idea = flesh_is_weak
+			add_idea = alpha_and_omega
+			add_idea = conviction_of_sin
+			add_idea = martyrs
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+
+	option = {
+		name = "catus_events_ideas.24"
+		trigger = {
+			not = {
+				full_idea_group = indigenous_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = indigenous_ideas
+			add_idea = indigenous_bountiful_land
+			add_idea = indigenous_irregular_warfare
+			add_idea = indigenous_constitution
+			add_idea = indigenous_braves
+			add_idea = indigenous_controlled_burns
+			add_idea = indigenous_trade_with_foreigners
+			add_idea = indigenous_treaties
+		}
+		country_event = {
+			id = catus_events_ideas.91
+		}
+	}
+
 }
 
 country_event = {
@@ -862,6 +928,72 @@ country_event = {
 			add_idea = press_gangs
 			add_idea = oak_forests_for_ships
 			add_idea = superior_seamanship
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+
+	option = {
+		name = "catus_events_ideas.22"
+		trigger = {
+			not = {
+				full_idea_group = horde_gov_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = horde_gov_ideas
+			add_idea = horse_lords
+			add_idea = beyond_the_sun
+			add_idea = mandate_of_the_khan
+			add_idea = there_shall_be_no_grass
+			add_idea = horde_loyalty
+			add_idea = watchers_of_the_silk_road
+			add_idea = a_magnanimous_empire
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+
+	option = {
+		name = "catus_events_ideas.23"
+		trigger = {
+			not = {
+				full_idea_group = theocracy_gov_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = theocracy_gov_ideas
+			add_idea = servants_of_god
+			add_idea = by_the_grace_of_god
+			add_idea = friends_in_high_places
+			add_idea = flesh_is_weak
+			add_idea = alpha_and_omega
+			add_idea = conviction_of_sin
+			add_idea = martyrs
+		}
+		country_event = {
+			id = catus_events_ideas.1
+		}
+	}
+
+	option = {
+		name = "catus_events_ideas.24"
+		trigger = {
+			not = {
+				full_idea_group = indigenous_ideas
+			}
+		}
+		hidden_effect = {
+			add_idea_group = indigenous_ideas
+			add_idea = indigenous_bountiful_land
+			add_idea = indigenous_irregular_warfare
+			add_idea = indigenous_constitution
+			add_idea = indigenous_braves
+			add_idea = indigenous_controlled_burns
+			add_idea = indigenous_trade_with_foreigners
+			add_idea = indigenous_treaties
 		}
 		country_event = {
 			id = catus_events_ideas.1
