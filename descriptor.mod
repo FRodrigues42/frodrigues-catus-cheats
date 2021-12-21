@@ -1,4 +1,4 @@
-version="1.0"
+version="1.32.f"
 tags={
 	"Events"
 	"Guide"
@@ -6,4 +6,4 @@ tags={
 	"Utilities"
 }
 name="FRodrigues' Catus Cheats"
-supported_version="1.32.*.*"
+supported_version="1.32.*"
